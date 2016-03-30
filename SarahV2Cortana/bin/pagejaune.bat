@@ -1,0 +1,1 @@
+cmd /c start %CD%/plugins/SarahV2Cortana/url/pagejaune.url

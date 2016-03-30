@@ -1,0 +1,1 @@
+@echo " " > %USERPROFILE%\Desktop\Document.txt

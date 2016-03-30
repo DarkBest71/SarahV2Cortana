@@ -1,0 +1,1 @@
+start C:\"Program Files (x86)\Trust\100KSeriesWebcam\AMCap.exe"

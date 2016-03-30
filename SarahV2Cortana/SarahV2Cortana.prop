@@ -1,0 +1,9 @@
+{
+  "modules": { 
+    "SarahV2Cortana": {
+      "description": "Actions pour Interface SarahV2Cortana",
+      "version": "3.16",
+	  "Auteur": "Avatar Rousseau Alias ( seb03000 )"
+    }
+  }
+}

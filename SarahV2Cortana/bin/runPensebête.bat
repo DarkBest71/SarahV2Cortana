@@ -1,0 +1,1 @@
+start C:\"WINDOWS\system32\StikyNot.exe "

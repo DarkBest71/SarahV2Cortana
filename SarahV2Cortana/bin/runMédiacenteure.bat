@@ -1,0 +1,1 @@
+start C:\"WINDOWS\ehome\ehshell.exe"

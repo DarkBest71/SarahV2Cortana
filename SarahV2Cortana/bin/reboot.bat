@@ -1,5 +1,5 @@
 taskkill /f /im WSRMacro.exe
 taskkill /f /im node.exe
 
-cd C:\SARAHBeta
-start C:\SARAHBeta\Server_NodeJS.cmd
+cd C:\SARAH
+start C:\SARAH\Server_NodeJS.cmd

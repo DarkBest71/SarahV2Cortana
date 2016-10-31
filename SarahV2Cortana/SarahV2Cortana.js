@@ -1,5 +1,5 @@
 exports.init = function(SARAH){
-SARAH.speak('Bonjour monsieur, mon système et prèt,');
+SARAH.speak('Bonjour monsieur, mon système et prèt.');
  }
 
   //Réalisation de SarahV2Cortana part Avatar Rousseau, alias seb03000.
@@ -31,15 +31,13 @@ switch(data.val) {
 	break;  
 	  
 	case "f5": 
-	process = '%CD%/plugins/SarahV2Cortana/bin/f5.vbs';
-	var Txt = new Array; 
-	Txt[1] = "Actualisation lancé";
+	var process = '%CD%/plugins/SarahV2Cortana/bin/f5.vbs'; 
 	break; 
 	  
 	case "enter":
 	process = '%CD%/plugins/SarahV2Cortana/bin/enter.vbs';
 	var Txt = new Array; 
-	Txt[0] = "A votre service";
+	Txt[0] = "je suis réveiller, pré a vous écouté.";
 	break; 
 	  
 	case "runSteam":
@@ -393,6 +391,13 @@ switch(data.val) {
 	Txt[0] = "voilà facebouke";
 	Txt[1] = "je vous lance tout de suis facebouke";
 	break;
+	
+    case "forum":
+	process = '%CD%/plugins/SarahV2Cortana/bin/forum.bat';
+	var Txt = new Array; 
+	Txt[0] = "voilà votre forum";
+	Txt[1] = "je vous lance votre forum";
+	break;
 	   
 	case "youtube":
 	process = '%CD%/plugins/SarahV2Cortana/bin/youtube.bat';
@@ -482,7 +487,6 @@ switch(data.val) {
 	process = '%CD%/plugins/SarahV2Cortana/bin/shut.vbs';
 	var Txt = new Array; 
 	Txt[0] = "fermeture des fenêtre";
-	Txt[1] = "fermeture des page";
 	break;
 	
 	case "dvdon":

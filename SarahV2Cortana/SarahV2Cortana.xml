@@ -6,6 +6,8 @@
 	<!-- Mode chatterbots -->
 	<item>tu ai la<tag>out.action.val="la"</tag></item>
 	<item>Bonjour<tag>out.action._attributes.tts = "Bonjour monsieur, comment aller vous."</tag></item>
+	<item>dis bonjour a chloé<tag>out.action._attributes.tts = "Bonjour chloé, comment vas telle?."</tag></item>
+	<item>dis bonjour a jérôme<tag>out.action._attributes.tts = "Bonjour jérôme, comment vas tu?."</tag></item>
 	<item>sava et toi<tag>out.action._attributes.tts = "Ben écoute, moi sava, comme toujour."</tag></item>
 	<item>moi sava et toi<tag>out.action._attributes.tts = "Ben écoute, moi sava, comme toujour"</tag></item>
 	<item>sava<tag>out.action._attributes.tts = "Moi sava, comme toujour"</tag></item>
@@ -22,17 +24,17 @@
 	<item>tu le fai éxpré<tag>out.action._attributes.tts = "je ne me pérmétré pas"</tag></item>
 	<item>Tu dore<tag>out.action._attributes.tts = "Je n'est pas sommeil monsieur"</tag></item>
 	<item>Merci<tag>out.action._attributes.tts = "Je vous en pri"</tag></item>
-    <item>Qui et ton créateur<tag>out.action._attributes.tts = "C'est vous mon créateure, monsieur"</tag></item>
+    <item>Qui et ton créateur<tag>out.action._attributes.tts = "C'est vous, mon créateure."</tag></item>
 	<item>qui et le président<tag>out.action._attributes.tts = "le président de la france, et François Hollande"</tag></item>
-	<item>De quoi<tag>out.action._attributes.tts = "Tu na pas entendu"</tag></item>
+	<item>De quoi<tag>out.action._attributes.tts = "Tu na pas entendu?."</tag></item>
 	<item>comment<tag>out.action._attributes.tts = "Tu na pas entendu"</tag></item>
 	<item>A bon<tag>out.action._attributes.tts = "Oui je ta sure"</tag></item>
-	<item>Tes sure<tag>out.action._attributes.tts = "Oui tout ta fait, sure"</tag></item>
+	<item>Tes sure<tag>out.action._attributes.tts = "Oui tout ta fait sur."</tag></item>
 	<item>Tes sure de toi<tag>out.action._attributes.tts = "exactement monsieur"</tag></item>
 	<item>Tu tennui pas trop<tag>out.action._attributes.tts = "Jamais, quand je vous répond,"</tag></item>
 	<item>Chante<tag>out.action._attributes.tts = "Je ne c'est pas chanté monsieur"</tag></item>
-	<item>Chante pour moi<tag>out.action._attributes.tts = "Désolé je ne coné rien en chanson"</tag></item>
-	<item>Tu Chante<tag>out.action._attributes.tts = "Non désolé monsieur"</tag></item>
+	<item>Chante pour moi<tag>out.action._attributes.tts = "Désolé je ne coné rien en chanson."</tag></item>
+	<item>Tu Chante<tag>out.action._attributes.tts = "Non, désolé monsieur."</tag></item>
 	
 	
 	<!-- Affichage écran interface avec le logiciel rainmeter -->
@@ -72,6 +74,12 @@
 	<item>affiche mes Films<tag>out.action.val="Films"</tag><tag>out.action._attributes.tts = "voici vos films"</tag></item>
 	  
 	<!-- Lancement divers page web --> 
+	<!-- Affichage mon forum robotique-projet --> 
+	<item>affiche mon forum<tag>out.action.val="facebook"</tag></item>
+	<item>lance mon forum<tag>out.action.val="facebook"</tag></item>
+	<item>ouvre mon forum<tag>out.action.val="facebook"</tag></item>
+	<item>va sur mon forum<tag>out.action.val="facebook"</tag></item>
+	
 	<!-- Affichage de la page Facebook --> 
 	<item>affiche facebook<tag>out.action.val="facebook"</tag></item>
 	<item>lance facebook<tag>out.action.val="facebook"</tag></item>
@@ -235,8 +243,8 @@
 	<item>colle<tag>out.action.val="paste"</tag><tag>out.action._attributes.tts = "contenu collé ."</tag></item>
 	<item>coupe<tag>out.action.val="cut"</tag><tag>out.action._attributes.tts = "contenu coupé "</tag></item>
 	  
-	<item>actualise<tag>out.action.val="f5"</tag></item>
-	<item>raffraichis<tag>out.action.val="f5"</tag></item>
+	<item>actualise<tag>out.action.val="f5"</tag><tag>out.action._attributes.tts = "Actualisation éffectuer."</tag></item>
+	<item>raffraichis<tag>out.action.val="f5"</tag><tag>out.action._attributes.tts = "Raffraichissement éffectuer."</tag></item>
 	   
 	<!-- Suivant, précedent, sauvegarde, ferme... -->
 	<item>préçedent<tag>out.action.val="precedent"</tag></item>
@@ -252,6 +260,9 @@
 	<item>vide moi la corbeille<tag>out.action.val="corbeille"</tag></item>
 	<item>vide la corbeille<tag>out.action.val="corbeille"</tag></item>
 	<item>éfface la corbeille<tag>out.action.val="corbeille"</tag></item>
+	<item>vide moi la poubelle<tag>out.action.val="corbeille"</tag></item>
+	<item>vide la poubelle<tag>out.action.val="corbeille"</tag></item>
+	<item>éfface la poubelle<tag>out.action.val="corbeille"</tag></item>
      
 	<!-- Lancement fermeture de logiciels -->
 	
@@ -459,21 +470,21 @@
 	<item>reviens<tag>out.action.val="enter"</tag></item>
 	<item>affiche l'écrans<tag>out.action.val="screenOn"</tag><tag>out.action._attributes.tts = "l'écran et en coure d'ouverture"</tag></item>
 	<item>mais l'écrans<tag>out.action.val="screenOn"</tag><tag>out.action._attributes.tts = "l'écran et en coure d'ouverture"</tag></item>
-	<item>allume l'écrans<tag>out.action.val="screenOn"</tag><tag>out.action._attributes.tts = "affichage de l'écran"</tag></item>
-	<item>Lance l'écrans<tag>out.action.val="screenOn"</tag><tag>out.action._attributes.tts = "affichage de l'écran"</tag></item>
+	<item>allume l'écrans<tag>out.action.val="screenOn"</tag><tag>out.action._attributes.tts = "affichage de l'écran en coure."</tag></item>
+	<item>Lance l'écrans<tag>out.action.val="screenOn"</tag><tag>out.action._attributes.tts = "affichage de l'écran."</tag></item>
 	<item>ferme l'écrans<tag>out.action.val="screenOff"</tag></item>
 	<item>désactive l'écrans<tag>out.action.val="screenOff"</tag></item>
-	<item>éteinds l'écrans<tag>out.action.val="screenOff"</tag><tag>out.action._attributes.tts = "l'écran et en coure de fermeture"</tag></item>
+	<item>éteinds l'écrans<tag>out.action.val="screenOff"</tag><tag>out.action._attributes.tts = "l'écran et en coure de fermeture."</tag></item>
 	
 	<!-- Ouverture ou fermeture du lecteur DVD du PC -->
 	<item>ouvre le Dévédé<tag>out.action.val="dvdon"</tag></item>
-	<item>ouvre le lecteur Dévédé<tag>out.action.val="dvdon"</tag></item>
+	<item>ouvre le lécteur Dévédé<tag>out.action.val="dvdon"</tag></item>
 	<item>ferme le Dévédé<tag>out.action.val="dvdoff"</tag></item>
-    <item>ouvre le lecteur<tag>out.action.val="dvdon"</tag></item>
-	<item>ferme le lecteur<tag>out.action.val="dvdoff"</tag></item>
-	<item>ferme le lecteur dévédé<tag>out.action.val="dvdoff"</tag></item>
+    <item>ouvre le lécteur<tag>out.action.val="dvdon"</tag></item>
+	<item>ferme le lécteur<tag>out.action.val="dvdoff"</tag></item>
+	<item>ferme le lécteur dévédé<tag>out.action.val="dvdoff"</tag></item>
     </one-of>
     <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/SarahV2Cortana";</tag>
     </rule> 
     </grammar>
-    <!-- Réalisation de SRAHV2 part Avatar Rousseau, alias seb03000 -->
+    <!-- Réalisation de SARAHV2CORTANA part Avatar Rousseau, alias seb03000 -->

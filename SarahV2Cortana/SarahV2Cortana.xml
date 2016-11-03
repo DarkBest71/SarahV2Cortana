@@ -1,10 +1,9 @@
 	<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleSarahV2Cortana" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
     <rule id="ruleSarahV2Cortana" scope="public">
     <tag>out.action=new Object(); </tag>
-    <item>Oké SSARAH</item>
+    <!-- <item>jarvice</item> -->
     <one-of> 
 	<!-- Mode chatterbots -->
-	<item>tu ai la<tag>out.action.val="la"</tag></item>
 	<item>Bonjour<tag>out.action._attributes.tts = "Bonjour monsieur, comment aller vous."</tag></item>
 	<item>dis bonjour a chloé<tag>out.action._attributes.tts = "Bonjour chloé, comment vas telle?."</tag></item>
 	<item>dis bonjour a jérôme<tag>out.action._attributes.tts = "Bonjour jérôme, comment vas tu?."</tag></item>
@@ -38,11 +37,11 @@
 	
 	
 	<!-- Affichage écran interface avec le logiciel rainmeter -->
-	<item>ouvre ton interface<tag>out.action.val="runsarah"</tag></item>
-	<item>mais ton interface<tag>out.action.val="runsarah"</tag></item>
-    <item>affiche ton interface<tag>out.action.val="runsarah"</tag></item>
-    <item>active ton interface<tag>out.action.val="runsarah"</tag></item>
-    <item>lance ton interface<tag>out.action.val="runsarah"</tag></item>
+	<item>ouvre ton interface<tag>out.action.val="Runsarah"</tag></item>
+	<item>mais ton interface<tag>out.action.val="Runsarah"</tag></item>
+    <item>affiche ton interface<tag>out.action.val="Runsarah"</tag><tag>out.action._attributes.tts = "affichage en coure"</tag></item>
+    <item>active ton interface<tag>out.action.val="Runsarah"</tag></item>
+    <item>lance ton interface<tag>out.action.val="Runsarah"</tag></item>
     <item>masque ton interface<tag>out.action.val="closesarah"</tag></item>
     <item>ferme ton interface<tag>out.action.val="closesarah"</tag></item>
     <item>désactive ton interface<tag>out.action.val="closesarah"</tag></item>
@@ -75,10 +74,10 @@
 	  
 	<!-- Lancement divers page web --> 
 	<!-- Affichage mon forum robotique-projet --> 
-	<item>affiche mon forum<tag>out.action.val="facebook"</tag></item>
-	<item>lance mon forum<tag>out.action.val="facebook"</tag></item>
-	<item>ouvre mon forum<tag>out.action.val="facebook"</tag></item>
-	<item>va sur mon forum<tag>out.action.val="facebook"</tag></item>
+	<item>affiche mon forum<tag>out.action.val="forum"</tag></item>
+	<item>lance mon forum<tag>out.action.val="forum"</tag></item>
+	<item>ouvre mon forum<tag>out.action.val="forum"</tag></item>
+	<item>va sur mon forum<tag>out.action.val="forum"</tag></item>
 	
 	<!-- Affichage de la page Facebook --> 
 	<item>affiche facebook<tag>out.action.val="facebook"</tag></item>
@@ -465,9 +464,6 @@
 	<item>redémarre<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je relance mon système"</tag></item>
 	 
 	<!-- Gestion des périphériques -->
-	<!-- Les deux commandes suivantes servent a sortir l'écran de veille. -->
-	<item>réveilles toi<tag>out.action.val="enter"</tag></item>
-	<item>reviens<tag>out.action.val="enter"</tag></item>
 	<item>affiche l'écrans<tag>out.action.val="screenOn"</tag><tag>out.action._attributes.tts = "l'écran et en coure d'ouverture"</tag></item>
 	<item>mais l'écrans<tag>out.action.val="screenOn"</tag><tag>out.action._attributes.tts = "l'écran et en coure d'ouverture"</tag></item>
 	<item>allume l'écrans<tag>out.action.val="screenOn"</tag><tag>out.action._attributes.tts = "affichage de l'écran en coure."</tag></item>
@@ -483,8 +479,9 @@
     <item>ouvre le lécteur<tag>out.action.val="dvdon"</tag></item>
 	<item>ferme le lécteur<tag>out.action.val="dvdoff"</tag></item>
 	<item>ferme le lécteur dévédé<tag>out.action.val="dvdoff"</tag></item>
+	
     </one-of>
     <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/SarahV2Cortana";</tag>
     </rule> 
     </grammar>
-    <!-- Réalisation de SARAHV2CORTANA part Avatar Rousseau, alias seb03000 -->
+    <!-- Réalisation de SARAHV2Cortana part Avatar Rousseau, alias seb03000 -->

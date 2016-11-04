@@ -1,484 +1,487 @@
-exports.init = function(SARAH){
-SARAH.speak('initialisation terminé, bonjour monsieur.');
- }
-
-//Réalisation de SarahV2Cortana par Avatar Rousseau, alias seb03000.
-exports.action = function(data, callback, config, SARAH) {
-  
-var exec = require('child_process').exec;
- 
-switch(data.val) {
-
-    case "togglefull": //mode plein écran
-    var process = '%CD%/plugins/SarahV2Cortana/ahk/ToggleFullscreen.ahk';
-	var Txt = new Array; 
-	Txt[0] = "Mode Pleine écran activé";
-	break;	
+	<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleSarahV2Cortana" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+    <rule id="ruleSarahV2Cortana" scope="public">
+    <tag>out.action=new Object(); </tag>
+    <item>oké SSarah</item>
+    <one-of> 
+	<!-- Mode chatterbots -->
+	<item>Bonjour<tag>out.action._attributes.tts = "Bonjour monsieur, comment aller vous."</tag></item>
+	<item>dis bonjour a chloé<tag>out.action._attributes.tts = "Bonjour chloé, comment vas telle?."</tag></item>
+	<item>dis bonjour a jérôme<tag>out.action._attributes.tts = "Bonjour jérôme, comment vas tu?."</tag></item>
+	<item>sava et toi<tag>out.action._attributes.tts = "Ben écoute, moi sava, comme toujour."</tag></item>
+	<item>moi sava et toi<tag>out.action._attributes.tts = "Ben écoute, moi sava, comme toujour"</tag></item>
+	<item>sava<tag>out.action._attributes.tts = "Moi sava, comme toujour"</tag></item>
+	<item>sava bien et toi<tag>out.action._attributes.tts = "Ben écoute moi sava comme toujour"</tag></item>
+	<item>Qui et tu<tag>out.action._attributes.tts = "je suis ton nassistance virtuelle, je suis la pour tédai a facilité té recherche"</tag></item>
+	<item>Qui tu et<tag>out.action._attributes.tts = "je suis ton nassistance virtuelle, je suis la pour tédai a facilité té recherche"</tag></item>
+	<item>Que fait tu<tag>out.action._attributes.tts = "Je fait une analyse de mon programme"</tag></item>
+	<item>Tu fait quoi<tag>out.action._attributes.tts = "Je fait une analyse de mon programme"</tag></item>
+	<item>a tu trouvé des erreur<tag>out.action._attributes.tts = "oui, je rencontre un ralentissement de mon système"</tag></item>
+	<item>tu trouve des erreur<tag>out.action._attributes.tts = "oui, je rencontre un ralentissement de mon système"</tag></item>
+	<item>tu a trouvé des erreur<tag>out.action._attributes.tts = "oui, je rencontre un ralentissement de mon système"</tag></item>
+	<item>tu te fou de moi<tag>out.action._attributes.tts = "pas du tout"</tag></item>
+	<item>tu te fiche de moi<tag>out.action._attributes.tts = "je ne me pérmétré pas"</tag></item>
+	<item>tu le fai éxpré<tag>out.action._attributes.tts = "je ne me pérmétré pas"</tag></item>
+	<item>Tu dore<tag>out.action._attributes.tts = "Je n'est pas sommeil monsieur"</tag></item>
+	<item>Merci<tag>out.action._attributes.tts = "Je vous en pri"</tag></item>
+    <item>Qui et ton créateur<tag>out.action._attributes.tts = "C'est vous, mon créateure."</tag></item>
+	<item>qui et le président<tag>out.action._attributes.tts = "le président de la france, et François Hollande"</tag></item>
+	<item>De quoi<tag>out.action._attributes.tts = "Tu na pas entendu?."</tag></item>
+	<item>comment<tag>out.action._attributes.tts = "Tu na pas entendu"</tag></item>
+	<item>A bon<tag>out.action._attributes.tts = "Oui je ta sure"</tag></item>
+	<item>Tes sure<tag>out.action._attributes.tts = "Oui tout ta fait sur."</tag></item>
+	<item>Tes sure de toi<tag>out.action._attributes.tts = "exactement monsieur"</tag></item>
+	<item>Tu tennui pas trop<tag>out.action._attributes.tts = "Jamais, quand je vous répond,"</tag></item>
+	<item>Chante<tag>out.action._attributes.tts = "Je ne c'est pas chanté monsieur"</tag></item>
+	<item>Chante pour moi<tag>out.action._attributes.tts = "Désolé je ne coné rien en chanson."</tag></item>
+	<item>Tu Chante<tag>out.action._attributes.tts = "Non, désolé monsieur."</tag></item>
+	
+	
+	<!-- Affichage écran interface avec le logiciel rainmeter -->
+	<item>ouvre ton interface<tag>out.action.val="Runsarah"</tag></item>
+	<item>mais ton interface<tag>out.action.val="Runsarah"</tag></item>
+    <item>affiche ton interface<tag>out.action.val="Runsarah"</tag></item>
+    <item>active ton interface<tag>out.action.val="Runsarah"</tag></item>
+    <item>lance ton interface<tag>out.action.val="Runsarah"</tag></item>
+    <item>masque ton interface<tag>out.action.val="closesarah"</tag></item>
+    <item>ferme ton interface<tag>out.action.val="closesarah"</tag></item>
+    <item>désactive ton interface<tag>out.action.val="closesarah"</tag></item>
+	<item>éteinds ton interface<tag>out.action.val="closesarah"</tag></item>
 	  
-	case "konsole": // affiche le terminale de windows 7
-	var process = '%CD%/plugins/SarahV2Cortana/bin/konsole.bat';
-	break;
+	 <!-- Retour, revenire vair le Bureau --> 
+ 	<item>affiche le bureau<tag>out.action.val="minimize"</tag></item>
+	<item>mai toi sur le bureau<tag>out.action.val="minimize"</tag></item>
+	<item>mai le bureau<tag>out.action.val="minimize"</tag></item>
+ 	<item>va sur le bureau<tag>out.action.val="minimize"</tag></item>
+	<item>ouvre le bureau<tag>out.action.val="minimize"</tag></item>
+	
+	<!-- Affichage de la vue 3D fonctionne que sur Windows 7 ( pour Windows 10 c'est en cours ) -->
+    <item>restore<tag>out.action.val="restore"</tag></item>
+	<item>affiche les fenetres<tag>out.action.val="restore"</tag></item>
+	<item>affiche les page<tag>out.action.val="restore"</tag></item>
+	<item>vue global<tag>out.action.val="global"</tag></item>
+	<item>affiche la vue d'ensemble<tag>out.action.val="global"</tag></item>
+	<item>affiche la 3D<tag>out.action.val="global"</tag></item>
+	<item>lance la 3D<tag>out.action.val="global"</tag></item>
+    <item>mai la 3D<tag>out.action.val="global"</tag></item>
 	  
-    case "controlpanel": // affiche le panneau de configuration 
-	var process = '%CD%/plugins/SarahV2Cortana/bin/controlpanel.bat';
-	break;  
+	<!-- Affiche l'enplacement du plugin, dossier, image de sarahv2 -->  
+	<item>affiche les pluguine<tag>out.action.val="plugins"</tag></item>
+	<item>affiche tes pluguine<tag>out.action.val="plugins"</tag></item>
+	<item>affiche ton dossier<tag>out.action.val="dossier"</tag></item>
+	<item>affiche mes images<tag>out.action.val="images"</tag><tag>out.action._attributes.tts = "voici vos image"</tag></item>
+	<item>affiche mes documents<tag>out.action.val="documents"</tag><tag>out.action._attributes.tts = "voici vos document"</tag></item>
+	<item>affiche mes Films<tag>out.action.val="Films"</tag><tag>out.action._attributes.tts = "voici vos films"</tag></item>
 	  
-	case "f5": //actualise ou rafraichie les pages
-	var process = '%CD%/plugins/SarahV2Cortana/bin/f5.vbs'; 
-	break; 
+	<!-- Lancement divers page web --> 
+	<!-- Affichage mon forum robotique-projet --> 
+	<item>affiche mon forum<tag>out.action.val="forum"</tag></item>
+	<item>lance mon forum<tag>out.action.val="forum"</tag></item>
+	<item>ouvre mon forum<tag>out.action.val="forum"</tag></item>
+	<item>va sur mon forum<tag>out.action.val="forum"</tag></item>
+	
+	<!-- Affichage de la page Facebook --> 
+	<item>affiche facebook<tag>out.action.val="facebook"</tag></item>
+	<item>lance facebook<tag>out.action.val="facebook"</tag></item>
+	<item>ouvre facebook<tag>out.action.val="facebook"</tag></item>
+	<item>va sur fèillsbouque<tag>out.action.val="facebook"</tag></item>
+	<item>affiche fèillsbouque<tag>out.action.val="facebook"</tag></item>
+	<item>lance fèillsbouque<tag>out.action.val="facebook"</tag></item>
+	<item>ouvre fèillsbouque<tag>out.action.val="facebook"</tag></item>
+	
+	<!-- Affichage de la page Youtube -->
+	<item>lance youtube<tag>out.action.val="youtube"</tag></item>
+	<item>affiche youtube<tag>out.action.val="youtube"</tag></item>
+	<item>va sur youtube<tag>out.action.val="youtube"</tag></item>
+	<item>ouvre youtube<tag>out.action.val="youtube"</tag></item>
+	
+	<!-- Affichage de la page de la Communauté -->
+	<item>va sur la communauté<tag>out.action.val="communauté"</tag></item> 
+	<item>affiche la communauté<tag>out.action.val="communauté"</tag></item>
+	<item>lance la communauté<tag>out.action.val="communauté"</tag></item> 
+	<item>ouvre la communauté<tag>out.action.val="communauté"</tag></item>
+	
+	<!-- Affichage de la page Gmail -->
+	<item>mai Gimèl<tag>out.action.val="Gmail"</tag></item>
+	<item>mai Gémèl<tag>out.action.val="Gmail"</tag></item>
+	<item>ouvre Gimèl<tag>out.action.val="Gmail"</tag></item>
+	<item>ouvre Gémèl<tag>out.action.val="Gmail"</tag></item>
+	<item>lance Gimèl<tag>out.action.val="Gmail"</tag></item>
+	<item>lance Gémèl<tag>out.action.val="Gmail"</tag></item>
+	<item>affiche Gimèl<tag>out.action.val="Gmail"</tag></item>
+	<item>affiche Gémèl<tag>out.action.val="Gmail"</tag></item>
+	<item>va sur Gimèl<tag>out.action.val="Gmail"</tag></item>
+	<item>va sur Gémèl<tag>out.action.val="Gmail"</tag></item>
+	
+	<!-- Affichage de la page Gmail aussi -->
+	<item>va sur ma méssageri<tag>out.action.val="Gmail"</tag></item>
+	<item>affiche ma méssageri<tag>out.action.val="Gmail"</tag></item>
+	<item>ouvre ma méssageri<tag>out.action.val="Gmail"</tag></item>
+	<item>lance ma méssageri<tag>out.action.val="Gmail"</tag></item>
+	
+	<!-- Affichage de la page Google -->
+	<item>va sur gougueule<tag>out.action.val="Gougueule"</tag></item>
+	<item>affiche gougueule<tag>out.action.val="Gougueule"</tag></item>
+	<item>ouvre gougueule<tag>out.action.val="Gougueule"</tag></item>
+	<item>lance gougueule<tag>out.action.val="Gogueule"</tag></item>
+	
+	<!-- Affichage de la page Twitter -->
+	<item>lance touiteure<tag>out.action.val="Twitter"</tag><tag>out.action._attributes.tts = "Je vous mais tuiteur"</tag></item>
+	<item>Mais touiteure<tag>out.action.val="Twitter"</tag><tag>out.action._attributes.tts = "Je vous mais tuiteur"</tag></item>
+	<item>Vas sure touiteure<tag>out.action.val="Twitter"</tag><tag>out.action._attributes.tts = "Je vous mais tuiteur"</tag></item>
+	<item>Ouvre touiteure<tag>out.action.val="Twitter"</tag><tag>out.action._attributes.tts = "Je vous mais tuiteur"</tag></item>
+	<item>Lance touiteure<tag>out.action.val="Twitter"</tag><tag>out.action._attributes.tts = "Je vous mais tuiteur"</tag></item>
+	<item>Affiche touiteure<tag>out.action.val="Twitter"</tag><tag>out.action._attributes.tts = "Je vous mais tuiteur"</tag></item>
+	
+	<!-- Affichage d'une page pour des recette quelconque -->
+	<item>trouve une recette<tag>out.action.val="allo"</tag><tag>out.action._attributes.tts = "Je vais vous trouver une recette sur internet"</tag></item>
+	<item>trouve moi une recette<tag>out.action.val="allo"</tag><tag>out.action._attributes.tts = "Je vais vous trouver une recette sur internet"</tag></item>  
+	
+	<!-- Lancement de Firefox -->
+	<item>va sur failleurfox<tag>out.action.val="runfirefox"</tag></item>
+	<item>affiche failleurfox<tag>out.action.val="runfirefox"</tag></item>
+	<item>lance failleurfox<tag>out.action.val="runfirefox"</tag></item>
+	<item>ouvre failleurfox<tag>out.action.val="runfirefox"</tag></item>
+	<item>ferme failleurfox<tag>out.action.val="closefirefox"</tag></item>
+	
+	<!-- Affichage de la page du Store -->
+    <item>Ouvre le store<tag>out.action.val="store"</tag><tag>out.action._attributes.tts = "Je vous mais le store"</tag></item>
+	<item>Mais le store<tag>out.action.val="store"</tag><tag>out.action._attributes.tts = "Je vous mais le store"</tag></item>
+	<item>Lance store<tag>out.action.val="store"</tag><tag>out.action._attributes.tts = "Je vous mais le store"</tag></item>
+	<item>Affiche store<tag>out.action.val="store"</tag><tag>out.action._attributes.tts = "Je vous mais le store"</tag></item>
+	<item>Vas sure le store<tag>out.action.val="store"</tag><tag>out.action._attributes.tts = "Je vous mais le store"</tag></item> 
+	
+	<!-- Affichage de la page de PageJaune -->
+	<item>Ouvre les pagejaune<tag>out.action.val="pagejaune"</tag><tag>out.action._attributes.tts = "Je vous mais les page jaune"</tag></item> 
+	<item>Affiche les pagejaune<tag>out.action.val="pagejaune"</tag><tag>out.action._attributes.tts = "Je vous mais les page jaune"</tag></item> 
+	<item>Lance les pagejaune<tag>out.action.val="pagejaune"</tag><tag>out.action._attributes.tts = "Je vous mais les page jaune"</tag></item>  
+    <item>Mais les pagejaune<tag>out.action.val="pagejaune"</tag><tag>out.action._attributes.tts = "Je vous mais les page jaune"</tag></item> 
+    <item>Vas sure les pagejaune<tag>out.action.val="pagejaune"</tag><tag>out.action._attributes.tts = "Je vous mais les page jaune"</tag></item> 
+	
+	<!-- Affichage de la page de eMule-island  -->
+	<item>Ouvre émule<tag>out.action.val="emule"</tag><tag>out.action._attributes.tts = "Je vous mai émule"</tag></item> 
+	<item>Affiche émule<tag>out.action.val="emule"</tag><tag>out.action._attributes.tts = "Je vous mai émule"</tag></item> 
+	<item>Lance émule<tag>out.action.val="emule"</tag><tag>out.action._attributes.tts = "Je vous mai émule"</tag></item>  
+    <item>Mais émule<tag>out.action.val="emule"</tag><tag>out.action._attributes.tts = "Je vous mai émule"</tag></item> 
+    <item>Vas sure émule<tag>out.action.val="emule"</tag><tag>out.action._attributes.tts = "Je vous mai émule"</tag></item> 
+	
+	<!-- Affichage de la page Wikipédia -->
+    <item>Vas sure wikipédia<tag>out.action.val="wikipedia"</tag><tag>out.action._attributes.tts = "Je vous mais wikipédia"</tag></item> 
+	<item>Mais wikipédia<tag>out.action.val="wikipedia"</tag><tag>out.action._attributes.tts = "Je vous mais wikipédia"</tag></item> 
+	<item>Lance wikipédia<tag>out.action.val="wikipedia"</tag><tag>out.action._attributes.tts = "Je vous mais wikipédia"</tag></item> 
+	<item>Affiche wikipédia<tag>out.action.val="wikipedia"</tag><tag>out.action._attributes.tts = "Je vous mais wikipédia"</tag></item>  
+	<item>Ouvre wikipédia<tag>out.action.val="wikipedia"</tag><tag>out.action._attributes.tts = "Je vous mais wikipédia"</tag></item>  
+	
+	<!-- Affichage de la page du site Cdiscount -->
+	<item>Ouvre Cdiscount<tag>out.action.val="Cdiscount"</tag><tag>out.action._attributes.tts = "Je vous mais Cdiscount"</tag></item>  
+	<item>Lance Cdiscount<tag>out.action.val="Cdiscount"</tag><tag>out.action._attributes.tts = "Je vous mais Cdiscount"</tag></item>
+	<item>Affiche Cdiscount<tag>out.action.val="Cdiscount"</tag><tag>out.action._attributes.tts = "Je vous mais Cdiscount"</tag></item>
+	<item>Vas sure Cdiscount<tag>out.action.val="Cdiscount"</tag><tag>out.action._attributes.tts = "Je vous mais Cdiscount"</tag></item>
+	<item>Mais Cdiscount<tag>out.action.val="Cdiscount"</tag><tag>out.action._attributes.tts = "Je vous mais Cdiscount"</tag></item>
+	
+	<!-- Affichage de la page du site Ebay -->
+	<item>Ouvre ibé<tag>out.action.val="ebay"</tag><tag>out.action._attributes.tts = "Je vous mai ibé"</tag></item>  
+	<item>Lance ibé<tag>out.action.val="ebay"</tag><tag>out.action._attributes.tts = "Je vous mai ibé"</tag></item>
+	<item>Affiche ibé<tag>out.action.val="ebay"</tag><tag>out.action._attributes.tts = "Je vous mai ibé"</tag></item>
+	<item>Vas sure ibé<tag>out.action.val="ebay"</tag><tag>out.action._attributes.tts = "Je vous mai ibé"</tag></item>
+	<item>Mais ibé<tag>out.action.val="ebay"</tag><tag>out.action._attributes.tts = "Je vous mai ibé"</tag></item>
+	
+	<!-- Affichage de la page du site Leboncoin -->
+	<item>Ouvre leboncoin<tag>out.action.val="leboncoin"</tag><tag>out.action._attributes.tts = "Je vous mai leboncoin"</tag></item>  
+	<item>Lance leboncoin<tag>out.action.val="leboncoin"</tag><tag>out.action._attributes.tts = "Je vous mai leboncoin"</tag></item>
+	<item>Affiche leboncoin<tag>out.action.val="leboncoin"</tag><tag>out.action._attributes.tts = "Je vous mai leboncoin"</tag></item>
+	<item>Vas sure leboncoin<tag>out.action.val="leboncoin"</tag><tag>out.action._attributes.tts = "Je vous mai leboncoin"</tag></item>
+	<item>Mais leboncoin<tag>out.action.val="leboncoin"</tag><tag>out.action._attributes.tts = "Je vous mai leboncoin"</tag></item>
 	  
-	case "runSteam": // ouvre le logiciel steam
-	var process = '%CD%/plugins/SarahV2Cortana/bin/runSteam.bat';
-	var Txt = new Array; 
-	Txt[0] = " Stime et en coure d'ouverture";
-    break;   
-	  
-	case "closeSteam": // ferme le logiciel steam
-	var process = '%CD%/plugins/SarahV2Cortana/bin/closeSteam.bat';
-	var Txt = new Array; 
-	Txt[0] = " Stime et en coure de férmeture";
-    break;  
-	 
-	case "runOrigin": // ouvre le logiciel origin 
-	var process = '%CD%/plugins/SarahV2Cortana/bin/runOrigin.bat';
-	var Txt = new Array; 
-	Txt[0] = " Origin et en coure d'ouverture";
-    break;
-	 
-	case "closeOrigin": // ferme le logiciel origin
-	var process = '%CD%/plugins/SarahV2Cortana/bin/closeOrigin.bat';
-	var Txt = new Array; 
-	Txt[0] = " Origin et en coure de férmeture";
-    break; 
-	 
-	case "runSkype": // ouvre le logiciel skype
-	var process = '%CD%/plugins/SarahV2Cortana/bin/runSkype.bat';
-	var Txt = new Array; 
-	Txt[0] = " skipe et en coure d'ouverture";
-    break;  	
-	  
-	case "closeSkype":// ferme le logiciel skype
-	var process = '%CD%/plugins/SarahV2Cortana/bin/closeSkype.bat';
-	var Txt = new Array; 
-	Txt[0] = " skipe et en coure de férmeture";
-    break;  
-	  
-	case "runInternetExplorer": // ouvre le navigateur internet exploreur
-	var process = '%CD%/plugins/SarahV2Cortana/bin/runInternetExplorer.bat';
-	var Txt = new Array; 
-	Txt[0] = " internet éxploreureest en coure d'ouverture";
-    break;  
-	  
-	case "closeInternetExplorer": // ferme le navigateur internet exploreur
-	var process = '%CD%/plugins/SarahV2Cortana/bin/closeInternetExplorer.bat';
-	var Txt = new Array; 
-	Txt[0] = " internet éxploreureest en coure de férmeture";
-    break;  
-	  
-	case "runBluetooth": // ouvre le périphérique du bluetooth
-	var process = '%CD%/plugins/SarahV2Cortana/bin/runBluetooth.bat';
-	var Txt = new Array; 
-	Txt[0] = "Le Bloutous est en coure d'ouverture";
-    break; 
-	  
-	case "closeBluetooth": // ferme le périphérique bluetooth
-	var process = '%CD%/plugins/SarahV2Cortana/bin/closeBluetooth.bat';
-	var Txt = new Array; 
-	Txt[0] = "Le Bloutous est en coure de férmeture";
-    break;  
-	  
-	case "runMédiacenteure": // ouvre le médiacenteur
-	var process = '%CD%/plugins/SarahV2Cortana/bin/runMédiacenteure.bat';
-	var Txt = new Array; 
-	Txt[0] = "Médiacenteure est en coure d'ouverture";
-    break;  
-	
-	case "closeMédiacenteure": // ferme le médiacenter
-	var process = '%CD%/plugins/SarahV2Cortana/bin/closeMédiacenteure.bat';
-	var Txt = new Array; 
-	Txt[0] = "Médiacenteure est en coure de férmeture";
-    break; 
-	  
-	case "Fichier": // créer un fichier sur le bureau
-	var process = '%CD%/plugins/SarahV2Cortana/bin/Fichier.bat'; 
-    break;
-	
-	case "scanne_avaste": // ouvre le logiciel antivirus avaste
-	var process = '%CD%/plugins/SarahV2Cortana/bin/scanne_avaste.bat';
-	var Txt = new Array; 
-	Txt[0] = "Avaste et en cour d'ouverture";
-    break;
-	
-	case "Dossier": // créer un dossier sur le bureau
-	var process = '%CD%/plugins/SarahV2Cortana/bin/Dossier.bat'; 
-    break;
-	
-	case "selectall": // pérmet de souligné 
-	var process = '%CD%/plugins/SarahV2Cortana/bin/selectall.vbs';
-    var Txt = new Array; 
-	Txt[0] = "en coure de surlignement";
-	break;
-	
-	case "cancel": // permet de quitté
-	var process = '%CD%/plugins/SarahV2Cortana/bin/cancel.vbs';
-	break;
-	
-	case "retablir": // permet de reméttre 
-	var process = '%CD%/plugins/SarahV2Cortana/bin/retablir.vbs';
-	break;
-	
-	case "save": // permet de sauvegarder
-	var process = '%CD%/plugins/SarahV2Cortana/bin/save.vbs';
-	break;
-	
-	case "copy": // permet de faire une copie
-	var process = '%CD%/plugins/SarahV2Cortana/bin/copy.vbs';
-	break;
-	
-	case "paste": // permet de coller
-	var process = '%CD%/plugins/SarahV2Cortana/bin/paste.vbs';
-	break;
-	
-	case "cut": // permet de couper
-	var process = '%CD%/plugins/SarahV2Cortana/bin/cut.vbs';
-	break;
-	  
-	case "journale": //permet d'aller sur un site voir le journale
-	var process = '%CD%/plugins/SarahV2Cortana/bin/journale.bat';
-	var Txt = new Array; 
-	Txt[0] = "voici les info monsieur";
-	Txt[1] = "affichage des info";
-	break; 
-	
-	case "process": //affichage du processeur en fonction
-	var process = '%CD%/plugins/SarahV2Cortana/bin/process.bat';
-	var Txt = new Array; 
-	Txt[0] = "afichage du procéssuce en cour";
-	break;
-	
-    case "bfm": // permet d'aller sur le site BFM télé
-	var process = '%CD%/plugins/SarahV2Cortana/bin/bfm.bat';
-	break;
-	  
-	case "ebay": // Aller sur le site de EBAY
-	var process = '%CD%/plugins/SarahV2Cortana/bin/ebay.bat';
-	break;
-	
-	case "leboncoin": // Aller sur le site leboncoin
-	var process = '%CD%/plugins/SarahV2Cortana/bin/leboncoin.bat';
-	break;
-	  
-    case "corbeille": // permet de vider votre corbeille de votre bureau
-    var process = '%CD%/plugins/SarahV2Cortana/bin/corbeille.bat';
-	var Txt = new Array; 
-	Txt[0] = "votre corbeille et vidé.";
-	Txt[1] = "vidage de votre corbeille";
-	break;
-	
-    case "allo": // permet d'aller sur le site alociné
-	var process = '%CD%/plugins/SarahV2Cortana/bin/allo.bat';
-	break;
-	
-	case "lock": // permet de vérrouiller votre session
-	var process = '%CD%/plugins/SarahV2Cortana/bin/lock.bat';
-	break;
-	
-	case "ToggleWindow":
-    var process = '%CD%/plugins/SarahV2Cortana/ahk/ToggleWindow.ahk';
-	var Txt = new Array; 
-	Txt[0] = "Mode réduit activé";
-	Txt[1] = "c'est réduit, monsieur";
-	break;
-	  
-  	case "runxbmc": // affiche le logiciel XBMC
- 	var process = '%CD%/plugins/SarahV2Cortana/ahk/RunXBMC.ahk';
-	var Txt = new Array; 
-	Txt[0] = "ixbéhèmecé est en cours de lancement";
-	Txt[1] = "ixbéhèmecé vas se lancé";
-	break;
-	  
-	case "closexbmc": // ferme le logiel XBMC
-	var process = '%CD%/plugins/SarahV2Cortana/ahk/CloseXBMC.ahk';
-	var Txt = new Array; 
-	Txt[0] = "ixbéhèmecé et en cour de fermeture";
-	break;
-	  	  
-	case "Runsarah": //lance rainmeter
-	var process = '%CD%/plugins/SarahV2Cortana/bin/Runsarah.bat';
-	break;
-	
-	case "closesarah": //lance ferme
-	var process = '%CD%/plugins/SarahV2Cortana/bin/closesarah.bat';
-	var Txt = new Array; 
-	Txt[0] = "c'est fait monsieur";
-	Txt[1] = "interface fermé";
-	break;  
-	  
-	case "runfirefox": //lance firefox
-	var process = '%CD%/plugins/SarahV2Cortana/bin/runfirefox.bat';
-	var Txt = new Array; 
-	Txt[0] = "j'ouvre firefox";
-	Txt[1] = "je lance firefox";
-	break;
-	  
-	case "closefirefox": //ferme firefox
-	var process = '%CD%/plugins/SarahV2Cortana/bin/Closefirefox.bat';
-	var Txt = new Array; 
-	Txt[0] = "fermeture de firefox";
-	Txt[1] = "firefox fermé";
-	break;
-	  
-	case "runshutdown": // arrêté le pc
-	var process = '%CD%/plugins/SarahV2Cortana/bin/runshutdown.bat';
-	break;
-	  
-	case "runrestart": // redémarre votre pc
-	var process = '%CD%/plugins/SarahV2Cortana/bin/runrestart.bat';
-	break;
-  
-	case "runvlc": // ouvre le logiciel VLC
-	var process = '%CD%/plugins/SarahV2Cortana/bin/runvlc.bat';
-	var Txt = new Array; 
-	Txt[0] = "VLC et en coure d'ouverture";
-	break;
-	
-    case "closerunvlc": // férme le logiciel VLC
-	var process = '%CD%/plugins/SarahV2Cortana/bin/closerunvlc.bat';
-	var Txt = new Array; 
-	Txt[0] = "VLC et en coure de fermeture";
-	break;
-	
-    case "webcam": // Lance ma webcam de mon pc 
-	var process = '%CD%/plugins/SarahV2Cortana/bin/webcam.bat';
-	var Txt = new Array; 
-	Txt[0] = "votre webcam et en coure d'ouverture";
-	break;
-	
-    case "closewebcam": // ferme ma webcam
-	var process = '%CD%/plugins/SarahV2Cortana/bin/closewebcam.bat';
-	var Txt = new Array; 
-	Txt[0] = "votre webcam et en coure de fermeture";
-	break;
-	
-	case "runPensebête": // ouvre le pense bête
-	var process = '%CD%/plugins/SarahV2Cortana/bin/runPensebête.bat';
-	var Txt = new Array; 
-	Txt[0] = "votre Pence bête est en coure d'ouverture";
-	break;
-	
-	case "closePensebête": // ferme le pense bête
-	var process = '%CD%/plugins/SarahV2Cortana/bin/closePensebête.bat';
-	var Txt = new Array; 
-	Txt[0] = "votre Pence bête est en coure de fermeture";
-	break;
-	
-	case "CamStudio": // ouvre le logiciel camstudio
-	var process = '%CD%/plugins/SarahV2Cortana/bin/CamStudio.bat';
-	var Txt = new Array; 
-	Txt[0] = "votre enregistrement et en coure d'ouverture";
-	break;
-	
-	case "closeCamStudio": // ferme le logiciel camstutio 
-	var process = '%CD%/plugins/SarahV2Cortana/bin/closeCamStudio.bat';
-	var Txt = new Array; 
-	Txt[0] = "votre arrêt denregistrement et en coure de fermeture";
-	break;
-	
-	case "runnotepad": // ouvre le logiciel notpad
-    var process = '%CD%/plugins/SarahV2Cortana/bin/runnotepad.bat';
-	var Txt = new Array; 
-	Txt[0] = "j'ouvre l'editeur";
-	Txt[1] = "je lance notpade";
-	break;
-	
-	case "closenotepad": // ferme le logiciel notpad
-    var process = '%CD%/plugins/SarahV2Cortana/bin/closenotpad.bat';
-	var Txt = new Array; 
-	Txt[0] = "éditeur fermé monsieur";
-	Txt[1] = "notpad fermé";
-	break;
-	
-	case "runBlocnote": // ouvre le blocnote
-    var process = '%CD%/plugins/SarahV2Cortana/bin/runBlocnote.bat';
-	var Txt = new Array; 
-	Txt[0] = "j'ouvre l'editeur";
-	Txt[1] = "je lance Blocnote";
-	break;
-	
-	case "closeBlocnote": // ferme le blocnote
-    var process = '%CD%/plugins/SarahV2Cortana/bin/closeBlocnote.bat';
-	var Txt = new Array; 
-	Txt[0] = "éditeur fermé monsieur";
-	Txt[1] = "Blocnote fermé";
-	break;
-	
-	case "runreboot": // redémarre le client est serveur de sarah
-	var process = '%CD%/plugins/SarahV2Cortana/ahk/runreboot.ahk';
-	break;
-	  
-	case "minimize": // reduit les page pour aller sur votre bureau
-	process = '%CD%/plugins/SarahV2Cortana/bin/minimize.vbs';
-	var Txt = new Array; 
-	Txt[0] = "voici le bureau";
-	Txt[1] = "affichage du bureau";
-	break;	  
-	  
-	case "plugins": // ouvre le dossier plugins de sarah
-	var process = '%CD%/plugins/SarahV2Cortana/bin/plugins.bat';
-	var Txt = new Array; 
-	Txt[0] = "j'ouvre le dossier";
-	break;
-	
-	case "dossier": // ouvre le dossier de sarah
-	var process = '%CD%/plugins/SarahV2Cortana/bin/sarah.bat';
-	break;
-	
-	case "images": // ouvre les image
-	var process = '%CD%/plugins/SarahV2Cortana/bin/images.bat'; 
-	break;
-	
-	case "Films": // ouvre l'emplacement du dossier de film
-	var process = '%CD%/plugins/SarahV2Cortana/bin/Films.bat';
-	break;
-	
-	case "documents":
-	var process = '%CD%/plugins/SarahV2Cortana/bin/documents.bat';
-	break;
-
-	case "screenOff": //eteint l'écran
-	process = '%CD%/plugins/SarahV2Cortana/bin/screenoff.bat';
-	break;
-	
-	case "screenOn": //allume l'écran
-	process = '%CD%/plugins/SarahV2Cortana/bin/screenon.bat';
-	break;
-	  
-	case "facebook": // ouvre le site facebook
-	process = '%CD%/plugins/SarahV2Cortana/bin/facebook.bat';
-	var Txt = new Array; 
-	Txt[0] = "voilà facebouke";
-	Txt[1] = "je vous lance tout de suis facebouke";
-	break;
-	
-    case "forum": // ouvre mon forum
-	process = '%CD%/plugins/SarahV2Cortana/bin/forum.bat';
-	var Txt = new Array; 
-	Txt[0] = "voilà votre forum";
-	Txt[1] = "je vous lance votre forum";
-	break;
+	<!-- Lancement d'information, actulité, les Média --> 
+	<item>mets le journale<tag>out.action.val="journale"</tag><tag>out.action._attributes.tts = "voici les dernières nouvelles du journal"</tag></item>
+	<item>donne moi le journale<tag>out.action.val="journale"</tag><tag>out.action._attributes.tts = "voici les dernières nouvelles du journal"</tag></item>
+	<item>affiche le journale<tag>out.action.val="journale"</tag><tag>out.action._attributes.tts = "voici les dernières nouvelles du journal"</tag></item>
+	<item>met les infos en direct<tag>out.action.val="bfm"</tag><tag>out.action._attributes.tts = "connexion avec le direct de la chaine BFM Tévé ("</tag></item>
+	<item>affiche les infos en direct<tag>out.action.val="bfm"</tag><tag>out.action._attributes.tts = "connexion avec le direct de la chaine BFM Tévé ("</tag></item>
+	<item>mais les infos<tag>out.action.val="bfm"</tag><tag>out.action._attributes.tts = "connexion avec le direct de la chaine BFM Tévé ("</tag></item>
 	   
-	case "youtube": // ouvre youtube
-	process = '%CD%/plugins/SarahV2Cortana/bin/youtube.bat';
-	var Txt = new Array; 
-	Txt[0] = "voilà youtube";
-	Txt[1] = "c'est fait youtube et ouvère";
-	break;
+	<!-- Lancement du termineau, processusse -->   
+	<item>affiche le terminale<tag>out.action.val="konsole"</tag><tag>out.action._attributes.tts = "terminal activé ("</tag></item>
+	<item>active le terminale<tag>out.action.val="konsole"</tag><tag>out.action._attributes.tts = "terminal activé ("</tag></item>
+	<item>affiche les procéssusse<tag>out.action.val="process"</tag><tag>out.action._attributes.tts = "affichage des procéssus"</tag></item> 
+	<item>affiche le panneau de configuration<tag>out.action.val="controlpanel"</tag><tag>out.action._attributes.tts = "Affichage du panneau de configuration ("</tag></item>
+	 
+	<!-- Création d'un dossier vide -->
+	<item>mai un dossier<tag>out.action.val="Dossier"</tag><tag>out.action._attributes.tts = "votre dossier a été crée sur votre burau ("</tag></item>
+	<item>fai un dossier<tag>out.action.val="Dossier"</tag><tag>out.action._attributes.tts = "votre dossier a été crée sur votre burau ("</tag></item>
+	<item>crèe un dossier<tag>out.action.val="Dossier"</tag><tag>out.action._attributes.tts = "votre dossier a été crée sur votre burau ("</tag></item>
+	 
+	<!-- Création d'un document vide -->
+	<item>mai un document<tag>out.action.val="Fichier"</tag><tag>out.action._attributes.tts = "votre document a été crée sur votre bureau ("</tag></item>
+	<item>fai un document<tag>out.action.val="Fichier"</tag><tag>out.action._attributes.tts = "votre document a été crée sur votre bureau ("</tag></item>
+	<item>crèe un document<tag>out.action.val="Fichier"</tag><tag>out.action._attributes.tts = "votre document a été crée sur votre bureau ("</tag></item>
 	
-    case "Gmail": // ouvre la page de gmail la messagerie
-	process = '%CD%/plugins/SarahV2Cortana/bin/Gmail.bat';
-	var Txt = new Array; 
-	Txt[0] = "voilà monsieur, affichage de votre méssageri";
-	break;
+	<!-- Création d'un fichier vide --> 
+	<item>mai un fichier<tag>out.action.val="Fichier"</tag><tag>out.action._attributes.tts = "votre fichée a été crée sur votre bureau ("</tag></item>
+	<item>fai un fichier<tag>out.action.val="Fichier"</tag><tag>out.action._attributes.tts = "votre fichée a été crée sur votre bureau("</tag></item>
+	<item>crèe un fichier<tag>out.action.val="Fichier"</tag><tag>out.action._attributes.tts = "votre fichée a été crée sur votre bureau ("</tag></item>
+	<item>crèe un fichier vide<tag>out.action.val="fichier"</tag><tag>out.action._attributes.tts = "Création de fichier vièrge  ("</tag></item>
+	 
+	<!-- Les rebond -->  
+	<item>séléctionne tout<tag>out.action.val="selectall"</tag><tag>out.action._attributes.tts = "Sélection d'ensemble ("</tag></item>
+	<item>surligne tout<tag>out.action.val="selectall"</tag><tag>out.action._attributes.tts = "surlignement effectué ("</tag></item> 
+	 
+	<item>annule<tag>out.action.val="cancel"</tag><tag>out.action._attributes.tts = "je suprime ("</tag></item>
+	<item>annulation<tag>out.action.val="cancel"</tag><tag>out.action._attributes.tts = "très bien, j'annule"</tag></item>
+	 
+	<item>rétabli<tag>out.action.val="retablir"</tag><tag>out.action._attributes.tts = "je rétabli ("</tag></item>
+	<item>remets<tag>out.action.val="retablir"</tag><tag>out.action._attributes.tts = "je remet ("</tag></item>
+	  
+	<item>vérrouille ma séssion<tag>out.action.val="lock"</tag><tag>out.action._attributes.tts = "Verrouillage ("</tag></item> 
+	<item>vérrouillage<tag>out.action.val="lock"</tag><tag>out.action._attributes.tts = "Verrouillage de votre session ("</tag></item> 
+	  
+	<item>sauvegarde<tag>out.action.val="save"</tag><tag>out.action._attributes.tts = "fichier sauvegardé "</tag></item>
+	<item>fait une sauvegarde<tag>out.action.val="save"</tag><tag>out.action._attributes.tts = "fichier sauvegardé monsieur "</tag></item>
+	  
+    <item>copie<tag>out.action.val="copy"</tag><tag>out.action._attributes.tts = "contenu copié"</tag></item>
+	<item>colle<tag>out.action.val="paste"</tag><tag>out.action._attributes.tts = "contenu collé ."</tag></item>
+	<item>coupe<tag>out.action.val="cut"</tag><tag>out.action._attributes.tts = "contenu coupé "</tag></item>
+	  
+	<item>actualise<tag>out.action.val="f5"</tag><tag>out.action._attributes.tts = "Actualisation éffectuer."</tag></item>
+	<item>raffraichis<tag>out.action.val="f5"</tag><tag>out.action._attributes.tts = "Raffraichissement éffectuer."</tag></item>
+	   
+	<!-- Suivant, précedent, sauvegarde, ferme... -->
+	<item>préçedent<tag>out.action.val="precedent"</tag></item>
+	<item>suivant<tag>out.action.val="next"</tag></item>
+	<item>férme toute les fenétre<tag>out.action.val="shut"</tag></item>
+	<item>férme les fenétre<tag>out.action.val="shut"</tag></item>
+	<item>enlève les fenêtre<tag>out.action.val="shut"</tag></item>
+	<item>ferme les page<tag>out.action.val="shut"</tag></item>
+	<item>ferme la page<tag>out.action.val="shut"</tag></item>
+	<item>sauvegarde<tag>out.action.val="save"</tag></item>  
+	    
+	<!-- Vidage de la corbeille -->   
+	<item>vide moi la corbeille<tag>out.action.val="corbeille"</tag></item>
+	<item>vide la corbeille<tag>out.action.val="corbeille"</tag></item>
+	<item>éfface la corbeille<tag>out.action.val="corbeille"</tag></item>
+	<item>vide moi la poubelle<tag>out.action.val="corbeille"</tag></item>
+	<item>vide la poubelle<tag>out.action.val="corbeille"</tag></item>
+	<item>éfface la poubelle<tag>out.action.val="corbeille"</tag></item>
+     
+	<!-- Lancement fermeture de logiciels -->
 	
-	case "communauté": // ouvre la comunauté
-	process = '%CD%/plugins/SarahV2Cortana/bin/communauté.bat';
-	var Txt = new Array; 
-	Txt[0] = "voilà monsieur, affichage de la communauté";
-	break;
+	<!-- Lancement fermeture de XBMC ( qui se nome kodi mainteant donc télécharger Kodi ) mais il aurra l'apélation XBMC avec sarahv2 --> 
+	<item>démarre XBéMCé<tag>out.action.val="runxbmc"</tag></item>
+	<item>vas sur XBéMCé<tag>out.action.val="runxbmc"</tag></item>
+	<item>mais XBéMCé<tag>out.action.val="runxbmc"</tag></item>
+	<item>affiche XBéMCé<tag>out.action.val="runxbmc"</tag></item>
+	<item>lance XBéMCé<tag>out.action.val="runxbmc"</tag></item>
+	<item>démarre le XBéMCé<tag>out.action.val="runxbmc"</tag></item>
+	<item>lance le XBéMCé<tag>out.action.val="runxbmc"</tag></item>
 	
-	case "Gougueule": //ouvre la page google
-	process = '%CD%/plugins/SarahV2Cortana/bin/Google.bat';
-	var Txt = new Array; 
-	Txt[0] = "voilà Gougueule";
-	Txt[1] = "c'est fait Gougueule et ouvère";
-	break;
+	<!-- Fermeture de XBMC ( qui se nome kodi mainteant donc télécharger Kodi ) mais il aurra l'apélation XBMC avec sarahv2 --> 
+	<item>férme XBéMCé<tag>out.action.val="closexbmc"</tag></item>
+	<item>férme le XBéMCé<tag>out.action.val="closexbmc"</tag></item>
+	<item>éteind XBéMCé<tag>out.action.val="closexbmc"</tag></item>
+	<item>éteind le XBéMCé<tag>out.action.val="closexbmc"</tag></item>
+	<item>Arréte le XBéMCé<tag>out.action.val="closexbmc"</tag></item>
+	<item>Arréte XBéMCé<tag>out.action.val="closexbmc"</tag></item>
 	
-	case "Twitter": //ouvre twitter
-	process = '%CD%/plugins/SarahV2Cortana/bin/Twitter.bat';
-	break;
+	<!-- Lancement du Pense-bête de windows 10 --> 
+	<item>démarre le Pense-bête<tag>out.action.val="runPensebête"</tag></item>
+	<item>vas sur le Pense-bête<tag>out.action.val="runPensebête"</tag></item>
+	<item>mais le Pense-bête<tag>out.action.val="runPensebête"</tag></item>
+	<item>affiche le Pense-bête<tag>out.action.val="runPensebête"</tag></item>
+	<item>lance le Pense-bête<tag>out.action.val="runPensebête"</tag></item>
+	<item>démarre le Pense-bête<tag>out.action.val="runPensebête"</tag></item>
+	<item>lance le Pense-bête<tag>out.action.val="runPensebête"</tag></item>
 	
-	case "store": // ouvre le store
-	process = '%CD%/plugins/SarahV2Cortana/bin/store.bat';
-	break;
+	<!-- Fermeture du pence-bête -->
+	<item>Férme le Pense-bête<tag>out.action.val="closePensebête"</tag></item>
+	<item>Férme Pense-bête<tag>out.action.val="closePensebête"</tag></item>
+	<item>éteind Pense-bête<tag>out.action.val="closePensebête"</tag></item>
+	<item>éteind le Pense-bête<tag>out.action.val="closePensebête"</tag></item>
+	<item>arréte Pense-bête<tag>out.action.val="closePensebête"</tag></item>
+	<item>arréte le Pense-bête<tag>out.action.val="closePensebête"</tag></item>
 	
-    case "pagejaune": // ouvre le site page jaune
-	process = '%CD%/plugins/SarahV2Cortana/bin/pagejaune.bat';
-	break;
+	<!-- Lancement de Origin ( c'est comme Steam ) --> 
+	<item>démarre origin<tag>out.action.val="runOrigin"</tag></item>
+	<item>vas sur origin<tag>out.action.val="runOrigin"</tag></item>
+	<item>mais origin<tag>out.action.val="runOrigin"</tag></item>
+	<item>affiche origin<tag>out.action.val="runOrigin"</tag></item>
+	<item>lance origin<tag>out.action.val="runOrigin"</tag></item>
 	
-	case "emule": // ouvre le site emule island 
-	process = '%CD%/plugins/SarahV2Cortana/bin/emule.bat';
-	break;
+	<!-- Fermeture de Origin ( c'est comme Steam ) -->
+	<item>Férme origin<tag>out.action.val="closeOrigin"</tag></item>
+	<item>éteind origin<tag>out.action.val="closeOrigin"</tag></item>
+	<item>arréte origin<tag>out.action.val="closeOrigin"</tag></item>
 	
-	case "Cdiscount": // ouvre le site  Cdiscount
-	process = '%CD%/plugins/SarahV2Cortana/bin/Cdiscount.bat';
-	break;
+	<!-- Lancement de Steam --> 
+	<item>démarre stime<tag>out.action.val="runSteam"</tag></item>
+	<item>vas sur stime<tag>out.action.val="runSteam"</tag></item>
+	<item>mais stime<tag>out.action.val="runSteam"</tag></item>
+	<item>affiche stime<tag>out.action.val="runSteam"</tag></item>
+	<item>lance stime<tag>out.action.val="runSteam"</tag></item>
 	
-	case "wikipedia": // ouvre le site wikipedia
-	process = '%CD%/plugins/SarahV2Cortana/bin/wikipedia.bat';
-	break;
+	<!-- Fermeture de Steam -->
+	<item>Férme stime<tag>out.action.val="closeSteam"</tag></item>
+	<item>éteind stime<tag>out.action.val="closeSteam"</tag></item>
+	<item>arréte stime<tag>out.action.val="closeSteam"</tag></item>
 	
-	case "restore": // restauration des fenêtre 
-	process = '%CD%/plugins/SarahV2Cortana/bin/restore.vbs';
-	var Txt = new Array; 
-	Txt[0] = "affichage des fenêtres";
-	Txt[1] = "restoration des fenêtres en coure";
-	break;
+    <!-- Lancement de Skype --> 
+	<item>démarre skipe<tag>out.action.val="runSkype"</tag></item>
+	<item>vas sur skipe<tag>out.action.val="runSkype"</tag></item>
+	<item>mais skipe<tag>out.action.val="runSkype"</tag></item>
+	<item>affiche skipe<tag>out.action.val="runSkype"</tag></item>
+	<item>lance skipe<tag>out.action.val="runSkype"</tag></item>
 	
-	case "global": // lance la vue 3D aéro de windows 7
-	process = '%CD%/plugins/SarahV2Cortana/bin/global.bat';
-	var Txt = new Array; 
-	Txt[0] = "affichage de la vue aéro";
-	Txt[1] = "affichage des fenêtres en 3D";
-	break;
+	<!-- Fermeture de Skype -->
+	<item>Férme skipe<tag>out.action.val="closeSkype"</tag></item>
+	<item>éteind skipe<tag>out.action.val="closeSkype"</tag></item>
+	<item>arréte skipe<tag>out.action.val="closeSkype"</tag></item>
 	
-	case "next": // suivant pour une page
-	process = '%CD%/plugins/SarahV2Cortana/bin/next.vbs';
-	var Txt = new Array; 
-	Txt[0] = "suivant";
-	break;
+	<!-- Lancement de media center --> 
+	<item>démarre médiacenteure<tag>out.action.val="runMédiacenteure"</tag></item>
+	<item>vas sur médiacenteure<tag>out.action.val="runMédiacenteure"</tag></item>
+	<item>mais médiacenteure<tag>out.action.val="runMédiacenteure"</tag></item>
+	<item>affiche médiacenteure<tag>out.action.val="runMédiacenteure"</tag></item>
+	<item>lance médiacenteure<tag>out.action.val="runMédiacenteure"</tag></item>
+	<item>démarre le médiacenteure<tag>out.action.val="runMédiacenteure"</tag></item>
+	<item>lance le médiacenteure<tag>out.action.val="runMédiacenteure"</tag></item>
 	
-	case "precedent": // precedent pour une page
-	process = '%CD%/plugins/SarahV2Cortana/bin/precedent.vbs';
-	var Txt = new Array; 
-	Txt[0] = "retour en arrière";
-	Txt[1] = "précédent";
-	break;
+	<!-- Fermeture de media center -->
+	<item>Férme médiacenteure<tag>out.action.val="closeMédiacenteure"</tag></item>
+	<item>Férme le médiacenteure<tag>out.action.val="closeMédiacenteure"</tag></item>
+	<item>éteind médiacenteure<tag>out.action.val="closeMédiacenteure"</tag></item>
+	<item>éteind le médiacenteure<tag>out.action.val="closeMédiacenteure"</tag></item>
+	<item>arréte médiacenteure<tag>out.action.val="closeMédiacenteure"</tag></item>
+	<item>arréte le médiacenteure<tag>out.action.val="closeMédiacenteure"</tag></item>
 	
-	case "save": // sauvegarder
-	process = '%CD%/plugins/SarahV2Cortana/bin/save.vbs';
-	var Txt = new Array; 
-	Txt[0] = "je sauvegarde";
-	Txt[1] = "sauvegarde éffectué";
-	break;
+	<!-- Lancement d'ouverture du logiciel CamStudio -->
+	<item>lance capture vidéo<tag>out.action.val="CamStudio"</tag></item>
+	<item>ouvre l'enregistrement du bureau<tag>out.action.val="CamStudio"</tag></item>
+	<item>mais la capture vidéo<tag>out.action.val="CamStudio"</tag></item>
+	<item>va sur capture<tag>out.action.val="CamStudio"</tag></item>
+	  
+	<!-- Lancement de la fermeture du logiciel CamStudio -->  
+	<item>ferme la capture vidéo<tag>out.action.val="closeCamStudio"</tag></item>
+	<item>ferme l'enregistrement du bureau<tag>out.action.val="closeCamStudio"</tag></item>
+	<item>éteind la capture vidéo<tag>out.action.val="closeCamStudio"</tag></item>
+	<item>arréte la capture<tag>out.action.val="closeCamStudio"</tag></item>
+	  
+	<!-- Lancement d'ouverture de Bluetooth -->  
+	<item>lance Bloutous<tag>out.action.val="runBluetooth"</tag></item>
+	<item>ouvre Bloutous<tag>out.action.val="runBluetooth"</tag></item>
+	<item>mais Bloutous<tag>out.action.val="runBluetooth"</tag></item>
+	<item>affiche Bloutous<tag>out.action.val="runBluetooth"</tag></item>
+	<item>va sur Bloutous<tag>out.action.val="runBluetooth"</tag></item>  
+	  
+ 	<!-- Lancement de la fermeture du Bluetooth -->  
+	<item>ferme le Bloutous<tag>out.action.val="closeBluetooth"</tag></item>
+	<item>ferme Bloutous<tag>out.action.val="closeBluetooth"</tag></item>
+	<item>éteind le Bloutous<tag>out.action.val="closeBluetooth"</tag></item>
+	<item>arréte le Bloutous<tag>out.action.val="closeBluetooth"</tag></item>
 	
-	case "shut":// fermé les fenêtre
-	process = '%CD%/plugins/SarahV2Cortana/bin/shut.vbs';
-	var Txt = new Array; 
-	Txt[0] = "fermeture des fenêtre";
-	break;
+	<!-- Lancement d'ouverture Internet Explorer -->  
+	<item>lance internet éxploreure<tag>out.action.val="runInternetExplorer"</tag></item>
+	<item>ouvre internet éxploreure<tag>out.action.val="runInternetExplorer"</tag></item>
+	<item>mais internet éxploreure<tag>out.action.val="runInternetExplorer"</tag></item>
+	<item>affiche internet éxploreure<tag>out.action.val="runInternetExplorer"</tag></item>
+	<item>va sur internet éxploreure<tag>out.action.val="runInternetExplorer"</tag></item>
 	
-	case "dvdon": // ouvre le lecteur CD de votre pc
-	process = '%CD%/plugins/SarahV2Cortana/bin/dvdon.bat';
-	var Txt = new Array; 
-	Txt[0] = "lecteur ouvert";
-	break;
+	<!-- Lancement de Internet Explorer -->  
+	<item>ferme internet éxploreure<tag>out.action.val="closeInternetExplorer"</tag></item>
+	<item>ferme internet éxploreure<tag>out.action.val="closeInternetExplorer"</tag></item>
+	<item>éteind internet éxploreure<tag>out.action.val="closeInternetExplorer"</tag></item>
+	<item>arréte internet éxploreure<tag>out.action.val="closeInternetExplorer"</tag></item>
+	  
+	<!-- Lancement d'ouverture de VLC -->  
+	<item>lance vlc<tag>out.action.val="runvlc"</tag></item>
+	<item>ouvre vlc<tag>out.action.val="runvlc"</tag></item>
+	<item>mais vlc<tag>out.action.val="runvlc"</tag></item>
+	<item>affiche vlc<tag>out.action.val="runvlc"</tag></item>
+	<item>va sur vlc<tag>out.action.val="runvlc"</tag></item>
+	  
+	<!-- Lancement de fermeture de VLC -->  
+	<item>ferme vlc<tag>out.action.val="closerunvlc"</tag></item>
+	<item>ferme la fenêtre de vlc<tag>out.action.val="closerunvlc"</tag></item>
+	<item>désactive vlc<tag>out.action.val="closerunvlc"</tag></item>
+	<item>éteind vlc<tag>out.action.val="closerunvlc"</tag></item>
+	<item>enlève vlc<tag>out.action.val="closerunvlc"</tag></item>
+	  
+	<!-- Lancement de l'ouverture de la Webcam AMCap -->   
+	<item>lance la webcam<tag>out.action.val="webcam"</tag></item>
+	<item>ouvre la webcam<tag>out.action.val="webcam"</tag></item>
+	<item>mais la webcam<tag>out.action.val="webcam"</tag></item>
+	<item>affiche la webcam<tag>out.action.val="webcam"</tag></item>
+	<item>va sur la webcam<tag>out.action.val="webcam"</tag></item> 
 	
-	case "dvdoff": // ferme le lecteur CD de votre pc
-	process = '%CD%/plugins/SarahV2Cortana/bin/dvdoff.bat';
-	var Txt = new Array; 
-	Txt[0] = "lecteur fermé monsieur";
-	break;
+	<!-- Lancement de la fermeture de la Webcam AMCap -->
+	<item>ferme la webcam<tag>out.action.val="closewebcam"</tag></item>
+	<item>ferme la fenêtre de la webcam<tag>out.action.val="closewebcam"</tag></item>
+	<item>désactive la webcam<tag>out.action.val="closewebcam"</tag></item>
+	<item>éteind la webcam<tag>out.action.val="closewebcam"</tag></item>
+	<item>enlève la webcam<tag>out.action.val="closewebcam"</tag></item>
+	  
+	<!-- Lancement de l'ouverture de Notepad++ -->
+	<item>affiche notpad<tag>out.action.val="runnotepad"</tag></item>
+	<item>ouvre notpad<tag>out.action.val="runnotepad"</tag></item>
+	<item>lance notpad<tag>out.action.val="runnotepad"</tag></item>
 	
-	case "close": // fermer tous
-	process = '%CD%/plugins/SarahV2Cortana/bin/close.vbs';
-	break;
-  }    
+	<!-- Lancement de la fermeture de la Notepad++ -->
+    <item>ferme notpad<tag>out.action.val="closenotepad"</tag></item>
+	
+	<!-- Lancement de l'ouverture de Blocnote -->
+	<item>affiche Blocnote<tag>out.action.val="runBlocnote"</tag></item>
+	<item>ouvre Blocnote<tag>out.action.val="runBlocnote"</tag></item>
+	<item>lance Blocnote<tag>out.action.val="runBlocnote"</tag></item>
+	
+	<!-- Lancement de la fermeture de Blocnote -->
+    <item>ferme Blocnote<tag>out.action.val="closeBlocnote"</tag></item>
+	
+	<!-- Lancement de l'ouverture avast free -->
+	<item>va sur avaste<tag>out.action.val="scanne_avaste"</tag></item>
+	<item>affiche Avaste<tag>out.action.val="scanne_avaste"</tag></item>
+	<item>lance Avaste<tag>out.action.val="scanne_avaste"</tag></item>
+	<item>ouvre Avaste<tag>out.action.val="scanne_avaste"</tag></item>
+	<item>Mai Avaste<tag>out.action.val="scanne_avaste"</tag></item>
+	<item>active Avaste<tag>out.action.val="scanne_avaste"</tag></item>
 
- var child = exec(process,
- function (error, stdout, stderr) {
-    console.log(process);
-   });
-Choix = Math.floor(Math.random() * Txt.length); 
-callback({'tts': Txt[Choix]});
-
-}
+	<!-- éteindre ou redémarré le PC --> 
+	<item>éteind le PC<tag>out.action.val="runshutdown"</tag></item>
+	<item>éteind l'ordinateur<tag>out.action.val="runshutdown"</tag></item>
+	<item>arrête le PC<tag>out.action.val="runshutdown"</tag></item>
+	<item>arrête l'ordinateur<tag>out.action.val="runshutdown"</tag></item>
+	<item>redémarre le PC<tag>out.action.val="runrestart"</tag></item>
+	<item>redémarre l'ordinateur<tag>out.action.val="runrestart"</tag></item>
+	    
+	<!-- Redémarage du serveur node + client micro-->
+	<item>redémarre le programme<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je redémarre mon programme"</tag></item>
+	<item>redémarre ton programme<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je redémarre mon programme"</tag></item>
+	<item>relance ton programme<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je relance mon programme"</tag></item>
+	<item>relance ton programme<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je relance mon programme"</tag></item>
+	<item>réinitialise ton programme<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je réinitialise mon programme"</tag></item>  
+	<item>réinitialise ton système<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je réinitialise mon système"</tag></item> 
+	<item>relance le système<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je relance mon système"</tag></item>
+	<item>relance ton système<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je relance mon système"</tag></item>
+	<item>redémarre le système<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je relance mon système"</tag></item>
+	<item>redémarre ton système<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je relance mon système"</tag></item>
+	<item>redémarre<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je relance mon système"</tag></item>
+	 
+	<!-- Gestion des périphériques -->
+	<item>affiche l'écrans<tag>out.action.val="screenOn"</tag><tag>out.action._attributes.tts = "l'écran et en coure d'ouverture"</tag></item>
+	<item>mais l'écrans<tag>out.action.val="screenOn"</tag><tag>out.action._attributes.tts = "l'écran et en coure d'ouverture"</tag></item>
+	<item>allume l'écrans<tag>out.action.val="screenOn"</tag><tag>out.action._attributes.tts = "affichage de l'écran en coure."</tag></item>
+	<item>Lance l'écrans<tag>out.action.val="screenOn"</tag><tag>out.action._attributes.tts = "affichage de l'écran."</tag></item>
+	<item>ferme l'écrans<tag>out.action.val="screenOff"</tag></item>
+	<item>désactive l'écrans<tag>out.action.val="screenOff"</tag></item>
+	<item>éteinds l'écrans<tag>out.action.val="screenOff"</tag><tag>out.action._attributes.tts = "l'écran et en coure de fermeture."</tag></item>
+	
+	<!-- Ouverture ou fermeture du lecteur DVD du PC -->
+	<item>ouvre le Dévédé<tag>out.action.val="dvdon"</tag></item>
+	<item>ouvre le lécteur Dévédé<tag>out.action.val="dvdon"</tag></item>
+	<item>ferme le Dévédé<tag>out.action.val="dvdoff"</tag></item>
+    <item>ouvre le lécteur<tag>out.action.val="dvdon"</tag></item>
+	<item>ferme le lécteur<tag>out.action.val="dvdoff"</tag></item>
+	<item>ferme le lécteur dévédé<tag>out.action.val="dvdoff"</tag></item>
+	
+    </one-of>
+    <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/SarahV2Cortana";</tag>
+    </rule> 
+    </grammar>
+    <!-- Réalisation de SARAHV2Cortana part Avatar Rousseau, alias seb03000 -->

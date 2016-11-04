@@ -5,8 +5,6 @@
     <one-of> 
 	<!-- Mode chatterbots -->
 	<item>Bonjour<tag>out.action._attributes.tts = "Bonjour monsieur, comment aller vous."</tag></item>
-	<item>dis bonjour a chloé<tag>out.action._attributes.tts = "Bonjour chloé, comment vas telle?."</tag></item>
-	<item>dis bonjour a jérôme<tag>out.action._attributes.tts = "Bonjour jérôme, comment vas tu?."</tag></item>
 	<item>sava et toi<tag>out.action._attributes.tts = "Ben écoute, moi sava, comme toujour."</tag></item>
 	<item>moi sava et toi<tag>out.action._attributes.tts = "Ben écoute, moi sava, comme toujour"</tag></item>
 	<item>sava<tag>out.action._attributes.tts = "Moi sava, comme toujour"</tag></item>
@@ -23,7 +21,7 @@
 	<item>tu le fai éxpré<tag>out.action._attributes.tts = "je ne me pérmétré pas"</tag></item>
 	<item>Tu dore<tag>out.action._attributes.tts = "Je n'est pas sommeil monsieur"</tag></item>
 	<item>Merci<tag>out.action._attributes.tts = "Je vous en pri"</tag></item>
-    <item>Qui et ton créateur<tag>out.action._attributes.tts = "C'est vous, mon créateure."</tag></item>
+        <item>Qui et ton créateur<tag>out.action._attributes.tts = "C'est vous, mon créateure."</tag></item>
 	<item>qui et le président<tag>out.action._attributes.tts = "le président de la france, et François Hollande"</tag></item>
 	<item>De quoi<tag>out.action._attributes.tts = "Tu na pas entendu?."</tag></item>
 	<item>comment<tag>out.action._attributes.tts = "Tu na pas entendu"</tag></item>
@@ -39,12 +37,12 @@
 	<!-- Affichage écran interface avec le logiciel rainmeter -->
 	<item>ouvre ton interface<tag>out.action.val="Runsarah"</tag></item>
 	<item>mais ton interface<tag>out.action.val="Runsarah"</tag></item>
-    <item>affiche ton interface<tag>out.action.val="Runsarah"</tag></item>
-    <item>active ton interface<tag>out.action.val="Runsarah"</tag></item>
-    <item>lance ton interface<tag>out.action.val="Runsarah"</tag></item>
-    <item>masque ton interface<tag>out.action.val="closesarah"</tag></item>
-    <item>ferme ton interface<tag>out.action.val="closesarah"</tag></item>
-    <item>désactive ton interface<tag>out.action.val="closesarah"</tag></item>
+        <item>affiche ton interface<tag>out.action.val="Runsarah"</tag></item>
+        <item>active ton interface<tag>out.action.val="Runsarah"</tag></item>
+        <item>lance ton interface<tag>out.action.val="Runsarah"</tag></item>
+        <item>masque ton interface<tag>out.action.val="closesarah"</tag></item>
+        <item>ferme ton interface<tag>out.action.val="closesarah"</tag></item>
+        <item>désactive ton interface<tag>out.action.val="closesarah"</tag></item>
 	<item>éteinds ton interface<tag>out.action.val="closesarah"</tag></item>
 	  
 	 <!-- Retour, revenire vair le Bureau --> 
@@ -55,14 +53,14 @@
 	<item>ouvre le bureau<tag>out.action.val="minimize"</tag></item>
 	
 	<!-- Affichage de la vue 3D fonctionne que sur Windows 7 ( pour Windows 10 c'est en cours ) -->
-    <item>restore<tag>out.action.val="restore"</tag></item>
+        <item>restore<tag>out.action.val="restore"</tag></item>
 	<item>affiche les fenetres<tag>out.action.val="restore"</tag></item>
 	<item>affiche les page<tag>out.action.val="restore"</tag></item>
 	<item>vue global<tag>out.action.val="global"</tag></item>
 	<item>affiche la vue d'ensemble<tag>out.action.val="global"</tag></item>
 	<item>affiche la 3D<tag>out.action.val="global"</tag></item>
 	<item>lance la 3D<tag>out.action.val="global"</tag></item>
-    <item>mai la 3D<tag>out.action.val="global"</tag></item>
+        <item>mai la 3D<tag>out.action.val="global"</tag></item>
 	  
 	<!-- Affiche l'enplacement du plugin, dossier, image de sarahv2 -->  
 	<item>affiche les pluguine<tag>out.action.val="plugins"</tag></item>
@@ -144,7 +142,7 @@
 	<item>ferme failleurfox<tag>out.action.val="closefirefox"</tag></item>
 	
 	<!-- Affichage de la page du Store -->
-    <item>Ouvre le store<tag>out.action.val="store"</tag><tag>out.action._attributes.tts = "Je vous mais le store"</tag></item>
+        <item>Ouvre le store<tag>out.action.val="store"</tag><tag>out.action._attributes.tts = "Je vous mais le store"</tag></item>
 	<item>Mais le store<tag>out.action.val="store"</tag><tag>out.action._attributes.tts = "Je vous mais le store"</tag></item>
 	<item>Lance store<tag>out.action.val="store"</tag><tag>out.action._attributes.tts = "Je vous mais le store"</tag></item>
 	<item>Affiche store<tag>out.action.val="store"</tag><tag>out.action._attributes.tts = "Je vous mais le store"</tag></item>
@@ -154,18 +152,18 @@
 	<item>Ouvre les pagejaune<tag>out.action.val="pagejaune"</tag><tag>out.action._attributes.tts = "Je vous mais les page jaune"</tag></item> 
 	<item>Affiche les pagejaune<tag>out.action.val="pagejaune"</tag><tag>out.action._attributes.tts = "Je vous mais les page jaune"</tag></item> 
 	<item>Lance les pagejaune<tag>out.action.val="pagejaune"</tag><tag>out.action._attributes.tts = "Je vous mais les page jaune"</tag></item>  
-    <item>Mais les pagejaune<tag>out.action.val="pagejaune"</tag><tag>out.action._attributes.tts = "Je vous mais les page jaune"</tag></item> 
-    <item>Vas sure les pagejaune<tag>out.action.val="pagejaune"</tag><tag>out.action._attributes.tts = "Je vous mais les page jaune"</tag></item> 
+        <item>Mais les pagejaune<tag>out.action.val="pagejaune"</tag><tag>out.action._attributes.tts = "Je vous mais les page jaune"</tag></item> 
+        <item>Vas sure les pagejaune<tag>out.action.val="pagejaune"</tag><tag>out.action._attributes.tts = "Je vous mais les page jaune"</tag></item> 
 	
 	<!-- Affichage de la page de eMule-island  -->
 	<item>Ouvre émule<tag>out.action.val="emule"</tag><tag>out.action._attributes.tts = "Je vous mai émule"</tag></item> 
 	<item>Affiche émule<tag>out.action.val="emule"</tag><tag>out.action._attributes.tts = "Je vous mai émule"</tag></item> 
 	<item>Lance émule<tag>out.action.val="emule"</tag><tag>out.action._attributes.tts = "Je vous mai émule"</tag></item>  
-    <item>Mais émule<tag>out.action.val="emule"</tag><tag>out.action._attributes.tts = "Je vous mai émule"</tag></item> 
-    <item>Vas sure émule<tag>out.action.val="emule"</tag><tag>out.action._attributes.tts = "Je vous mai émule"</tag></item> 
+        <item>Mais émule<tag>out.action.val="emule"</tag><tag>out.action._attributes.tts = "Je vous mai émule"</tag></item> 
+        <item>Vas sure émule<tag>out.action.val="emule"</tag><tag>out.action._attributes.tts = "Je vous mai émule"</tag></item> 
 	
 	<!-- Affichage de la page Wikipédia -->
-    <item>Vas sure wikipédia<tag>out.action.val="wikipedia"</tag><tag>out.action._attributes.tts = "Je vous mais wikipédia"</tag></item> 
+        <item>Vas sure wikipédia<tag>out.action.val="wikipedia"</tag><tag>out.action._attributes.tts = "Je vous mais wikipédia"</tag></item> 
 	<item>Mais wikipédia<tag>out.action.val="wikipedia"</tag><tag>out.action._attributes.tts = "Je vous mais wikipédia"</tag></item> 
 	<item>Lance wikipédia<tag>out.action.val="wikipedia"</tag><tag>out.action._attributes.tts = "Je vous mais wikipédia"</tag></item> 
 	<item>Affiche wikipédia<tag>out.action.val="wikipedia"</tag><tag>out.action._attributes.tts = "Je vous mais wikipédia"</tag></item>  
@@ -238,7 +236,7 @@
 	<item>sauvegarde<tag>out.action.val="save"</tag><tag>out.action._attributes.tts = "fichier sauvegardé "</tag></item>
 	<item>fait une sauvegarde<tag>out.action.val="save"</tag><tag>out.action._attributes.tts = "fichier sauvegardé monsieur "</tag></item>
 	  
-    <item>copie<tag>out.action.val="copy"</tag><tag>out.action._attributes.tts = "contenu copié"</tag></item>
+        <item>copie<tag>out.action.val="copy"</tag><tag>out.action._attributes.tts = "contenu copié"</tag></item>
 	<item>colle<tag>out.action.val="paste"</tag><tag>out.action._attributes.tts = "contenu collé ."</tag></item>
 	<item>coupe<tag>out.action.val="cut"</tag><tag>out.action._attributes.tts = "contenu coupé "</tag></item>
 	  
@@ -323,7 +321,7 @@
 	<item>éteind stime<tag>out.action.val="closeSteam"</tag></item>
 	<item>arréte stime<tag>out.action.val="closeSteam"</tag></item>
 	
-    <!-- Lancement de Skype --> 
+        <!-- Lancement de Skype --> 
 	<item>démarre skipe<tag>out.action.val="runSkype"</tag></item>
 	<item>vas sur skipe<tag>out.action.val="runSkype"</tag></item>
 	<item>mais skipe<tag>out.action.val="runSkype"</tag></item>
@@ -424,7 +422,7 @@
 	<item>lance notpad<tag>out.action.val="runnotepad"</tag></item>
 	
 	<!-- Lancement de la fermeture de la Notepad++ -->
-    <item>ferme notpad<tag>out.action.val="closenotepad"</tag></item>
+        <item>ferme notpad<tag>out.action.val="closenotepad"</tag></item>
 	
 	<!-- Lancement de l'ouverture de Blocnote -->
 	<item>affiche Blocnote<tag>out.action.val="runBlocnote"</tag></item>
@@ -432,7 +430,7 @@
 	<item>lance Blocnote<tag>out.action.val="runBlocnote"</tag></item>
 	
 	<!-- Lancement de la fermeture de Blocnote -->
-    <item>ferme Blocnote<tag>out.action.val="closeBlocnote"</tag></item>
+        <item>ferme Blocnote<tag>out.action.val="closeBlocnote"</tag></item>
 	
 	<!-- Lancement de l'ouverture avast free -->
 	<item>va sur avaste<tag>out.action.val="scanne_avaste"</tag></item>
@@ -476,7 +474,7 @@
 	<item>ouvre le Dévédé<tag>out.action.val="dvdon"</tag></item>
 	<item>ouvre le lécteur Dévédé<tag>out.action.val="dvdon"</tag></item>
 	<item>ferme le Dévédé<tag>out.action.val="dvdoff"</tag></item>
-    <item>ouvre le lécteur<tag>out.action.val="dvdon"</tag></item>
+        <item>ouvre le lécteur<tag>out.action.val="dvdon"</tag></item>
 	<item>ferme le lécteur<tag>out.action.val="dvdoff"</tag></item>
 	<item>ferme le lécteur dévédé<tag>out.action.val="dvdoff"</tag></item>
 	

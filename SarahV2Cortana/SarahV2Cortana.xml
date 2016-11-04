@@ -1,7 +1,7 @@
 	<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleSarahV2Cortana" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
     <rule id="ruleSarahV2Cortana" scope="public">
     <tag>out.action=new Object(); </tag>
-    <!-- <item>jarvice</item> -->
+    <item>Oké SSARAH</item>
     <one-of> 
 	<!-- Mode chatterbots -->
 	<item>Bonjour<tag>out.action._attributes.tts = "Bonjour monsieur, comment aller vous."</tag></item>

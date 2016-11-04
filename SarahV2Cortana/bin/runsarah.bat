@@ -1,1 +1,0 @@
-start C:\"Programmes\rainmeter\Rainmeter.exe"

@@ -39,7 +39,7 @@
 	<!-- Affichage écran interface avec le logiciel rainmeter -->
 	<item>ouvre ton interface<tag>out.action.val="Runsarah"</tag></item>
 	<item>mais ton interface<tag>out.action.val="Runsarah"</tag></item>
-    <item>affiche ton interface<tag>out.action.val="Runsarah"</tag><tag>out.action._attributes.tts = "affichage en coure"</tag></item>
+    <item>affiche ton interface<tag>out.action.val="Runsarah"</tag></item>
     <item>active ton interface<tag>out.action.val="Runsarah"</tag></item>
     <item>lance ton interface<tag>out.action.val="Runsarah"</tag></item>
     <item>masque ton interface<tag>out.action.val="closesarah"</tag></item>

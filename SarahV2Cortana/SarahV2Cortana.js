@@ -143,6 +143,11 @@ switch(data.val) {
 	var process = '%CD%/plugins/SarahV2Cortana/bin/cut.vbs';
 	break;
 	  
+	case "enter": // appui touche entréer pour valider ou sortir l'écran qui se serait mus en veille
+	process = '%CD%/plugins/jarvis/bin/enter.vbs';
+	var Txt = new Array; 
+	Txt[0] = "je valide";	
+		
 	case "journale": //permet d'aller sur un site voir le journale
 	var process = '%CD%/plugins/SarahV2Cortana/bin/journale.bat';
 	var Txt = new Array; 

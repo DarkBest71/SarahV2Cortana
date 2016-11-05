@@ -245,6 +245,8 @@
 	<item>actualise<tag>out.action.val="f5"</tag><tag>out.action._attributes.tts = "Actualisation éffectuer"</tag></item>
 	<item>raffraichis<tag>out.action.val="f5"</tag><tag>out.action._attributes.tts = "Raffraichissement éffectuer"</tag></item>
 	   
+	<item>valide<tag>out.action.val="enter"</tag></item>   
+	    
 	<!-- Suivant, précedent, sauvegarde, ferme... -->
 	<item>préçedent<tag>out.action.val="precedent"</tag></item>
 	<item>suivant<tag>out.action.val="next"</tag></item>

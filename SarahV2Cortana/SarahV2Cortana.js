@@ -203,26 +203,26 @@ switch(data.val) {
 	Txt[0] = "ixbéhèmecé et en cour de fermeture";
 	break;
 	  	  
-	case "Runsarah": //lance rainmeter en .bat
-	var process = '%CD%/plugins/SarahV2Cortana/bin/Runsarah.bat';
+	case "Runtruc": //lance rainmeter en .bat
+	var process = '%CD%/plugins/SarahV2Cortana/bin/Runtruc.bat';
 	var Txt = new Array; 
     Txt[0] = "interface en coure d'ouverture";
 	break;
 	
-	case "closesarah": //lance ferme rainmeter en .bat
-	var process = '%CD%/plugins/SarahV2Cortana/bin/closesarah.bat';
+	case "closetruc": //lance ferme rainmeter en .bat
+	var process = '%CD%/plugins/SarahV2Cortana/bin/closetruc.bat';
 	var Txt = new Array; 
 	Txt[0] = "interface fermé";
 	break; 
 
-	case "Runsarah": // lance rainmeter en .ahk
-	var process = '%CD%/plugins/SarahV2Cortana/ahk/Runsarah.ahk';
+	case "Runtruc": // lance rainmeter en .ahk
+	var process = '%CD%/plugins/SarahV2Cortana/ahk/Runtruc.ahk';
 	var Txt = new Array; 
 	Txt[0] = "je lance mon interface";
 	break;
 	
-	case "closesarah": // ferme rainmeter en .ahk
-	var process = '%CD%/plugins/SarahV2Cortana/ahk/Closesarah.ahk';
+	case "closetruc": // ferme rainmeter en .ahk
+	var process = '%CD%/plugins/SarahV2Cortana/ahk/Closetruc.ahk';
 	var Txt = new Array; 
 	Txt[0] = "l'interface et en coure de fermeture";
 	break;

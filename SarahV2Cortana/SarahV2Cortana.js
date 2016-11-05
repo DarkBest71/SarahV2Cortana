@@ -329,6 +329,14 @@ switch(data.val) {
 	var process = '%CD%/plugins/SarahV2Cortana/ahk/runreboot.ahk';
 	break;
 	  
+	case "start_invisible": // Redémarage du serveur node + client micro en mode invisible( en arrière plan )
+	var process = '%CD%/plugins/SarahV2Cortana/bin/start_invisible.vbs';
+	break;
+	  
+	case "éteindre_système": // Redémarage du serveur node + client micro en mode invisible( en arrière plan )
+	var process = '%CD%/plugins/SarahV2Cortana/bin/éteindre_système.vbs';
+	break; 	
+		
 	case "minimize": // reduit les page pour aller sur votre bureau
 	process = '%CD%/plugins/SarahV2Cortana/bin/minimize.vbs';
 	var Txt = new Array; 

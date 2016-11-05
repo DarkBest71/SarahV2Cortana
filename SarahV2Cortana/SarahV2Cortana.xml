@@ -463,6 +463,12 @@
 	<item>redémarre ton système<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je relance mon système"</tag></item>
 	<item>redémarre<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je relance mon système"</tag></item>
 	 
+	<!-- Redémarage du serveur node + client micro en mode invisible( en arrière plan )-->
+	<item>redémarre en mode invisible<tag>out.action.val="start_invisible"</tag><tag>out.action._attributes.tts = "je redémarre mon système en arrière plan"</tag></item>
+	<item>éteind ton système<tag>out.action.val="éteindre_système"</tag><tag>out.action._attributes.tts = "jéteind mon sytème"</tag></item>
+	<item>éteind ton programme<tag>out.action.val="éteindre_système"</tag><tag>out.action._attributes.tts = "jéteind mon programme"</tag></item>   
+	    
+	    
 	<!-- Gestion des périphériques -->
 	<item>affiche l'écrans<tag>out.action.val="screenOn"</tag><tag>out.action._attributes.tts = "l'écran et en coure d'ouverture"</tag></item>
 	<item>mais l'écrans<tag>out.action.val="screenOn"</tag><tag>out.action._attributes.tts = "l'écran et en coure d'ouverture"</tag></item>

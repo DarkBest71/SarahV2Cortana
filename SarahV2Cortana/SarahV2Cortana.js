@@ -1,5 +1,5 @@
 exports.init = function(SARAH){
-SARAH.speak('initialisation terminé, bonjour monsieur.');
+SARAH.speak('initialisation terminé. Bonjour monsieur.');
  }
 
 //Réalisation de SarahV2Cortana par Avatar Rousseau, alias seb03000.

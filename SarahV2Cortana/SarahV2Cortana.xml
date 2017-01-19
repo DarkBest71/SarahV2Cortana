@@ -146,6 +146,13 @@
 	<item>lance failleurfox<tag>out.action.val="runfirefox"</tag></item>
 	<item>ouvre failleurfox<tag>out.action.val="runfirefox"</tag></item>
 	<item>ferme failleurfox<tag>out.action.val="closefirefox"</tag></item>
+	    
+	<!-- Lancement et ferme GoogleChrome -->
+	<item>va sur gougueule<tag>out.action.val="rungooglechrome"</tag></item>
+	<item>affiche gougueule<tag>out.action.val="rungooglechrome"</tag></item>
+	<item>lance gougueule<tag>out.action.val="rungooglechrome"</tag></item>
+	<item>ouvre gougueule<tag>out.action.val="rungooglechrome"</tag></item>
+	<item>ferme gougueule<tag>out.action.val="closegooglechrome"</tag></item>
 	
 	<!-- Affichage de la page du Store -->
     <item>Ouvre le store<tag>out.action.val="store"</tag><tag>out.action._attributes.tts = "Je vous mais le store"</tag></item>

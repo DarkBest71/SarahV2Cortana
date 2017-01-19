@@ -46,6 +46,10 @@
     <item>ferme ton interface<tag>out.action.val="closetruc"</tag></item>
     <item>désactive ton interface<tag>out.action.val="closetruc"</tag></item>
 	<item>éteinds ton interface<tag>out.action.val="closetruc"</tag></item>
+	    
+      <item>affiche ton interface<tag>out.action.val="runrainmeter"</tag></item>
+      <item>active ton interface<tag>out.action.val="runrainmeter"</tag></item>
+      <item>lance ton interface<tag>out.action.val="runrainmeter"</tag></item>    
 	  
 	 <!-- Retour, revenire vair le Bureau --> 
  	<item>affiche le bureau<tag>out.action.val="minimize"</tag></item>

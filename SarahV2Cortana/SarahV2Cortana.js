@@ -259,6 +259,20 @@ switch(data.val) {
 	Txt[0] = "fermeture de firefox";
 	Txt[1] = "firefox fermé";
 	break;
+		
+	case "rungooglechrome": //lance googlechrome
+	var process = '%CD%/plugins/SarahV2Cortana/bin/rungooglechrome.bat';
+	var Txt = new Array; 
+	Txt[0] = "j'ouvre gougueulechrome";
+	Txt[1] = "je lance gougueulechrome";
+	break;
+	
+	case "closegooglechrome": //ferme googlechrome
+	var process = '%CD%/plugins/SarahV2Cortana/bin/Closegooglechrome.bat';
+	var Txt = new Array; 
+	Txt[0] = "fermeture de gougueulechrome";
+	Txt[1] = "gougueulechrome fermé";
+	break;	
 	  
 	case "runshutdown": // arrêté le pc
 	var process = '%CD%/plugins/SarahV2Cortana/bin/runshutdown.bat';

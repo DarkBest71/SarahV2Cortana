@@ -14,6 +14,20 @@ switch(data.val) {
 	var Txt = new Array; 
 	Txt[0] = "Mode Pleine écran activé";
 	break;	
+		
+        case "runrainmeter": //lance rainmeter
+	var process = '%CD%/plugins/SarahV2Cortana/bin/runrainmeter.bat';
+	var Txt = new Array; 
+	Txt[0] = "j'affiche l'interface";
+	Txt[1] = "je lance mon interface";
+	break;
+
+	case "closerainmeter": //fermer rainmeter
+	var process = '%CD%/plugins/SarahV2Cortana/bin/closerainmeter.bat';
+	var Txt = new Array; 
+	Txt[0] = "c'est fait monsieur";
+	Txt[1] = "interface fermé";
+	break;	
 	  
 	case "konsole": // affiche le terminale de windows 7
 	var process = '%CD%/plugins/SarahV2Cortana/bin/konsole.bat';

@@ -2,7 +2,7 @@ exports.init = function(SARAH){
 SARAH.speak('initialisation terminé. Bonjour monsieur.');
  }
 
-//Réalisation de SarahV2Cortana par Avatar Rousseau, alias seb03000.
+//Réalisation de SarahV2Cortana par Avatar Rousseau (Dark Best), alias seb03000.
 exports.action = function(data, callback, config, SARAH) {
   
 var exec = require('child_process').exec;

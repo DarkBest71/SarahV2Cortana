@@ -278,7 +278,7 @@
      
 	<!-- Lancement fermeture de logiciels -->
 	
-	<!-- Lancement fermeture de XBMC ( qui se nome kodi mainteant donc télécharger Kodi ) mais il aurra l'apélation XBMC avec sarahv2 --> 
+	<!-- Ouverture de XBMC --> 
 	<item>démarre XBéMCé<tag>out.action.val="runxbmc"</tag></item>
 	<item>vas sur XBéMCé<tag>out.action.val="runxbmc"</tag></item>
 	<item>mais XBéMCé<tag>out.action.val="runxbmc"</tag></item>
@@ -287,7 +287,7 @@
 	<item>démarre le XBéMCé<tag>out.action.val="runxbmc"</tag></item>
 	<item>lance le XBéMCé<tag>out.action.val="runxbmc"</tag></item>
 	
-	<!-- Fermeture de XBMC ( qui se nome kodi mainteant donc télécharger Kodi ) mais il aurra l'apélation XBMC avec sarahv2 --> 
+	<!-- Fermeture de XBMC --> 
 	<item>férme XBéMCé<tag>out.action.val="closexbmc"</tag></item>
 	<item>férme le XBéMCé<tag>out.action.val="closexbmc"</tag></item>
 	<item>éteind XBéMCé<tag>out.action.val="closexbmc"</tag></item>
@@ -295,6 +295,25 @@
 	<item>Arréte le XBéMCé<tag>out.action.val="closexbmc"</tag></item>
 	<item>Arréte XBéMCé<tag>out.action.val="closexbmc"</tag></item>
 	
+	<!-- Lancement ouverture fermeture de Kodi -->
+	
+	<!-- Ouverture de Kodi --> 
+	<item>démarre kodi<tag>out.action.val="runkodi"</tag></item>
+	<item>vas sur kodi<tag>out.action.val="runkodi"</tag></item>
+	<item>mais kodi<tag>out.action.val="runkodi"</tag></item>
+	<item>affiche kodi<tag>out.action.val="runkodi"</tag></item>
+	<item>lance kodi<tag>out.action.val="runkodi"</tag></item>
+	<item>démarre le kodi<tag>out.action.val="runkodi"</tag></item>
+	<item>lance le kodi<tag>out.action.val="runkodi"</tag></item>
+	
+	<!-- Fermeture de Kodi --> 
+	<item>férme kodi<tag>out.action.val="closekodi"</tag></item>
+	<item>férme le kodi<tag>out.action.val="closekodi"</tag></item>
+	<item>éteind kodi<tag>out.action.val="closekodi"</tag></item>
+	<item>éteind le kodi<tag>out.action.val="closekodi"</tag></item>
+	<item>Arréte le kodi<tag>out.action.val="closekodi"</tag></item>
+	<item>Arréte kodi<tag>out.action.val="closekodi"</tag></item> 
+	    
 	<!-- Lancement du Pense-bête de windows 10 --> 
 	<item>démarre le Pense-bête<tag>out.action.val="runPensebête"</tag></item>
 	<item>vas sur le Pense-bête<tag>out.action.val="runPensebête"</tag></item>

@@ -420,6 +420,20 @@ switch(data.val) {
 	process = '%CD%/plugins/SarahV2Cortana/bin/screenon.bat';
 	break;
 	  
+	case "Matrix": // Mode veille Matrix
+	process = '%CD%/plugins/SarahV2Cortana/bin/runMatrix.bat';
+	var Txt = new Array; 
+	Txt[0] = "Mode veille activé";
+	Txt[1] = "exécution en cour";
+	break; 
+	
+	case "IP": // Mode tracabilité IP
+	process = '%CD%/plugins/SarahV2Cortana/bin/tracabilité IP.vbs';
+	var Txt = new Array; 
+	Txt[0] = "Mode tracabilité lancé";
+	Txt[1] = "exécution en cour";
+	break;
+		
 	case "facebook": // ouvre le site facebook
 	process = '%CD%/plugins/SarahV2Cortana/bin/facebook.bat';
 	var Txt = new Array; 

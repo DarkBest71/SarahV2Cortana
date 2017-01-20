@@ -221,7 +221,20 @@ switch(data.val) {
 	var Txt = new Array; 
 	Txt[0] = "ixbéhèmecé et en cour de fermeture";
 	break;
-	  	  
+	  
+	case "runkodi": // affiche le logiciel kodi
+ 	var process = '%CD%/plugins/SarahV2Cortana/bin/runkodi.bat';
+	var Txt = new Array; 
+	Txt[0] = "kodi est en cours de lancement";
+	Txt[1] = "kodi vas se lancé";
+	break;
+	  
+	case "closekodi": // ferme le logiel kodi
+	var process = '%CD%/plugins/SarahV2Cortana/bin/closekodi.bat';
+	var Txt = new Array; 
+	Txt[0] = "ixbéhèmecé et en cour de fermeture";
+	break; 
+		
 	case "Runtruc": //lance rainmeter en .bat
 	var process = '%CD%/plugins/SarahV2Cortana/bin/Runtruc.bat';
 	var Txt = new Array; 

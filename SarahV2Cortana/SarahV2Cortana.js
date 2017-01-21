@@ -420,7 +420,7 @@ switch(data.val) {
 	process = '%CD%/plugins/SarahV2Cortana/bin/screenon.bat';
 	break;
 	  
-	case "Matrix": // Mode veille Matrix
+	case "runMatrix": // Mode veille Matrix
 	process = '%CD%/plugins/SarahV2Cortana/bin/runMatrix.bat';
 	var Txt = new Array; 
 	Txt[0] = "Mode veille activé";

@@ -427,8 +427,8 @@ switch(data.val) {
 	Txt[1] = "exécution en cour";
 	break; 
 	
-	case "IP": // Mode tracabilité IP
-	process = '%CD%/plugins/SarahV2Cortana/bin/tracabilité IP.vbs';
+	case "tracabilitéIP": // Mode tracabilité IP
+	process = '%CD%/plugins/SarahV2Cortana/bin/tracabilitéIP.vbs';
 	var Txt = new Array; 
 	Txt[0] = "Mode tracabilité lancé";
 	Txt[1] = "exécution en cour";

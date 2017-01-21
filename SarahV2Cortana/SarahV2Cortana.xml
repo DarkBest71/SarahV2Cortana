@@ -482,19 +482,6 @@
 	<item>redémarre le PC<tag>out.action.val="runrestart"</tag></item>
 	<item>redémarre l'ordinateur<tag>out.action.val="runrestart"</tag></item>
 	    
-	<!-- Mode veille Matrix, mais l'écran en veille, Mot de passe 123 puis entré -->
-	<item>Mais en veille<tag>out.action.val="runMatrix"</tag></item>
-	<item>Mais toi en veille<tag>out.action.val="runMatrix"</tag></item>
-	<item>Mode Matrice<tag>out.action.val="runMatrix"</tag></item>
-        <item>Mais la Matrix<tag>out.action.val="runMatrix"</tag></item>
-	<item>active la Matrix<tag>out.action.val="runMatrix"</tag></item>
-	
-	<!-- Mode tracabilité IP géolocalisation -->
-	<item>donne mon ipé<tag>out.action.val="tracabilité IP"</tag></item>
-	<item>donne moi mon ipé<tag>out.action.val="tracabilité IP"</tag></item>
-	<item>quelle et ma tracabilité<tag>out.action.val="tracabilité IP"</tag></item>
-	<item>géolocalise moi<tag>out.action.val="tracabilité IP"</tag></item>    
-	    
 	<!-- Redémarage du serveur node + client micro-->
 	<item>redémarre le programme<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je redémarre mon programme"</tag></item>
 	<item>redémarre ton programme<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je redémarre mon programme"</tag></item>
@@ -523,6 +510,19 @@
 	<item>désactive l'écrans<tag>out.action.val="screenOff"</tag></item>
 	<item>éteinds l'écrans<tag>out.action.val="screenOff"</tag><tag>out.action._attributes.tts = "l'écran et en coure de fermeture"</tag></item>
 	
+	 <!-- Mode veille Matrix, mais l'écran en veille, Mot de passe 123 puis entré -->
+	<item>Mais en veille<tag>out.action.val="runMatrix"</tag></item>
+	<item>Mais toi en veille<tag>out.action.val="runMatrix"</tag></item>
+	<item>Mode Matrice<tag>out.action.val="runMatrix"</tag></item>
+        <item>Mais la Matrix<tag>out.action.val="runMatrix"</tag></item>
+	<item>active la Matrix<tag>out.action.val="runMatrix"</tag></item>
+	
+	<!-- Mode tracabilité IP géolocalisation -->
+	<item>donne mon ipé<tag>out.action.val="tracabilitéIP"</tag></item>
+	<item>donne moi mon ipé<tag>out.action.val="tracabilitéIP"</tag></item>
+	<item>quelle et ma tracabilité<tag>out.action.val="tracabilitéIP"</tag></item>
+	<item>géolocalise moi<tag>out.action.val="tracabilitéIP"</tag></item>   
+	    
 	<!-- Ouverture ou fermeture du lecteur DVD du PC -->
 	<item>ouvre le Dévédé<tag>out.action.val="dvdon"</tag></item>
 	<item>ouvre le lécteur Dévédé<tag>out.action.val="dvdon"</tag></item>

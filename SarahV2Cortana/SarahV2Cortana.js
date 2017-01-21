@@ -550,6 +550,12 @@ switch(data.val) {
 	Txt[0] = "lecteur fermé monsieur";
 	break;
 	
+	case "InfoPC": // ferme le lecteur CD de votre pc
+	process = '%CD%/plugins/SarahV2Cortana/bin/InfoPC.bat';
+	var Txt = new Array; 
+	Txt[0] = "Vos information de votre pc et en cour d'ouverture";
+	break;	
+		
 	case "close": // fermer tous
 	process = '%CD%/plugins/SarahV2Cortana/bin/close.vbs';
 	break;

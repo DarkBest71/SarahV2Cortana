@@ -524,10 +524,10 @@
 	<item>géolocalise moi<tag>out.action.val="tracabilitéIP"</tag></item>  
 	    
 	 <!-- Mode information sur votre PC -->
-	<item>mais les information du pc<tag>out.action.val="InfoPC"</tag></item>
-	<item>donne les info du pc<tag>out.action.val="InfoPC"</tag></item>
-	<item>donne moi les info du pc<tag>out.action.val="InfoPC"</tag></item>
-	<item>mais les info du pc<tag>out.action.val="InfoPC"</tag></item>   
+	<item>mais les information du pc<tag>out.action.val="runInfoPC"</tag></item>
+	<item>donne les info du pc<tag>out.action.val="runInfoPC"</tag></item>
+	<item>donne moi les info du pc<tag>out.action.val="runInfoPC"</tag></item>
+	<item>mais les info du pc<tag>out.action.val="runInfoPC"</tag></item>   
 	    
 	<!-- Ouverture ou fermeture du lecteur DVD du PC -->
 	<item>ouvre le Dévédé<tag>out.action.val="dvdon"</tag></item>

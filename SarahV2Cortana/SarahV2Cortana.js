@@ -550,8 +550,8 @@ switch(data.val) {
 	Txt[0] = "lecteur fermé monsieur";
 	break;
 	
-	case "InfoPC": // Ouvre le fichier InfoPC.bat
-	process = '%CD%/plugins/SarahV2Cortana/bin/InfoPC.bat';
+	case "runInfoPC": // Ouvre le fichier InfoPC.bat
+	process = '%CD%/plugins/SarahV2Cortana/bin/runInfoPC.bat';
 	var Txt = new Array; 
 	Txt[0] = "Vos information de votre pc et en cour d'ouverture";
 	break;	

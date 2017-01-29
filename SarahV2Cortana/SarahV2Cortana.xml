@@ -533,7 +533,12 @@
 	<item>Fait une capture décran<tag>out.action.val="runcapture-décran"</tag></item>
 	<item>Fait une capture<tag>out.action.val="runcapture-décran"</tag></item>
 	<item>Lance une capture décran<tag>out.action.val="runcapture-décran"</tag></item>
-	<item>Lance une capture<tag>out.action.val="runcapture-décran"</tag></item>    
+	<item>Lance une capture<tag>out.action.val="runcapture-décran"</tag></item> 
+	    
+	<!-- Mode jeux démo -->
+	<item>Lance la démo<tag>out.action.val="runpetit-jeux"</tag></item>
+	<item>lance le jeux<tag>out.action.val="runpetit-jeux"</tag></item>
+	<item>mais le jeux décran<tag>out.action.val="runpetit-jeux"</tag></item>    
 	    
 	<!-- Ouverture ou fermeture du lecteur DVD du PC -->
 	<item>ouvre le Dévédé<tag>out.action.val="dvdon"</tag></item>

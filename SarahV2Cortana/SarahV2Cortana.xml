@@ -529,6 +529,12 @@
 	<item>donne moi les info du pc<tag>out.action.val="runInfoPC"</tag></item>
 	<item>mais les info du pc<tag>out.action.val="runInfoPC"</tag></item>   
 	    
+	<!-- Mode capture d'écran -->
+	<item>Fait une capture décran<tag>out.action.val="runcapture-décran"</tag></item>
+	<item>Fait une capture<tag>out.action.val="runcapture-décran"</tag></item>
+	<item>Lance une capture décran<tag>out.action.val="runcapture-décran"</tag></item>
+	<item>Lance une capture<tag>out.action.val="runcapture-décran"</tag></item>    
+	    
 	<!-- Ouverture ou fermeture du lecteur DVD du PC -->
 	<item>ouvre le Dévédé<tag>out.action.val="dvdon"</tag></item>
 	<item>ouvre le lécteur Dévédé<tag>out.action.val="dvdon"</tag></item>

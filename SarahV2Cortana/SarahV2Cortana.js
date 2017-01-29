@@ -559,6 +559,10 @@ switch(data.val) {
 	case "close": // fermer tous
 	process = '%CD%/plugins/SarahV2Cortana/bin/close.vbs';
 	break;
+		
+        case "runcapture-décran": // Lance une capture d'écarn
+	process = '%CD%/plugins/SarahV2Cortana/bin/runcapture-décran.bat';
+	break;	
   }    
 
  var child = exec(process,

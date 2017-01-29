@@ -560,7 +560,7 @@ switch(data.val) {
 	process = '%CD%/plugins/SarahV2Cortana/bin/close.vbs';
 	break;
 		
-        case "runcapture-décran": // Lance une capture d'écarn
+        case "runcapture-décran": // Lance une capture d'écran
 	process = '%CD%/plugins/SarahV2Cortana/bin/runcapture-décran.bat';
 	break;	
   }    

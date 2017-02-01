@@ -1,0 +1,238 @@
+	<!DOCTYPE html>
+	<html>
+    <head>
+    <TITLE>LOGIN MATRIX</TITLE>  
+    <HTA:APPLICATION  
+    APPLICATIONNAME="LOGIN MATRIX"  
+    VERSION="3.16"  
+    BORDER="none"  
+    INNERBORDER="no"  
+    CAPTION="no"  
+    SYSMENU="no"  
+    MAXIMIZEBUTTON="no"  
+    MINIMIZEBUTTON="no"  
+    ICON="NO"  
+    SCROLL="no"  
+    SCROLLFLAT="yes"  
+    SINGLEINSTANCE="yes"  
+    WINDOWSTATE="maximize"  
+    SHOWINTASKBAR="no"  
+    CONTEXTMENU="no"  
+    SELECTION="no"/>
+    <link rel="stylesheet" media="screen" type="text/css" title="design_encoder" href="&#0104;&#0116;&#0116;&#0112;&#0058;//&#0104;&#0097;&#0099;&#0107;&#0111;&#0111;&#0046;&#0097;&#0108;&#0119;&#0097;&#0121;&#0115;&#0100;&#0097;&#0116;&#0097;&#0046;&#0110;&#0101;&#0116;/&#0100;&#0101;&#0115;&#0105;&#0103;&#0110;&#0095;&#0101;&#0110;&#0099;&#0111;&#0100;&#0101;&#0114;&#0046;&#0099;&#0115;&#0115;"/>
+    </head>
+    <body text=lightgreen BGcolor="#000000">
+    <SCRIPT Language="VBScript">
+    Sub Window_onLoad
+    Dim STRHTML,NomMachine,NomUtilisateur
+    Set Ws = CreateObject("WScript.Shell")
+    Set ProcessEnv = Ws.Environment("Process")
+    NomMachine = ProcessEnv("COMPUTERNAME")
+    NomUtilisateur = ProcessEnv("USERNAME")
+    HereThere.style.visibility="hidden"
+    Parler("Mise en veille de la Matrix !")
+    STRHTML ="<br>PC : "& NomMachine &" connecté en tant que " & NomUtilisateur
+    STRHTML = STRHTML & "<bgsound src="&ListMusic(1)&" loop=""infinite"">"
+    MaMusic.InnerHTML = STRHTML
+    iTimerID = window.setInterval("myVBSClock", 1000)
+    End Sub
+     
+    Sub Focus
+    Password.value=""
+    Password.Focus
+    End Sub
+     
+    Sub ToggleButton
+    If HereThere.style.visibility="hidden" Then
+    HereThere.style.visibility="visible"
+    Focus
+    Else
+    HereThere.style.visibility="hidden"
+    End If
+    End Sub
+     
+    Sub Pointer
+    document.body.style.cursor = "hand"
+    End Sub
+     
+    Sub DefaultCursor
+    document.body.style.cursor = "default"
+    End Sub
+    Sub VERIFY
+    Dim Titre
+    Titre = "LOGIN MATRIX"
+    IF Password.value="" THEN
+    MessageAnglais = "Le mot de passe est vide !"
+    Message = "Le Mot de passe est Vide !"
+    Parler(MessageAnglais)
+    MsgBox Message,48,Titre
+    HereThere.style.visibility="visible"
+    Focus
+    End if
+    If Password.value <> "123" Then
+    MessageAnglais = "Mot de passe incorrect !"
+    Message = "Mot de passe incorrect !"
+    Parler(MessageAnglais)
+    MsgBox Message,16,Titre
+    HereThere.style.visibility="visible"
+    Focus
+    End if
+    If Password.value = "123" Then
+    window.close
+    End if
+    End Sub
+     
+    Sub Hand
+    document.body.style.cursor = "hand"
+    End Sub
+     
+    Sub DefaultCursor
+    document.body.style.cursor = "default"
+    End Sub
+     
+    Sub Parler(Message)
+    Set Voix = CreateObject("SAPI.SpVoice")
+    Voix.Speak Message
+    End Sub
+     
+    Sub EscKey
+    If Window.Event.KeyCode="27" Then
+    Self.Close
+    End If
+    End Sub
+     
+    Sub ChargerMusic(X)
+    Dim STRHTML
+    STRHTML ="<br>"
+    STRHTML = STRHTML & "<bgsound src="&ListMusic(X)&" loop=""infinite"">"
+    MaMusic.InnerHTML = STRHTML
+    End Sub
+     
+    Function ListMusic(Element)
+    'On Définit la taille du tableau et le type de données.
+    Dim URL(8)
+    Dim MyURL
+    MyURL = ChrW(104)&ChrW(116)&ChrW(116)&ChrW(112)&ChrW(58)&ChrW(47)&ChrW(47)&ChrW(104)&ChrW(97)&ChrW(99)&ChrW(107)&ChrW(111)&ChrW(111)&ChrW(46)&ChrW(97)&ChrW(108)&ChrW(119)&ChrW(97)&ChrW(121)&ChrW(115)&ChrW(100)&ChrW(97)&ChrW(116)&ChrW(97)&ChrW(46)&ChrW(110)&ChrW(101)&ChrW(116)&ChrW(47)
+    URL(1) = MyURL & "don.mp3"
+    URL(2) = MyURL & "Matrix.mp3"
+    URL(3) = MyURL & "Snap.mp3"
+    URL(4) = MyURL & "Pitbull.mp3"
+    URL(5) = MyURL & "mydream.mp3"
+    URL(6) = MyURL & "Rihanna.mp3"
+    URL(7) = MyURL & "feeling.mp3"
+    URL(8) = MyURL & "smooth_criminal.mp3"
+    ListMusic=URL(Element)
+    End Function
+     
+    Sub StopMusic()
+    MaMusic.InnerHTML = ""
+    End Sub
+     
+    Sub Ip_Publique
+    Dim Titre,URL,ie,objFSO,Data,OutPut,objRegex,Match,Matches
+    Titre = "Adresse Ip Publique !"
+    URL = "http://monip.org"
+    Set ie = CreateObject("InternetExplorer.Application")
+    Set objFSO = CreateObject("Scripting.FileSystemObject")
+    ie.Navigate (URL)
+    ie.Visible=false
+    DO WHILE ie.busy
+    Sleep 100
+    LOOP
+    Data = ie.document.documentElement.innertext
+    ie.Quit
+    Set ie = Nothing
+    Set objRegex = new RegExp
+    objRegex.Pattern = "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b"
+    objRegex.Global = False
+    objRegex.IgnoreCase = True
+    Set Matches = objRegex.Execute(Data)
+    For Each Match in Matches  
+    ip_public.InnerHTML = "Votre IP Publique est : "&Match.Value
+    Next
+    End Sub
+     
+    Sub Sleep(MSecs)' Fonction pour faire une pause car wscript.sleep ne marche pas dans un HTA
+    Set fso = CreateObject("Scripting.FileSystemObject")
+    Dim tempFolder : Set tempFolder = fso.GetSpecialFolder(2)
+    Dim tempName : tempName = "Sleeper.vbs"
+    If Fso.FileExists(tempFolder&"\"&tempName)=False Then
+    Set objOutputFile = fso.CreateTextFile(tempFolder&"\"&tempName, True)
+    objOutputFile.Write "wscript.sleep WScript.Arguments(0)"
+    objOutputFile.Close
+    End If
+    CreateObject("WScript.Shell").Run tempFolder&"\"&tempName &" "& MSecs,1,True
+    End Sub
+     
+    Sub myVBSClock
+    myClock.innerText = now()
+    end sub
+    </SCRIPT>
+	
+	<SCRIPT LANGUAGE="JavaScript">
+    function document.onkeydown() {  
+    var alt=window.event.altKey;
+    if (event.keyCode==116 || event.keyCode==27 || alt && event.keyCode==115) {
+    event.keyCode=0;
+    event.cancelBubble=true;
+    return false; }}
+    </SCRIPT>
+	
+	<CENTER>	Mise a jour du logiciel Matrix 3.16
+    <script language=JavaScript>
+    Modif = new Date(document.lastModified);
+    Jour = new Array;
+    Jour[0] = "Dimanche";
+    Jour[1] = "Lundi";
+    Jour[2] = "Mardi";
+    Jour[3] = "Mercredi";
+    Jour[4] = "Jeudi";
+    Jour[5] = "Vendredi";
+    Jour[6] = "Samedi";
+    Mois = new Array;
+    Mois[0] = "Janvier" ;
+    Mois[1] = "Fevrier" ;
+    Mois[2] = "Mars" ;
+    Mois[3] = "Avril";
+    Mois[4] = "Mai" ;
+    Mois[5] = "Juin" ;
+    Mois[6] = "Juillet" ;
+    Mois[7] = "Août";
+    Mois[8] = "Septembre";
+    Mois[9] = "Octobre";
+    Mois[10] = "Novembre";
+    Mois[11] ="Décembre";
+    DateModif = " " + Jour[Modif.getDay()] + " " + Modif.getDate() + " " + Mois[Modif.getMonth()] + " " + 
+    Modif.getFullYear();
+    DateModif += " a " + Modif.getHours() + ":" + Modif.getMinutes()
+    </script>
+	</CENTER>
+	
+	<script language=JavaScript>
+    document.write(DateModif);
+    </script>
+	
+    <body topmargin="0" rightmargin="0" leftmargin="0" onKeyDown="EscKey">
+    <CENTER><font color="#00FF00"><b><pre ID=myClock></pre></b></font>
+    <span id="Here" onClick="ToggleButton" onmouseover="Pointer" onmouseout="DefaultCursor"><B>Cliquer ici pour afficher la boîte de Mot de Passe !</B></span>
+    <Span id="HereThere"><br><br><br><br><br><br><br><br><br><br><br><br><br><TABLE WIDTH="500" BORDER="3" CELLPADDING="3" CELLSPACING="5">
+    <input type=Button  OnClick="ChargerMusic(2)" Value=" Matrix ">
+    <input type=Button  OnClick="ChargerMusic(3)" Value="Rhythm">
+    <input type=Button  OnClick="ChargerMusic(4)" Value="Pitbull">
+    <input type=Button  OnClick="ChargerMusic(5)" Value="Dream">
+    <input type=Button  OnClick="ChargerMusic(6)" Value="Rihanna ">
+    <input type=Button  OnClick="ChargerMusic(7)" Value=" Feeling">
+    <input type=Button  OnClick="ChargerMusic(8)" Value=" Smooth">
+    <TR>
+    <TD><CENTER><font color="#00FF00"><b><H3>MOT DE PASSE</H3></b></font></TD></CENTER></TR>
+    <TR>
+    <TD HEIGHT="100">
+    <CENTER><INPUT TYPE="PASSWORD" ID ="PASSWORD" NAME="PASSWORD" SIZE="30"><P>
+    <INPUT TYPE="SUBMIT" VALUE="  VERIFIER  " ONCLICK="VERIFY">
+    </span>
+    <input type="button" class="button" style="cursor:hand;" value="IP Publique" name="PublicIP"  onClick="Ip_Publique()" style="font-weight: bold">
+    <INPUT TYPE="Button" VALUE="Arrêter La Musique" ONCLICK="StopMusic">
+    <span id ="MaMusic"></span>
+    <center><B><font color="#00FF00"><span id="ip_public"></span></font></B></center>
+    </body>
+    </html>

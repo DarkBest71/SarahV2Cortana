@@ -1,18 +1,19 @@
-# SarahV2Cortana
+# :::: SarahV2Cortana ::::
 Auteur: Avatar Rousseau Alias seb03000.
 
-# Actions interface SarahV2Cortana
+# :::: Le plugin SarahV2Cortana, fonctionne bien sur Windows 10 64 Bits Pro, est Windows 7 64Bits édition intégrale avec kinect V1 est bien prendre la version de Sarah 3.16:::::
+
+# :::: Actions interface SarahV2Cortana ::::
 Mode chatterbots, réponse aléatoires, lancement / fermeture de logiciels et de dossiers, lancement des page web, 
 
 lancement de l'interface, allumé ou éteindre l’écran du pc , redémarré ou éteindre son pc, actualisé , 
 
 vidé sa corbeille, est bien d'autre encore.
 
-
-# Ce plugin permet d’interagir avec SarahV2Cortana.
+# :::: Ce plugin permet d’interagir avec SarahV2Cortana ::::
 Pour les fichier .ahk il faut télécharger le logiciel AutoHotkey en fonction de votre système d'exploitation<
 
-# Pour que SarahV2Cortana fonctionne bien, prendre la version de Sarah 3.16:::::
+# :::: Pour que SarahV2Cortana fonctionne bien, prendre la version de Sarah 3.16 :::::
 Placer bien le dossier de sarah 3.16 dans votre disque dur ( C: ) et nommé le SARAH
 
 Ne chager pas le nom ( donc SARAH ) dans le fichier custom.ini laissez bien le nom SARAH, 
@@ -25,15 +26,14 @@ est placer le dans le dossier plugin de SARAH, puis pour enclencher SaraV2Cortan
 
 Comme exemple: ok sarah vas sur youtube. 
 
-# Si le ( ok sarah ) ne vous convient pas, faite ce si:::::
+# :::: Si le ( ok sarah ) ne vous convient pas, faite ce si :::::
 Aller dans le dossier SarahV2Cortana puis cliquer sur le fichier SarahV2Cortana.xml, et faite se changement:
 
 Oké SSARAH
 
 Enlevé le ( Oké S ) il y a un ( S ) en trop retiré le, et enregistrer.
 
-# Exemple de ce qu'on peut faire avec SarahV2Cortana:::::
-
+# :::: Exemple de ce qu'on peut faire avec SarahV2Cortana :::::
 Lui parlé, (mod chaterbot).
 
 Lui demandé d’ouvrir des pages web .url répertorier dans le plugin comme: Firefox, youtube, Pagejaune, 
@@ -42,7 +42,7 @@ site de recette, Facebook, Gmail( messagerie ), notre communauté, le store, Twi
 
 Cdiscount, ebay, leboncoin, est autre.
 
-# Interagire avec votre pc: 
+# :::: Interagire avec votre pc :::: 
 ouvrir des logiciels .exe répertorier dans le plugin comme: ouvrire le Blocnote, VLC, 
 
 Avast, notpad, Firefox, Google Chrome, XBMC ( alias Kodi ) autre.
@@ -77,13 +77,11 @@ Vous avez aussi un mode jeux , que j'ai construit en .bat
 
 Et encore +
       
-# Le plugin SarahV2Cortana, fonctionne bien sur Windows 10 64 Bits Pro, est Windows 7 64Bits édition intégrale avec kinect V1 est bien prendre la version de Sarah 3.16:::::
-
-Je mettrai a jours régulièrement le plugin SarahV2Cortana.
+# :::: Je mettrai a jours régulièrement le plugin SarahV2Cortana ::::
       
 Pour avoir le lien sous le bras pour les dernière mise a jour c'est ici: https://github.com/seb03000/SarahV2Cortana/archive/master.zip 
 
-# Merci pour l'aide à:::::
+# :::: Merci pour l'aide à :::::
 Adrien D: --> pour son ( tous 1 Jarvis ), cela ma bien aidé.
 Jean-Luc BEGHIN: --> pour l'aide ( Ok sarah ).
 Jean Jeannel: --> pour avoir réglé l'erreur 

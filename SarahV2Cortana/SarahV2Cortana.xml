@@ -35,21 +35,27 @@
 	<item>Chante pour moi<tag>out.action._attributes.tts = "Désolé je ne coné rien en chanson."</tag></item>
 	<item>Tu Chante<tag>out.action._attributes.tts = "Non, désolé monsieur."</tag></item>
 	
-	
-	<!-- Affichage écran interface avec le logiciel rainmeter -->
+   	<!-- Affichage est ferme l'interface avec le logiciel rainmeter en .ahk-->
 	<item>ouvre ton interface<tag>out.action.val="Runtruc"</tag></item>
 	<item>mais ton interface<tag>out.action.val="Runtruc"</tag></item>
-        <item>affiche ton interface<tag>out.action.val="Runtruc"</tag></item>
-        <item>active ton interface<tag>out.action.val="Runtruc"</tag></item>
-        <item>lance ton interface<tag>out.action.val="Runtruc"</tag></item>
-        <item>masque ton interface<tag>out.action.val="closetruc"</tag></item>
-        <item>ferme ton interface<tag>out.action.val="closetruc"</tag></item>
-        <item>désactive ton interface<tag>out.action.val="closetruc"</tag></item>
+    <item>affiche ton interface<tag>out.action.val="Runtruc"</tag></item>
+    <item>active ton interface<tag>out.action.val="Runtruc"</tag></item>
+    <item>lance ton interface<tag>out.action.val="Runtruc"</tag></item>
+    <item>masque ton interface<tag>out.action.val="closetruc"</tag></item>
+    <item>ferme ton interface<tag>out.action.val="closetruc"</tag></item>
+    <item>désactive ton interface<tag>out.action.val="closetruc"</tag></item>
 	<item>éteinds ton interface<tag>out.action.val="closetruc"</tag></item>
 	    
-        <item>affiche ton interface<tag>out.action.val="runrainmeter"</tag></item>
-        <item>active ton interface<tag>out.action.val="runrainmeter"</tag></item>
-        <item>lance ton interface<tag>out.action.val="runrainmeter"</tag></item>    
+	<!-- Affichage l'interface avec le logiciel rainmeter en .bat -->	
+    <item>affiche ton interface<tag>out.action.val="runrainmeter"</tag></item>
+    <item>active ton interface<tag>out.action.val="runrainmeter"</tag></item>
+    <item>lance ton interface<tag>out.action.val="runrainmeter"</tag></item>   
+
+	<!-- Ferme l'interface avec le logiciel rainmeter en .bat -->
+    <item>masque ton interface<tag>out.action.val="closerainmeter"</tag></item>
+    <item>ferme ton interface<tag>out.action.val="closerainmeter"</tag></item>
+    <item>désactive ton interface<tag>out.action.val="closerainmeter"</tag></item>
+	<item>éteinds ton interface<tag>out.action.val="closerainmeter"</tag></item>
 	  
 	 <!-- Retour, revenire vair le Bureau --> 
  	<item>affiche le bureau<tag>out.action.val="minimize"</tag></item>

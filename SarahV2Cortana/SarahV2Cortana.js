@@ -89,6 +89,18 @@ switch(data.val) {
 	Txt[0] = " internet éxploreureest en coure de férmeture";
     break;  
 	  
+	case "runclavier": // Affiche le clavier virtuel de Windows
+	var process = '%CD%/plugins/SarahV2Cortana/bin/runclavier.bat';
+	var Txt = new Array; 
+	Txt[0] = "Le clavier virtuéle et en cours d'ouverture";
+    break;
+	
+	case "closeclavier": // Ferme le clavier virtuel de Windows
+	var process = '%CD%/plugins/SarahV2Cortana/bin/closeclavier.bat';
+	var Txt = new Array; 
+	Txt[0] = "Le clavier virtuéle vas se fermer";
+    break;
+		
 	case "runBluetooth": // ouvre le périphérique du bluetooth
 	var process = '%CD%/plugins/SarahV2Cortana/bin/runBluetooth.bat';
 	var Txt = new Array; 

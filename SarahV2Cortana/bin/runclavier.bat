@@ -1,0 +1,1 @@
+start C:\" Windows\system32\osk\osk.exe "

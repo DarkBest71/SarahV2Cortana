@@ -38,24 +38,37 @@
    	<!-- Affichage est ferme l'interface avec le logiciel rainmeter en .ahk-->
 	<item>ouvre ton interface<tag>out.action.val="Runtruc"</tag></item>
 	<item>mais ton interface<tag>out.action.val="Runtruc"</tag></item>
-    <item>affiche ton interface<tag>out.action.val="Runtruc"</tag></item>
-    <item>active ton interface<tag>out.action.val="Runtruc"</tag></item>
-    <item>lance ton interface<tag>out.action.val="Runtruc"</tag></item>
-    <item>masque ton interface<tag>out.action.val="closetruc"</tag></item>
-    <item>ferme ton interface<tag>out.action.val="closetruc"</tag></item>
-    <item>désactive ton interface<tag>out.action.val="closetruc"</tag></item>
+        <item>affiche ton interface<tag>out.action.val="Runtruc"</tag></item>
+        <item>active ton interface<tag>out.action.val="Runtruc"</tag></item>
+        <item>lance ton interface<tag>out.action.val="Runtruc"</tag></item>
+        <item>masque ton interface<tag>out.action.val="closetruc"</tag></item>
+        <item>ferme ton interface<tag>out.action.val="closetruc"</tag></item>
+        <item>désactive ton interface<tag>out.action.val="closetruc"</tag></item>
 	<item>éteinds ton interface<tag>out.action.val="closetruc"</tag></item>
 	    
 	<!-- Affichage l'interface avec le logiciel rainmeter en .bat -->	
-    <item>affiche ton interface<tag>out.action.val="runrainmeter"</tag></item>
-    <item>active ton interface<tag>out.action.val="runrainmeter"</tag></item>
-    <item>lance ton interface<tag>out.action.val="runrainmeter"</tag></item>   
+        <item>affiche ton interface<tag>out.action.val="runrainmeter"</tag></item>
+        <item>active ton interface<tag>out.action.val="runrainmeter"</tag></item>
+        <item>lance ton interface<tag>out.action.val="runrainmeter"</tag></item>   
 
 	<!-- Ferme l'interface avec le logiciel rainmeter en .bat -->
-    <item>masque ton interface<tag>out.action.val="closerainmeter"</tag></item>
-    <item>ferme ton interface<tag>out.action.val="closerainmeter"</tag></item>
-    <item>désactive ton interface<tag>out.action.val="closerainmeter"</tag></item>
+        <item>masque ton interface<tag>out.action.val="closerainmeter"</tag></item>
+        <item>ferme ton interface<tag>out.action.val="closerainmeter"</tag></item>
+        <item>désactive ton interface<tag>out.action.val="closerainmeter"</tag></item>
 	<item>éteinds ton interface<tag>out.action.val="closerainmeter"</tag></item>
+	    
+	<!-- Ouvre le clavier virtuel de Windows --> 
+ 	<item>affiche le clavier<tag>out.action.val="runclavier"</tag></item>
+	<item>mai le clavier<tag>out.action.val="runclavier"</tag></item>
+ 	<item>va sur le clavier<tag>out.action.val="runclavier"</tag></item>
+	<item>ouvre le clavier<tag>out.action.val="runclavier"</tag></item>
+	<item>balance le clavier<tag>out.action.val="runclavier"</tag></item>
+	<item>éxécute le clavier<tag>out.action.val="runclavier"</tag></item>
+	
+	<!-- Ferme le clavier virtuel de Windows --> 
+ 	<item>Ferme le clavier<tag>out.action.val="closeclavier"</tag></item>
+	<item>enlève le clavier<tag>out.action.val="closeclavier"</tag></item>
+ 	<item>éteins le clavier<tag>out.action.val="closeclavier"</tag></item>  
 	  
 	 <!-- Retour, revenire vair le Bureau --> 
  	<item>affiche le bureau<tag>out.action.val="minimize"</tag></item>

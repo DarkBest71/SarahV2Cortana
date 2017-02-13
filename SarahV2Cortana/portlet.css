@@ -1,12 +1,10 @@
-
 .plugin-gridster.SarahV2Cortana .front {
   background: #55b5e6 url('images/SarahV2Cortana.jpg') center 34px;
-  background-size:   110px 110px;
+  background-size:   76px 76px;
   background-repeat: no-repeat;
 }
-
 .plugin-gridster.SarahV2Cortana .back {
-  background: #55b5e6 url('images/SarahV2Cortana2.jpg') center 34px;
-  background-size:   80px 80px;
+  background: #070000 url('images/SarahV2Cortana2.jpg') center 34px;
+  background-size:   70px 70px;
   background-repeat: no-repeat;
 }

@@ -11,5 +11,5 @@ FORMATDATE2B2#%COMPLETEDAY% à %HOURS% heures et %MINUTES% minutes
 FORMATDATE3A#%HOURS% heures et %MINUTES% minutes
 FORMATDATE3B#%HOURS% heures
 FORMATDATE5A#%WEEKDAY% %DAY% %MONTH%
-HELLO#Nous sommes le %DATE% et il est %TIME%. Il y a %NBPLUGIN% dossier chargé, et plus de six million de ligne de code, chargé dans ma base.
+HELLO#Nous sommes le %DATE% et il est %TIME%. Il y a %NBPLUGIN% dossier chargé, dans ma base.
 ENUM#Voici les noms des %NBPLUGIN% pleug in chargés:

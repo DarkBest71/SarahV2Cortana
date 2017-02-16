@@ -1,0 +1,15 @@
+OKLETSGO#Je me renseigne
+MONTH#Janvier~Février~Mars~Avril~Mai~Juin~Juillet~Aout~Septembre~Octobre~Novembre~Décembre
+DAY#Dimanche~Lundi~Mardi~Mercredi~Jeudi~Vendredi~Samedi
+NEARDAY#Aujourd'hui~Demain~Après demain
+FORMATDATE1A#%DAY% %MONTH% %YEAR% à %HOURS% heures et %MINUTES% minutes
+FORMATDATE1B#%DAY% %MONTH% %YEAR% à %HOURS% heures
+FORMATDATE2A1#le %WEEKDAY% %DAY% %MONTH%,
+FORMATDATE2A2#%DAY%,
+FORMATDATE2B1#%COMPLETEDAY% à %HOURS% heures
+FORMATDATE2B2#%COMPLETEDAY% à %HOURS% heures et %MINUTES% minutes
+FORMATDATE3A#%HOURS% heures et %MINUTES% minutes
+FORMATDATE3B#%HOURS% heures
+FORMATDATE5A#%WEEKDAY% %DAY% %MONTH%
+HELLO#Nous sommes le %DATE% et il est %TIME%. Il y a %NBPLUGIN% dossier chargé, et plus de six million de ligne de code, chargé dans ma base.
+ENUM#Voici les noms des %NBPLUGIN% pleug in chargés:

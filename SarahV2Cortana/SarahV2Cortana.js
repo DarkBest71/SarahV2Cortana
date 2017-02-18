@@ -579,6 +579,10 @@ switch(data.val) {
 	case "runpetit-jeux": // Lance la démo du jeux
 	process = '%CD%/plugins/SarahV2Cortana/bin/runpetit-jeux.bat';
 	break;	
+		
+	case "RunRadio-Dark-Best": // Lance la Radio-Dark-Best
+	process = '%CD%/plugins/SarahV2Cortana/bin/RunRadio-Dark-Best.bat';
+	break;	
   }    
 
  var child = exec(process,

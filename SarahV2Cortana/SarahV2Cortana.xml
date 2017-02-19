@@ -559,16 +559,16 @@
 	<item>lance le jeux<tag>out.action.val="runpetit-jeux"</tag></item>
 	<item>mais le jeux décran<tag>out.action.val="runpetit-jeux"</tag></item> 
 	    
-	<!-- Mode Radio-Dark-Best -->
-	<item>Lance la Radio<tag>out.action.val="RunRadio-Dark-Best"</tag></item>
-	<item>Mais la Radio<tag>out.action.val="RunRadio-Dark-Best"</tag></item>
-	<item>Affiche la Radio<tag>out.action.val="RunRadio-Dark-Best"</tag></item>
-	<item>Balance la Radio<tag>out.action.val="RunRadio-Dark-Best"</tag></item>
-	<item>Donne la Radio<tag>out.action.val="RunRadio-Dark-Best"</tag></item>
-	<item>Donne moi la Radio<tag>out.action.val="RunRadio-Dark-Best"</tag></item>
-	<item>Mode Radio<tag>out.action.val="RunRadio-Dark-Best"</tag></item>
-	<item>Allume la Radio<tag>out.action.val="RunRadio-Dark-Best"</tag></item>
-	<item>Active la Radio<tag>out.action.val="RunRadio-Dark-Best"</tag></item>   
+  	<!-- Mode Radio-Dark-Best -->
+	<item>Lance la Radio<tag>out.action.val="runRadio"</tag></item>
+	<item>Mais la Radio<tag>out.action.val="runRadio"</tag></item>
+	<item>Affiche la Radio<tag>out.action.val="runRadio"</tag></item>
+	<item>Balance la Radio<tag>out.action.val="runRadio"</tag></item>
+	<item>Donne la Radio<tag>out.action.val="runRadio"</tag></item>
+	<item>Donne moi la Radio<tag>out.action.val="runRadio"</tag></item>
+	<item>Mode Radio<tag>out.action.val="runRadio"</tag></item>
+	<item>Allume la Radio<tag>out.action.val="runRadio"</tag></item>
+	<item>Active la Radio<tag>out.action.val="runRadio"</tag></item>
 	    
 	<!-- Ouverture ou fermeture du lecteur DVD du PC -->
 	<item>ouvre le Dévédé<tag>out.action.val="dvdon"</tag></item>

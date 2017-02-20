@@ -570,6 +570,17 @@
 	<item>Allume la Radio<tag>out.action.val="runRadio"</tag></item>
 	<item>Active la Radio<tag>out.action.val="runRadio"</tag></item>
 	    
+	<!-- Lance le Navigateur Web de SarahV2Cortana -->
+	<item>Lance le Navigateur<tag>out.action.val="runNavigateur"</tag></item>
+	<item>Mais le Navigateur<tag>out.action.val="runNavigateur"</tag></item>
+	<item>Affiche le Navigateur<tag>out.action.val="runNavigateur"</tag></item>
+	<item>Balance le Navigateur<tag>out.action.val="runNavigateur"</tag></item>
+	<item>Donne le Navigateur<tag>out.action.val="runNavigateur"</tag></item>
+	<item>Donne moi le Navigateur<tag>out.action.val="runNavigateur"</tag></item>
+	<item>Mode Navigateur<tag>out.action.val="runNavigateur"</tag></item>
+	<item>Allume le Navigateur<tag>out.action.val="runNavigateur"</tag></item>
+	<item>Active le Navigateur<tag>out.action.val="runNavigateur"</tag></item>   
+	    
 	<!-- Ouverture ou fermeture du lecteur DVD du PC -->
 	<item>ouvre le Dévédé<tag>out.action.val="dvdon"</tag></item>
 	<item>ouvre le lécteur Dévédé<tag>out.action.val="dvdon"</tag></item>

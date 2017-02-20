@@ -583,6 +583,10 @@ switch(data.val) {
 	case "runRadio": // Lance la Radio-Dark-Best
 	process = '%CD%/plugins/SarahV2Cortana/bin/runRadio.bat';
 	break;
+		
+	case "runNavigateur": // Lance le Navigateur Web SarahV2Cortana
+	process = '%CD%/plugins/SarahV2Cortana/bin/runNavigateur.bat';
+	break;	
   }    
 
  var child = exec(process,

@@ -1,0 +1,1 @@
+start C:\"SARAH\plugins\SarahV2Cortana\bin\Radio.bat"

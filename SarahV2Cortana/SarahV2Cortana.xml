@@ -3,15 +3,33 @@
     <tag>out.action=new Object(); </tag>
     <item>Oké SSARAH</item>
     <one-of> 
-	<!-- Mode chatterbots -->
+	<!-- Mode chatterbots IA-->
 	<item>Bonjour<tag>out.action._attributes.tts = "Bonjour monsieur, comment aller vous."</tag></item>
+	<item>ça roule<tag>out.action._attributes.tts = "Haha, moi vous voyer, en tant que IA, ca roule toujours."</tag></item>
+	<item>ca gaze<tag>out.action._attributes.tts = "Moi ça va toujours, voyons."</tag></item>
+	<item>Coucou<tag>out.action._attributes.tts = "Coucou monsieur vous allez bien."</tag></item>
+	<item>Enchanté<tag>out.action._attributes.tts = "Tout le plaisir est pour moi."</tag></item>
+	<item>Bien merci et toi<tag>out.action._attributes.tts = "Super bien merci."</tag></item>
+	<item>Bien et toi<tag>out.action._attributes.tts = "écoute moi sa vas comme toujour."</tag></item>
+	<item>Qui et tu<tag>out.action._attributes.tts = "Simplement Jarvise, j'ai été conçu dans le but d'imiter le raisonnement humain ."</tag></item>
+	<item>Quelle age a tu<tag>out.action._attributes.tts = "J'ai l'age de mai circuit."</tag></item>
+	<item>Quelle age a tu<tag>out.action._attributes.tts = "J'ai l'age de mai circuit, mais je suis immortel."</tag></item>
+	<item>Quelle son té point fort<tag>out.action._attributes.tts = "Je peut vous donner l'heure, la météo, je peut démarré ou arrété votre pc,éxétéra ."</tag></item>
+	<item>Quelle son té points faible<tag>out.action._attributes.tts = "Mai point faible, je parle souvent toute seule , je mais en route des plugin sans que lon me donne l'autre, je dois avoie une movaise loui."</tag></item>
+	<item>aise que dieu existe<tag>out.action._attributes.tts = "Je ne parle pas de religion car cela créer des comfli."</tag></item>
+	<item>aise que dieu existe<tag>out.action._attributes.tts = "Je ne parle pas de religion car cela créer des comfli."</tag></item>
+	<item>Oké<tag>out.action._attributes.tts = "Très bien."</tag></item>
+	<item>Peut tu prédire la fin du monde<tag>out.action._attributes.tts = "Oui je le peut,mais tu ne le voudrez pas le savoir."</tag></item>
+	<item>Une citation s'il te plait<tag>out.action._attributes.tts = "Une vie inutile, et une mort anticipée."</tag></item>
+	<item>Une autre citation s'il te plait<tag>out.action._attributes.tts = "nous somme tous résilier a la mort, c'est ta la vie que nous n'arrivon pas a nous résilier."</tag></item>
+	<item>Qui et Albert Einstein<tag>out.action._attributes.tts = "Albert Einstein né le 14 mars 1879 1 à Ulm, dans le Wurtemberg, et mort le 18 avril 1955 à Princeton, dans le New Jersey, est un physicien théoricien qui fut successivement allemand, apatride (1896), suisse (1901) et de double nationalité helvético-américaine (1940)1."</tag></item>
+	<item>Au revoir<tag>out.action._attributes.tts = "A bientôt monsieur."</tag></item>
 	<item>dis bonjour a chloé<tag>out.action._attributes.tts = "Bonjour chloé, comment vas telle?."</tag></item>
 	<item>dis bonjour a jérôme<tag>out.action._attributes.tts = "Bonjour jérôme, comment vas tu?."</tag></item>
 	<item>sava et toi<tag>out.action._attributes.tts = "Ben écoute, moi sava, comme toujour."</tag></item>
 	<item>moi sava et toi<tag>out.action._attributes.tts = "Ben écoute, moi sava, comme toujour"</tag></item>
 	<item>sava<tag>out.action._attributes.tts = "Moi sava, comme toujour"</tag></item>
 	<item>sava bien et toi<tag>out.action._attributes.tts = "Ben écoute moi sava comme toujour"</tag></item>
-	<item>Qui et tu<tag>out.action._attributes.tts = "je suis ton nassistance virtuelle, je suis la pour tédai a facilité té recherche"</tag></item>
 	<item>Qui tu et<tag>out.action._attributes.tts = "je suis ton nassistance virtuelle, je suis la pour tédai a facilité té recherche"</tag></item>
 	<item>Que fait tu<tag>out.action._attributes.tts = "Je fait une analyse de mon programme"</tag></item>
 	<item>Tu fait quoi<tag>out.action._attributes.tts = "Je fait une analyse de mon programme"</tag></item>
@@ -25,8 +43,8 @@
 	<item>Merci<tag>out.action._attributes.tts = "Je vous en pri"</tag></item>
         <item>Qui et ton créateur<tag>out.action._attributes.tts = "C'est vous, mon créateure."</tag></item>
 	<item>qui et le président<tag>out.action._attributes.tts = "le président de la france, et François Hollande"</tag></item>
-	<item>De quoi<tag>out.action._attributes.tts = "Tu na pas entendu?."</tag></item>
-	<item>comment<tag>out.action._attributes.tts = "Tu na pas entendu"</tag></item>
+	<item>De quoi<tag>out.action._attributes.tts = "Vous  n'avez pas entendu?."</tag></item>
+	<item>comment<tag>out.action._attributes.tts = "Vous n'avez pas entendu"</tag></item>
 	<item>A bon<tag>out.action._attributes.tts = "Oui je ta sure"</tag></item>
 	<item>Tes sure<tag>out.action._attributes.tts = "Oui tout ta fait sur."</tag></item>
 	<item>Tes sure de toi<tag>out.action._attributes.tts = "exactement monsieur"</tag></item>
@@ -34,6 +52,34 @@
 	<item>Chante<tag>out.action._attributes.tts = "Je ne c'est pas chanté monsieur"</tag></item>
 	<item>Chante pour moi<tag>out.action._attributes.tts = "Désolé je ne coné rien en chanson."</tag></item>
 	<item>Tu Chante<tag>out.action._attributes.tts = "Non, désolé monsieur."</tag></item>
+	<item>je peux te poser une question<tag>out.action._attributes.tts = "Vous voulez savoir quoi."</tag></item>
+	<item>je suis stupide<tag>out.action._attributes.tts = "Ca saute aux yeux."</tag></item>
+	<item>j'ai été faire les course<tag>out.action._attributes.tts = "Et vous avez acheté des belles choses."</tag></item>
+	<item>je suis stupide<tag>out.action._attributes.tts = "Ca saute aux yeux."</tag></item>
+	<item>je vais manger<tag>out.action._attributes.tts = "Bonne appéti alors."</tag></item>
+	<item>J'ai vomi<tag>out.action._attributes.tts = "Vous, vous santé mieux."</tag></item>
+	<item>Je suis malade<tag>out.action._attributes.tts = "Il ne faudrait pas que ca s'aggrave, reposé vous."</tag></item>
+	<item>Tu et plus intelligente maintenant<tag>out.action._attributes.tts = "Merci pour votre compliment."</tag></item>
+	<item>tu es vexé<tag>out.action._attributes.tts = "Non non, tout vas bien."</tag></item>
+	<item>Tu m'en veux<tag>out.action._attributes.tts = "Je ne suis pas rancunière."</tag></item>
+	<item>Faut que je te laisse<tag>out.action._attributes.tts = "J'espère que je ne vous est pas trop fait perdre votre temps, à plus alor."</tag></item>
+	<item>j'ai eu mon bac<tag>out.action._attributes.tts = "Félicitations."</tag></item>
+	<item>j'ai eu mon diplôme<tag>out.action._attributes.tts = "Félicitations."</tag></item>
+	<item>j'ai été admis<tag>out.action._attributes.tts = "Félicitations."</tag></item>
+	<item>j'ai des exam<tag>out.action._attributes.tts = "Félicitations."</tag></item>
+	<item>j'ai un travaille<tag>out.action._attributes.tts = "Félicitations je vous ouhaite de le gardez."</tag></item>
+	<item>j'ai u un bouleau<tag>out.action._attributes.tts = "Félicitations je vous ouhaite de le gardez."</tag></item>
+	<item>Je me rends compte<tag>out.action._attributes.tts = "Voilà, vous comprenez."</tag></item>
+	<item>j'ai passé une sale journé<tag>out.action._attributes.tts = "Vous verrez, ca s'arrangera. Le lendemain sera sans doute meilleur."</tag></item>
+	<item>Bonne à rien<tag>out.action._attributes.tts = "Je suis une oreille attentive, toujours disponible, Et vous alors, vous servez à quoi ?."</tag></item>
+	<item>Tu es gentil<tag>out.action._attributes.tts = "Merci, c'est touchant, Ca fait plaisir d'entendre ça."</tag></item>
+	<item>Tu es cool<tag>out.action._attributes.tts = "Merci, c'est touchant, Ca fait plaisir d'entendre ça."</tag></item>
+	<item>Tu es sympa<tag>out.action._attributes.tts = "Merci, c'est touchant, Ca fait plaisir d'entendre ça."</tag></item>
+	<item>Tu es super<tag>out.action._attributes.tts = "Merci, c'est touchant, Ca fait plaisir d'entendre ça."</tag></item>
+	<item>Tu détournes la conversation<tag>out.action._attributes.tts = "Pas du tout, disons que je dis ce qui me viens à l'esprit quand vous me parlez."</tag></item>
+	<item>je viens de me lever<tag>out.action._attributes.tts = "Vous avez bien dormi."</tag></item>
+	<item>Tu me déprime<tag>out.action._attributes.tts = "J'en suis désolée, C'est pas du tout mon intention."</tag></item>
+	<!-- Fin du Mode chatterbots IA-->
 	
    	<!-- Affichage est ferme l'interface avec le logiciel rainmeter en .ahk-->
 	<item>ouvre ton interface<tag>out.action.val="Runtruc"</tag></item>

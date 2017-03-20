@@ -524,6 +524,13 @@ switch(data.val) {
 	Txt[1] = "affichage des fenêtres en 3D";
 	break;
 	
+        case "global": // lance la vue 3D aéro de windows 7 et Windows 10
+	process = '%CD%/plugins/SarahV2Cortana/bin/global.vbs';
+	var Txt = new Array; 
+	Txt[0] = "affichage de la vue aéro";
+	Txt[1] = "affichage des fenêtres en 3D";
+	break;	
+		
 	case "next": // suivant pour une page
 	process = '%CD%/plugins/SarahV2Cortana/bin/next.vbs';
 	var Txt = new Array; 

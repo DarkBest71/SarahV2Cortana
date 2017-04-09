@@ -1,1 +1,1 @@
-explorer C:\SARAH
+explorer.exe C:\SARAH

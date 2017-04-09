@@ -1,1 +1,1 @@
-explorer H:\photo, image
+explorer.exe H:\photo, image

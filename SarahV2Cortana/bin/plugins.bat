@@ -1,1 +1,1 @@
-explorer C:\SARAH\plugins
+explorer.exe C:\SARAH\plugins

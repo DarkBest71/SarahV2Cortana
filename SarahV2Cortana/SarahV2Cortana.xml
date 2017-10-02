@@ -1,10 +1,11 @@
 	<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleSarahV2Cortana" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
-    <rule id="ruleSarahV2Cortana" scope="public">
-    <tag>out.action=new Object(); </tag>
-    <item>SARAH</item>
-    <one-of> 
+        <rule id="ruleSarahV2Cortana" scope="public">
+        <tag>out.action=new Object(); </tag>
+        <item>SARAH</item>
+        <one-of> 
 	<!-- Mode chatterbots IA-->
-
+        <item>présente toi<tag>out.action.test = "Bonjour je me nomme Sarah, je suis la pour vous aidai"</tag></item>
+	<item>Fait ta présentation<tag>out.action.test = "j'ai été conçu dans le but d'imiter le raisonnement humain afin de vous aidé"</tag></item>
 	<item>Bonjour<tag>out.action._attributes.tts = "Bonjour monsieur, comment aller vous."</tag></item>
 	<item>ça roule<tag>out.action._attributes.tts = "Haha, moi vous voyer, en tant que IA, ca roule toujours."</tag></item>
 	<item>sa gaze<tag>out.action._attributes.tts = "Moi ça va toujours, voyons."</tag></item>

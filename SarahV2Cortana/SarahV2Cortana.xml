@@ -1,11 +1,11 @@
 	<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleSarahV2Cortana" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
-        <rule id="ruleSarahV2Cortana" scope="public">
-        <tag>out.action=new Object(); </tag>
-        <item>SARAH</item>
-        <one-of> 
+    <rule id="ruleSarahV2Cortana" scope="public">
+    <tag>out.action=new Object(); </tag>
+    <item>SARAH</item>
+    <one-of> 
 	<!-- Mode chatterbots IA-->
-        <item>présente toi<tag>out.action.test = "Bonjour je me nomme Sarah, je suis la pour vous aidai"</tag></item>
-	<item>Fait ta présentation<tag>out.action.test = "j'ai été conçu dans le but d'imiter le raisonnement humain afin de vous aidé"</tag></item>
+    <item>présente toi<tag>out.action.tts = "Bonjour je me nomme Sarah, je suis la pour vous aidai"</tag></item>
+	<item>Fait ta présentation<tag>out.action.tts = "j'ai été conçu dans le but d'imiter le raisonnement humain afin de vous aidé"</tag></item>
 	<item>Bonjour<tag>out.action._attributes.tts = "Bonjour monsieur, comment aller vous."</tag></item>
 	<item>ça roule<tag>out.action._attributes.tts = "Haha, moi vous voyer, en tant que IA, ca roule toujours."</tag></item>
 	<item>sa gaze<tag>out.action._attributes.tts = "Moi ça va toujours, voyons."</tag></item>
@@ -42,7 +42,7 @@
 	<item>tu le fai éxpré<tag>out.action._attributes.tts = "je ne me pérmétré pas"</tag></item>
 	<item>Tu dore<tag>out.action._attributes.tts = "Je n'est pas sommeil monsieur"</tag></item>
 	<item>Merci<tag>out.action._attributes.tts = "Je vous en pri"</tag></item>
-        <item>Qui et ton créateur<tag>out.action._attributes.tts = "C'est vous, mon créateure."</tag></item>
+    <item>Qui et ton créateur<tag>out.action._attributes.tts = "C'est vous, mon créateure."</tag></item>
 	<item>qui et le président<tag>out.action._attributes.tts = "le président de la france, et émmanuel Macron"</tag></item>
 	<item>De quoi<tag>out.action._attributes.tts = "Vous  n'avez pas entendu?."</tag></item>
 	<item>comment<tag>out.action._attributes.tts = "Vous n'avez pas entendu"</tag></item>
@@ -82,8 +82,6 @@
 	<item>Tu me déprime<tag>out.action._attributes.tts = "J'en suis désolée, C'est pas du tout mon intention."</tag></item>
 	<item>peut tu faire une recherche pour moi<tag>out.action._attributes.tts = "oui biensure, quelle et votre recherche monsieur."</tag></item>
 	<item>peut tu faire une recherche<tag>out.action._attributes.tts = "oui biensure, je vous écoute, monsieur."</tag></item>
-	
-	
 	<!-- Fin du Mode chatterbots IA-->
 	
 	<!-- Affichage est ferme l'interface avec le logiciel rainmeter en .ahk-->
@@ -648,4 +646,3 @@
     </rule> 
     </grammar>
     <!-- Réalisation de SARAHV2Cortana part Avatar Rousseau (Dark Best), alias seb03000 -->
-

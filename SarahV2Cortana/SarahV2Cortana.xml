@@ -41,8 +41,8 @@
 	<item>tu le fai éxpré<tag>out.action._attributes.tts = "je ne me pérmétré pas"</tag></item>
 	<item>Tu dore<tag>out.action._attributes.tts = "Je n'est pas sommeil monsieur"</tag></item>
 	<item>Merci<tag>out.action._attributes.tts = "Je vous en pri"</tag></item>
-    <item>Qui et ton créateur<tag>out.action._attributes.tts = "C'est vous, mon créateure."</tag></item>
-	<item>qui et le président<tag>out.action._attributes.tts = "le président de la france, et François Hollande"</tag></item>
+        <item>Qui et ton créateur<tag>out.action._attributes.tts = "C'est vous, mon créateure."</tag></item>
+	<item>qui et le président<tag>out.action._attributes.tts = "le président de la france, et émmanuel Macron"</tag></item>
 	<item>De quoi<tag>out.action._attributes.tts = "Vous  n'avez pas entendu?."</tag></item>
 	<item>comment<tag>out.action._attributes.tts = "Vous n'avez pas entendu"</tag></item>
 	<item>A bon<tag>out.action._attributes.tts = "Oui je ta sure"</tag></item>

@@ -1,22 +1,22 @@
 	<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleSarahV2Cortana" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
     <rule id="ruleSarahV2Cortana" scope="public">
     <tag>out.action=new Object(); </tag>
-    <item>Oké SSARAH</item>
+    <item>SARAH</item>
     <one-of> 
 	<!-- Mode chatterbots IA-->
+
 	<item>Bonjour<tag>out.action._attributes.tts = "Bonjour monsieur, comment aller vous."</tag></item>
 	<item>ça roule<tag>out.action._attributes.tts = "Haha, moi vous voyer, en tant que IA, ca roule toujours."</tag></item>
-	<item>ca gaze<tag>out.action._attributes.tts = "Moi ça va toujours, voyons."</tag></item>
+	<item>sa gaze<tag>out.action._attributes.tts = "Moi ça va toujours, voyons."</tag></item>
 	<item>Coucou<tag>out.action._attributes.tts = "Coucou monsieur vous allez bien."</tag></item>
 	<item>Enchanté<tag>out.action._attributes.tts = "Tout le plaisir est pour moi."</tag></item>
 	<item>Bien merci et toi<tag>out.action._attributes.tts = "Super bien merci."</tag></item>
 	<item>Bien et toi<tag>out.action._attributes.tts = "écoute moi sa vas comme toujour."</tag></item>
-	<item>Qui et tu<tag>out.action._attributes.tts = "Simplement Jarvise, j'ai été conçu dans le but d'imiter le raisonnement humain ."</tag></item>
+	<item>Qui et tu<tag>out.action._attributes.tts = "Simplement Sarah, j'ai été conçu dans le but d'imiter le raisonnement humain ."</tag></item>
 	<item>Quelle age a tu<tag>out.action._attributes.tts = "J'ai l'age de mai circuit."</tag></item>
-	<item>Quelle age a tu<tag>out.action._attributes.tts = "J'ai l'age de mai circuit, mais je suis immortel."</tag></item>
+	<item>Quelle age<tag>out.action._attributes.tts = "J'ai l'age de mai circuit, mais je suis immortel."</tag></item>
 	<item>Quelle son té point fort<tag>out.action._attributes.tts = "Je peut vous donner l'heure, la météo, je peut démarré ou arrété votre pc,éxétéra ."</tag></item>
-	<item>Quelle son té points faible<tag>out.action._attributes.tts = "Mai point faible, je parle souvent toute seule , je mais en route des plugin sans que lon me donne l'autre, je dois avoie une movaise loui."</tag></item>
-	<item>aise que dieu existe<tag>out.action._attributes.tts = "Je ne parle pas de religion car cela créer des comfli."</tag></item>
+	<item>Quelle son té points faible<tag>out.action._attributes.tts = "Mai point faible, je parle souvent toute seule , je mais en route des plugin sans que lon me donne l'odre, je dois avoie une movaise écoute."</tag></item>
 	<item>aise que dieu existe<tag>out.action._attributes.tts = "Je ne parle pas de religion car cela créer des comfli."</tag></item>
 	<item>Oké<tag>out.action._attributes.tts = "Très bien."</tag></item>
 	<item>Peut tu prédire la fin du monde<tag>out.action._attributes.tts = "Oui je le peut,mais tu ne le voudrez pas le savoir."</tag></item>
@@ -41,7 +41,7 @@
 	<item>tu le fai éxpré<tag>out.action._attributes.tts = "je ne me pérmétré pas"</tag></item>
 	<item>Tu dore<tag>out.action._attributes.tts = "Je n'est pas sommeil monsieur"</tag></item>
 	<item>Merci<tag>out.action._attributes.tts = "Je vous en pri"</tag></item>
-        <item>Qui et ton créateur<tag>out.action._attributes.tts = "C'est vous, mon créateure."</tag></item>
+    <item>Qui et ton créateur<tag>out.action._attributes.tts = "C'est vous, mon créateure."</tag></item>
 	<item>qui et le président<tag>out.action._attributes.tts = "le président de la france, et François Hollande"</tag></item>
 	<item>De quoi<tag>out.action._attributes.tts = "Vous  n'avez pas entendu?."</tag></item>
 	<item>comment<tag>out.action._attributes.tts = "Vous n'avez pas entendu"</tag></item>
@@ -67,8 +67,8 @@
 	<item>j'ai eu mon diplôme<tag>out.action._attributes.tts = "Félicitations."</tag></item>
 	<item>j'ai été admis<tag>out.action._attributes.tts = "Félicitations."</tag></item>
 	<item>j'ai des exam<tag>out.action._attributes.tts = "Félicitations."</tag></item>
-	<item>j'ai un travaille<tag>out.action._attributes.tts = "Félicitations je vous ouhaite de le gardez."</tag></item>
-	<item>j'ai u un bouleau<tag>out.action._attributes.tts = "Félicitations je vous ouhaite de le gardez."</tag></item>
+	<item>j'ai un travaille<tag>out.action._attributes.tts = "Félicitations je vous souhaite de le gardez."</tag></item>
+	<item>j'ai u un bouleau<tag>out.action._attributes.tts = "Félicitations je vous souhaite de le gardez."</tag></item>
 	<item>Je me rends compte<tag>out.action._attributes.tts = "Voilà, vous comprenez."</tag></item>
 	<item>j'ai passé une sale journé<tag>out.action._attributes.tts = "Vous verrez, ca s'arrangera. Le lendemain sera sans doute meilleur."</tag></item>
 	<item>Bonne à rien<tag>out.action._attributes.tts = "Je suis une oreille attentive, toujours disponible, Et vous alors, vous servez à quoi ?."</tag></item>
@@ -79,30 +79,34 @@
 	<item>Tu détournes la conversation<tag>out.action._attributes.tts = "Pas du tout, disons que je dis ce qui me viens à l'esprit quand vous me parlez."</tag></item>
 	<item>je viens de me lever<tag>out.action._attributes.tts = "Vous avez bien dormi."</tag></item>
 	<item>Tu me déprime<tag>out.action._attributes.tts = "J'en suis désolée, C'est pas du tout mon intention."</tag></item>
+	<item>peut tu faire une recherche pour moi<tag>out.action._attributes.tts = "oui biensure, quelle et votre recherche monsieur."</tag></item>
+	<item>peut tu faire une recherche<tag>out.action._attributes.tts = "oui biensure, je vous écoute, monsieur."</tag></item>
+	
+	
 	<!-- Fin du Mode chatterbots IA-->
 	
-   	<!-- Affichage est ferme l'interface avec le logiciel rainmeter en .ahk-->
+	<!-- Affichage est ferme l'interface avec le logiciel rainmeter en .ahk-->
 	<item>ouvre ton interface<tag>out.action.val="Runtruc"</tag></item>
 	<item>mais ton interface<tag>out.action.val="Runtruc"</tag></item>
-        <item>affiche ton interface<tag>out.action.val="Runtruc"</tag></item>
-        <item>active ton interface<tag>out.action.val="Runtruc"</tag></item>
-        <item>lance ton interface<tag>out.action.val="Runtruc"</tag></item>
-        <item>masque ton interface<tag>out.action.val="closetruc"</tag></item>
-        <item>ferme ton interface<tag>out.action.val="closetruc"</tag></item>
-        <item>désactive ton interface<tag>out.action.val="closetruc"</tag></item>
+    <item>affiche ton interface<tag>out.action.val="Runtruc"</tag></item>
+    <item>active ton interface<tag>out.action.val="Runtruc"</tag></item>
+    <item>lance ton interface<tag>out.action.val="Runtruc"</tag></item>
+    <item>masque ton interface<tag>out.action.val="closetruc"</tag></item>
+    <item>ferme ton interface<tag>out.action.val="closetruc"</tag></item>
+    <item>désactive ton interface<tag>out.action.val="closetruc"</tag></item>
 	<item>éteinds ton interface<tag>out.action.val="closetruc"</tag></item>
 	    
 	<!-- Affichage l'interface avec le logiciel rainmeter en .bat -->	
-        <item>affiche ton interface<tag>out.action.val="runrainmeter"</tag></item>
-        <item>active ton interface<tag>out.action.val="runrainmeter"</tag></item>
-        <item>lance ton interface<tag>out.action.val="runrainmeter"</tag></item>   
+    <item>affiche ton interface<tag>out.action.val="runrainmeter"</tag></item>
+    <item>active ton interface<tag>out.action.val="runrainmeter"</tag></item>
+    <item>lance ton interface<tag>out.action.val="runrainmeter"</tag></item>   
 
 	<!-- Ferme l'interface avec le logiciel rainmeter en .bat -->
-        <item>masque ton interface<tag>out.action.val="closerainmeter"</tag></item>
-        <item>ferme ton interface<tag>out.action.val="closerainmeter"</tag></item>
-        <item>désactive ton interface<tag>out.action.val="closerainmeter"</tag></item>
+    <item>masque ton interface<tag>out.action.val="closerainmeter"</tag></item>
+    <item>ferme ton interface<tag>out.action.val="closerainmeter"</tag></item>
+    <item>désactive ton interface<tag>out.action.val="closerainmeter"</tag></item>
 	<item>éteinds ton interface<tag>out.action.val="closerainmeter"</tag></item>
-	    
+	
 	<!-- Ouvre le clavier virtuel de Windows --> 
  	<item>affiche le clavier<tag>out.action.val="runclavier"</tag></item>
 	<item>mai le clavier<tag>out.action.val="runclavier"</tag></item>
@@ -114,9 +118,9 @@
 	<!-- Ferme le clavier virtuel de Windows --> 
  	<item>Ferme le clavier<tag>out.action.val="closeclavier"</tag></item>
 	<item>enlève le clavier<tag>out.action.val="closeclavier"</tag></item>
- 	<item>éteins le clavier<tag>out.action.val="closeclavier"</tag></item>  
-	  
-	 <!-- Retour, revenire vair le Bureau --> 
+ 	<item>éteins le clavier<tag>out.action.val="closeclavier"</tag></item>
+
+	<!-- Retour, revenire vair le Bureau --> 
  	<item>affiche le bureau<tag>out.action.val="minimize"</tag></item>
 	<item>mai toi sur le bureau<tag>out.action.val="minimize"</tag></item>
 	<item>mai le bureau<tag>out.action.val="minimize"</tag></item>
@@ -124,22 +128,23 @@
 	<item>ouvre le bureau<tag>out.action.val="minimize"</tag></item>
 	
 	<!-- Affichage de la vue 3D fonctionne que sur Windows 7 ( pour Windows 10 c'est en cours ) -->
-        <item>restore<tag>out.action.val="restore"</tag></item>
+    <item>restore<tag>out.action.val="restore"</tag></item>
 	<item>affiche les fenetres<tag>out.action.val="restore"</tag></item>
 	<item>affiche les page<tag>out.action.val="restore"</tag></item>
 	<item>vue global<tag>out.action.val="global"</tag></item>
 	<item>affiche la vue d'ensemble<tag>out.action.val="global"</tag></item>
 	<item>affiche la 3D<tag>out.action.val="global"</tag></item>
 	<item>lance la 3D<tag>out.action.val="global"</tag></item>
-        <item>mai la 3D<tag>out.action.val="global"</tag></item>
+    <item>mai la 3D<tag>out.action.val="global"</tag></item>
 	  
 	<!-- Affiche l'enplacement du plugin, dossier, image de sarahv2 -->  
+	
 	<item>affiche les pluguine<tag>out.action.val="plugins"</tag></item>
 	<item>affiche tes pluguine<tag>out.action.val="plugins"</tag></item>
 	<item>affiche ton dossier<tag>out.action.val="dossier"</tag></item>
-	<item>affiche mes images<tag>out.action.val="images"</tag><tag>out.action._attributes.tts = "voici vos image"</tag></item>
-	<item>affiche mes documents<tag>out.action.val="documents"</tag><tag>out.action._attributes.tts = "voici vos document"</tag></item>
-	<item>affiche mes Films<tag>out.action.val="Films"</tag><tag>out.action._attributes.tts = "voici vos films"</tag></item>
+	<item>affiche mes images<tag>out.action.val="images"</tag></item>
+	<item>affiche mes documents<tag>out.action.val="documents"</tag></item>
+	<item>affiche mes Films<tag>out.action.val="Films"</tag></item>
 	  
 	<!-- Lancement divers page web --> 
 	<!-- Affichage mon forum robotique-projet --> 
@@ -194,16 +199,16 @@
 	<item>lance gougueule<tag>out.action.val="Gogueule"</tag></item>
 	
 	<!-- Affichage de la page Twitter -->
-	<item>lance touiteure<tag>out.action.val="Twitter"</tag><tag>out.action._attributes.tts = "Je vous mais tuiteur"</tag></item>
-	<item>Mais touiteure<tag>out.action.val="Twitter"</tag><tag>out.action._attributes.tts = "Je vous mais tuiteur"</tag></item>
-	<item>Vas sure touiteure<tag>out.action.val="Twitter"</tag><tag>out.action._attributes.tts = "Je vous mais tuiteur"</tag></item>
-	<item>Ouvre touiteure<tag>out.action.val="Twitter"</tag><tag>out.action._attributes.tts = "Je vous mais tuiteur"</tag></item>
-	<item>Lance touiteure<tag>out.action.val="Twitter"</tag><tag>out.action._attributes.tts = "Je vous mais tuiteur"</tag></item>
-	<item>Affiche touiteure<tag>out.action.val="Twitter"</tag><tag>out.action._attributes.tts = "Je vous mais tuiteur"</tag></item>
+	<item>lance touiteure<tag>out.action.val="Twitter"</tag></item>
+	<item>Mais touiteure<tag>out.action.val="Twitter"</tag></item>
+	<item>Vas sure touiteure<tag>out.action.val="Twitter"</tag></item>
+	<item>Ouvre touiteure<tag>out.action.val="Twitter"</tag></item>
+	<item>Lance touiteure<tag>out.action.val="Twitter"</tag></item>
+	<item>Affiche touiteure<tag>out.action.val="Twitter"</tag></item>
 	
 	<!-- Affichage d'une page pour des recette quelconque -->
-	<item>trouve une recette<tag>out.action.val="allo"</tag><tag>out.action._attributes.tts = "Je vais vous trouver une recette sur internet"</tag></item>
-	<item>trouve moi une recette<tag>out.action.val="allo"</tag><tag>out.action._attributes.tts = "Je vais vous trouver une recette sur internet"</tag></item>  
+	<item>trouve une recette<tag>out.action.val="allo"</tag></item>
+	<item>trouve moi une recette<tag>out.action.val="allo"</tag></item>  
 	
 	<!-- Lancement de Firefox -->
 	<item>va sur failleurfox<tag>out.action.val="runfirefox"</tag></item>
@@ -220,72 +225,72 @@
 	<item>ferme gougueule<tag>out.action.val="closegooglechrome"</tag></item>
 	
 	<!-- Affichage de la page du Store -->
-        <item>Ouvre le store<tag>out.action.val="store"</tag><tag>out.action._attributes.tts = "Je vous mais le store"</tag></item>
-	<item>Mais le store<tag>out.action.val="store"</tag><tag>out.action._attributes.tts = "Je vous mais le store"</tag></item>
-	<item>Lance store<tag>out.action.val="store"</tag><tag>out.action._attributes.tts = "Je vous mais le store"</tag></item>
-	<item>Affiche store<tag>out.action.val="store"</tag><tag>out.action._attributes.tts = "Je vous mais le store"</tag></item>
-	<item>Vas sure le store<tag>out.action.val="store"</tag><tag>out.action._attributes.tts = "Je vous mais le store"</tag></item> 
+    <item>Ouvre le store<tag>out.action.val="store"</tag></item>
+	<item>Mais le store<tag>out.action.val="store"</tag></item>
+	<item>Lance store<tag>out.action.val="store"</tag></item>
+	<item>Affiche store<tag>out.action.val="store"</tag></item>
+	<item>Vas sure le store<tag>out.action.val="store"</tag></item> 
 	
 	<!-- Affichage de la page de PageJaune -->
-	<item>Ouvre les pagejaune<tag>out.action.val="pagejaune"</tag><tag>out.action._attributes.tts = "Je vous mais les page jaune"</tag></item> 
-	<item>Affiche les pagejaune<tag>out.action.val="pagejaune"</tag><tag>out.action._attributes.tts = "Je vous mais les page jaune"</tag></item> 
-	<item>Lance les pagejaune<tag>out.action.val="pagejaune"</tag><tag>out.action._attributes.tts = "Je vous mais les page jaune"</tag></item>  
-        <item>Mais les pagejaune<tag>out.action.val="pagejaune"</tag><tag>out.action._attributes.tts = "Je vous mais les page jaune"</tag></item> 
-        <item>Vas sure les pagejaune<tag>out.action.val="pagejaune"</tag><tag>out.action._attributes.tts = "Je vous mais les page jaune"</tag></item> 
+	<item>Ouvre les pagejaune<tag>out.action.val="pagejaune"</tag></item> 
+	<item>Affiche les pagejaune<tag>out.action.val="pagejaune"</tag></item> 
+	<item>Lance les pagejaune<tag>out.action.val="pagejaune"</tag></item>  
+    <item>Mais les pagejaune<tag>out.action.val="pagejaune"</tag></item> 
+    <item>Vas sure les pagejaune<tag>out.action.val="pagejaune"</tag></item> 
 	
 	<!-- Affichage de la page de eMule-island  -->
-	<item>Ouvre émule<tag>out.action.val="emule"</tag><tag>out.action._attributes.tts = "Je vous mai émule"</tag></item> 
-	<item>Affiche émule<tag>out.action.val="emule"</tag><tag>out.action._attributes.tts = "Je vous mai émule"</tag></item> 
-	<item>Lance émule<tag>out.action.val="emule"</tag><tag>out.action._attributes.tts = "Je vous mai émule"</tag></item>  
-        <item>Mais émule<tag>out.action.val="emule"</tag><tag>out.action._attributes.tts = "Je vous mai émule"</tag></item> 
-        <item>Vas sure émule<tag>out.action.val="emule"</tag><tag>out.action._attributes.tts = "Je vous mai émule"</tag></item> 
+	<item>Ouvre émule<tag>out.action.val="emule"</tag></item> 
+	<item>Affiche émule<tag>out.action.val="emule"</tag></item> 
+	<item>Lance émule<tag>out.action.val="emule"</tag></item>  
+    <item>Mais émule<tag>out.action.val="emule"</tag></item> 
+    <item>Vas sure émule<tag>out.action.val="emule"</tag></item> 
 	
 	<!-- Affichage de la page Wikipédia -->
-        <item>Vas sure wikipédia<tag>out.action.val="wikipedia"</tag><tag>out.action._attributes.tts = "Je vous mais wikipédia"</tag></item> 
-	<item>Mais wikipédia<tag>out.action.val="wikipedia"</tag><tag>out.action._attributes.tts = "Je vous mais wikipédia"</tag></item> 
-	<item>Lance wikipédia<tag>out.action.val="wikipedia"</tag><tag>out.action._attributes.tts = "Je vous mais wikipédia"</tag></item> 
-	<item>Affiche wikipédia<tag>out.action.val="wikipedia"</tag><tag>out.action._attributes.tts = "Je vous mais wikipédia"</tag></item>  
-	<item>Ouvre wikipédia<tag>out.action.val="wikipedia"</tag><tag>out.action._attributes.tts = "Je vous mais wikipédia"</tag></item>  
+    <item>Vas sure wikipédia<tag>out.action.val="wikipedia"</tag></item> 
+	<item>Mais wikipédia<tag>out.action.val="wikipedia"</tag></item> 
+	<item>Lance wikipédia<tag>out.action.val="wikipedia"</tag></item> 
+	<item>Affiche wikipédia<tag>out.action.val="wikipedia"</tag></item>  
+	<item>Ouvre wikipédia<tag>out.action.val="wikipedia"</tag></item>  
 	
 	<!-- Affichage de la page du site Cdiscount -->
-	<item>Ouvre Cdiscount<tag>out.action.val="Cdiscount"</tag><tag>out.action._attributes.tts = "Je vous mais Cdiscount"</tag></item>  
-	<item>Lance Cdiscount<tag>out.action.val="Cdiscount"</tag><tag>out.action._attributes.tts = "Je vous mais Cdiscount"</tag></item>
-	<item>Affiche Cdiscount<tag>out.action.val="Cdiscount"</tag><tag>out.action._attributes.tts = "Je vous mais Cdiscount"</tag></item>
-	<item>Vas sure Cdiscount<tag>out.action.val="Cdiscount"</tag><tag>out.action._attributes.tts = "Je vous mais Cdiscount"</tag></item>
-	<item>Mais Cdiscount<tag>out.action.val="Cdiscount"</tag><tag>out.action._attributes.tts = "Je vous mais Cdiscount"</tag></item>
+	<item>Ouvre Cdiscount<tag>out.action.val="Cdiscount"</tag></item>  
+	<item>Lance Cdiscount<tag>out.action.val="Cdiscount"</tag></item>
+	<item>Affiche Cdiscount<tag>out.action.val="Cdiscount"</tag></item>
+	<item>Vas sure Cdiscount<tag>out.action.val="Cdiscount"</tag></item>
+	<item>Mais Cdiscount<tag>out.action.val="Cdiscount"</tag></item>
 	
 	<!-- Affichage de la page du site Ebay -->
-	<item>Ouvre ibé<tag>out.action.val="ebay"</tag><tag>out.action._attributes.tts = "Je vous mai ibé"</tag></item>  
-	<item>Lance ibé<tag>out.action.val="ebay"</tag><tag>out.action._attributes.tts = "Je vous mai ibé"</tag></item>
-	<item>Affiche ibé<tag>out.action.val="ebay"</tag><tag>out.action._attributes.tts = "Je vous mai ibé"</tag></item>
-	<item>Vas sure ibé<tag>out.action.val="ebay"</tag><tag>out.action._attributes.tts = "Je vous mai ibé"</tag></item>
-	<item>Mais ibé<tag>out.action.val="ebay"</tag><tag>out.action._attributes.tts = "Je vous mai ibé"</tag></item>
+	<item>Ouvre ibé<tag>out.action.val="ebay"</tag></item>  
+	<item>Lance ibé<tag>out.action.val="ebay"</tag></item>
+	<item>Affiche ibé<tag>out.action.val="ebay"</tag></item>
+	<item>Vas sure ibé<tag>out.action.val="ebay"</tag></item>
+	<item>Mais ibé<tag>out.action.val="ebay"</tag></item>
 	
 	<!-- Affichage de la page du site Leboncoin -->
-	<item>Ouvre leboncoin<tag>out.action.val="leboncoin"</tag><tag>out.action._attributes.tts = "Je vous mai leboncoin"</tag></item>  
-	<item>Lance leboncoin<tag>out.action.val="leboncoin"</tag><tag>out.action._attributes.tts = "Je vous mai leboncoin"</tag></item>
-	<item>Affiche leboncoin<tag>out.action.val="leboncoin"</tag><tag>out.action._attributes.tts = "Je vous mai leboncoin"</tag></item>
-	<item>Vas sure leboncoin<tag>out.action.val="leboncoin"</tag><tag>out.action._attributes.tts = "Je vous mai leboncoin"</tag></item>
-	<item>Mais leboncoin<tag>out.action.val="leboncoin"</tag><tag>out.action._attributes.tts = "Je vous mai leboncoin"</tag></item>
+	<item>Ouvre leboncoin<tag>out.action.val="leboncoin"</tag></item>  
+	<item>Lance leboncoin<tag>out.action.val="leboncoin"</tag></item>
+	<item>Affiche leboncoin<tag>out.action.val="leboncoin"</tag></item>
+	<item>Vas sure leboncoin<tag>out.action.val="leboncoin"</tag></item>
+	<item>Mais leboncoin<tag>out.action.val="leboncoin"</tag></item>
 	  
 	<!-- Lancement d'information, actulité, les Média --> 
-	<item>mets le journale<tag>out.action.val="journale"</tag><tag>out.action._attributes.tts = "voici les dernières nouvelles du journal"</tag></item>
-	<item>donne moi le journale<tag>out.action.val="journale"</tag><tag>out.action._attributes.tts = "voici les dernières nouvelles du journal"</tag></item>
-	<item>affiche le journale<tag>out.action.val="journale"</tag><tag>out.action._attributes.tts = "voici les dernières nouvelles du journal"</tag></item>
-	<item>met les infos en direct<tag>out.action.val="bfm"</tag><tag>out.action._attributes.tts = "connexion avec le direct de la chaine BFM Tévé"</tag></item>
-	<item>affiche les infos en direct<tag>out.action.val="bfm"</tag><tag>out.action._attributes.tts = "connexion avec le direct de la chaine BFM Tévé"</tag></item>
-	<item>mais les infos<tag>out.action.val="bfm"</tag><tag>out.action._attributes.tts = "connexion avec le direct de la chaine BFM Tévé"</tag></item>
-	   
+	<item>mets le journale<tag>out.action.val="journale"</tag></item>
+	<item>donne moi le journale<tag>out.action.val="journale"</tag></item>
+	<item>affiche le journale<tag>out.action.val="journale"</tag></item>
+	<item>met les infos en direct<tag>out.action.val="bfm"</tag></item>
+	<item>affiche les infos en direct<tag>out.action.val="bfm"</tag></item>
+	<item>mais les infos<tag>out.action.val="bfm"</tag></item>
+	    
 	<!-- Lancement du termineau, processusse -->   
-	<item>affiche le terminale<tag>out.action.val="konsole"</tag><tag>out.action._attributes.tts = "terminal activé"</tag></item>
-	<item>active le terminale<tag>out.action.val="konsole"</tag><tag>out.action._attributes.tts = "terminal activé"</tag></item>
-	<item>affiche les procéssusse<tag>out.action.val="process"</tag><tag>out.action._attributes.tts = "affichage des procéssus"</tag></item> 
-	<item>affiche le panneau de configuration<tag>out.action.val="controlpanel"</tag><tag>out.action._attributes.tts = "Affichage du panneau de configuration"</tag></item>
+	<item>affiche le terminale<tag>out.action.val="konsole"</tag></item>
+	<item>active le terminale<tag>out.action.val="konsole"</tag></item>
+	<item>affiche les procéssusse<tag>out.action.val="process"</tag></item> 
+	<item>affiche le panneau de configuration<tag>out.action.val="controlpanel"</tag></item>
 	 
 	<!-- Création d'un dossier vide -->
-	<item>mai un dossier<tag>out.action.val="Dossier"</tag><tag>out.action._attributes.tts = "votre dossier a été crée sur votre burau"</tag></item>
-	<item>fai un dossier<tag>out.action.val="Dossier"</tag><tag>out.action._attributes.tts = "votre dossier a été crée sur votre burau"</tag></item>
-	<item>crèe un dossier<tag>out.action.val="Dossier"</tag><tag>out.action._attributes.tts = "votre dossier a été crée sur votre burau"</tag></item>
+	<item>mai un dossier<tag>out.action.val="Dossier"</tag></item>
+	<item>fai un dossier<tag>out.action.val="Dossier"</tag></item>
+	<item>crèe un dossier<tag>out.action.val="Dossier"</tag></item>
 	 
 	<!-- Création d'un document vide -->
 	<item>mai un document<tag>out.action.val="Fichier"</tag><tag>out.action._attributes.tts = "votre document a été crée sur votre bureau"</tag></item>
@@ -293,36 +298,38 @@
 	<item>crèe un document<tag>out.action.val="Fichier"</tag><tag>out.action._attributes.tts = "votre document a été crée sur votre bureau"</tag></item>
 	
 	<!-- Création d'un fichier vide --> 
-	<item>mai un fichier<tag>out.action.val="Fichier"</tag><tag>out.action._attributes.tts = "votre fichée a été crée sur votre bureau"</tag></item>
-	<item>fai un fichier<tag>out.action.val="Fichier"</tag><tag>out.action._attributes.tts = "votre fichée a été crée sur votre bureau"</tag></item>
-	<item>crèe un fichier<tag>out.action.val="Fichier"</tag><tag>out.action._attributes.tts = "votre fichée a été crée sur votre bureau"</tag></item>
-	<item>crèe un fichier vide<tag>out.action.val="fichier"</tag><tag>out.action._attributes.tts = "Création de fichier vièrge"</tag></item>
+	<item>mai un fichier<tag>out.action.val="Fichier"</tag></item>
+	<item>fai un fichier<tag>out.action.val="Fichier"</tag></item>
+	<item>crèe un fichier<tag>out.action.val="Fichier"</tag></item>
+	<item>crèe un fichier vide<tag>out.action.val="fichier"</tag></item>
 	 
 	<!-- Les rebond -->  
-	<item>séléctionne tout<tag>out.action.val="selectall"</tag><tag>out.action._attributes.tts = "Sélection d'ensemble"</tag></item>
-	<item>surligne tout<tag>out.action.val="selectall"</tag><tag>out.action._attributes.tts = "surlignement effectué"</tag></item> 
+	<item>séléctionne tout<tag>out.action.val="selectall"</tag></item>
+	<item>surligne tout<tag>out.action.val="selectall"</tag></item> 
 	 
-	<item>annule<tag>out.action.val="cancel"</tag><tag>out.action._attributes.tts = "je suprime"</tag></item>
-	<item>annulation<tag>out.action.val="cancel"</tag><tag>out.action._attributes.tts = "très bien, j'annule"</tag></item>
+	<item>annule<tag>out.action.val="cancel"</tag></item>
+	<item>annulation<tag>out.action.val="cancel"</tag></item>
 	 
-	<item>rétabli<tag>out.action.val="retablir"</tag><tag>out.action._attributes.tts = "je rétabli"</tag></item>
-	<item>remets<tag>out.action.val="retablir"</tag><tag>out.action._attributes.tts = "je remet"</tag></item>
+	<item>rétabli<tag>out.action.val="retablir"</tag></item>
+	<item>remets<tag>out.action.val="retablir"</tag></item>
 	  
-	<item>vérrouille ma séssion<tag>out.action.val="lock"</tag><tag>out.action._attributes.tts = "Verrouillage"</tag></item> 
-	<item>vérrouillage<tag>out.action.val="lock"</tag><tag>out.action._attributes.tts = "Verrouillage de votre session"</tag></item> 
+	<item>vérrouille ma séssion<tag>out.action.val="lock"</tag></item> 
+	<item>vérrouillage<tag>out.action.val="lock"</tag></item> 
 	  
-	<item>sauvegarde<tag>out.action.val="save"</tag><tag>out.action._attributes.tts = "fichier sauvegardé"</tag></item>
-	<item>fait une sauvegarde<tag>out.action.val="save"</tag><tag>out.action._attributes.tts = "fichier sauvegardé monsieur"</tag></item>
+	<item>sauvegarde<tag>out.action.val="save"</tag></item>
+	<item>fait une sauvegarde<tag>out.action.val="save"</tag></item>
 	  
-        <item>copie<tag>out.action.val="copy"</tag><tag>out.action._attributes.tts = "contenu copié"</tag></item>
-	<item>colle<tag>out.action.val="paste"</tag><tag>out.action._attributes.tts = "contenu collé"</tag></item>
+    <item>copie<tag>out.action.val="copy"</tag></item>
+	<item>colle<tag>out.action.val="paste"</tag></item>
 	<item>coupe<tag>out.action.val="cut"</tag><tag>out.action._attributes.tts = "contenu coupé"</tag></item>
 	  
 	<item>actualise<tag>out.action.val="f5"</tag><tag>out.action._attributes.tts = "Actualisation éffectuer"</tag></item>
 	<item>raffraichis<tag>out.action.val="f5"</tag><tag>out.action._attributes.tts = "Raffraichissement éffectuer"</tag></item>
+	
+	<!-- Ferme l'onglet du page internet --> 
+	<item>ferme l'onglet<tag>out.action.val="f4"</tag><tag>out.action._attributes.tts = "onglet fermé"</tag></item> 
+	<item>ferme les onglet<tag>out.action.val="f4"</tag><tag>out.action._attributes.tts = "voilà monsieur"</tag></item>
 	   
-	<item>valide<tag>out.action.val="enter"</tag></item>   
-	    
 	<!-- Suivant, précedent, sauvegarde, ferme... -->
 	<item>préçedent<tag>out.action.val="precedent"</tag></item>
 	<item>suivant<tag>out.action.val="next"</tag></item>
@@ -332,7 +339,8 @@
 	<item>ferme les page<tag>out.action.val="shut"</tag></item>
 	<item>ferme la page<tag>out.action.val="shut"</tag></item>
 	<item>sauvegarde<tag>out.action.val="save"</tag></item>  
-	    
+	<item>valide<tag>out.action.val="enter"</tag></item>    
+		
 	<!-- Vidage de la corbeille -->   
 	<item>vide moi la corbeille<tag>out.action.val="corbeille"</tag></item>
 	<item>vide la corbeille<tag>out.action.val="corbeille"</tag></item>
@@ -420,7 +428,7 @@
 	<item>éteind stime<tag>out.action.val="closeSteam"</tag></item>
 	<item>arréte stime<tag>out.action.val="closeSteam"</tag></item>
 	
-        <!-- Lancement de Skype --> 
+    <!-- Lancement de Skype --> 
 	<item>démarre skipe<tag>out.action.val="runSkype"</tag></item>
 	<item>vas sur skipe<tag>out.action.val="runSkype"</tag></item>
 	<item>mais skipe<tag>out.action.val="runSkype"</tag></item>
@@ -521,7 +529,7 @@
 	<item>lance notpad<tag>out.action.val="runnotepad"</tag></item>
 	
 	<!-- Lancement de la fermeture de la Notepad++ -->
-        <item>ferme notpad<tag>out.action.val="closenotepad"</tag></item>
+    <item>ferme notpad<tag>out.action.val="closenotepad"</tag></item>
 	
 	<!-- Lancement de l'ouverture de Blocnote -->
 	<item>affiche Blocnote<tag>out.action.val="runBlocnote"</tag></item>
@@ -529,7 +537,7 @@
 	<item>lance Blocnote<tag>out.action.val="runBlocnote"</tag></item>
 	
 	<!-- Lancement de la fermeture de Blocnote -->
-        <item>ferme Blocnote<tag>out.action.val="closeBlocnote"</tag></item>
+    <item>ferme Blocnote<tag>out.action.val="closeBlocnote"</tag></item>
 	
 	<!-- Lancement de l'ouverture avast free -->
 	<item>va sur avaste<tag>out.action.val="scanne_avaste"</tag></item>
@@ -548,38 +556,37 @@
 	<item>redémarre l'ordinateur<tag>out.action.val="runrestart"</tag></item>
 	    
 	<!-- Redémarage du serveur node + client micro-->
-	<item>redémarre le programme<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je redémarre mon programme"</tag></item>
-	<item>redémarre ton programme<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je redémarre mon programme"</tag></item>
-	<item>relance ton programme<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je relance mon programme"</tag></item>
-	<item>relance ton programme<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je relance mon programme"</tag></item>
-	<item>réinitialise ton programme<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je réinitialise mon programme"</tag></item>  
-	<item>réinitialise ton système<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je réinitialise mon système"</tag></item> 
-	<item>relance le système<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je relance mon système"</tag></item>
-	<item>relance ton système<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je relance mon système"</tag></item>
-	<item>redémarre le système<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je relance mon système"</tag></item>
-	<item>redémarre ton système<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je relance mon système"</tag></item>
-	<item>redémarre<tag>out.action.val="runreboot"</tag><tag>out.action._attributes.tts = "je relance mon système"</tag></item>
+	<item>redémarre le programme<tag>out.action.val="runreboot"</tag></item>
+	<item>redémarre ton programme<tag>out.action.val="runreboot"</tag></item>
+	<item>relance ton programme<tag>out.action.val="runreboot"</tag></item>
+	<item>relance ton programme<tag>out.action.val="runreboot"</tag></item>
+	<item>réinitialise ton programme<tag>out.action.val="runreboot"</tag></item>  
+	<item>réinitialise ton système<tag>out.action.val="runreboot"</tag></item> 
+	<item>relance le système<tag>out.action.val="runreboot"</tag></item>
+	<item>relance ton système<tag>out.action.val="runreboot"</tag></item>
+	<item>redémarre le système<tag>out.action.val="runreboot"</tag></item>
+	<item>redémarre ton système<tag>out.action.val="runreboot"</tag></item>
+	<item>redémarre<tag>out.action.val="runreboot"</tag></item>
 	 
 	<!-- Redémarage du serveur node + client micro en mode invisible( en arrière plan )-->
-	<item>redémarre en mode invisible<tag>out.action.val="start_invisible"</tag><tag>out.action._attributes.tts = "je redémarre mon système en arrière plan"</tag></item>
-	<item>éteind ton système<tag>out.action.val="éteindre_système"</tag><tag>out.action._attributes.tts = "jéteind mon sytème"</tag></item>
-	<item>éteind ton programme<tag>out.action.val="éteindre_système"</tag><tag>out.action._attributes.tts = "jéteind mon programme"</tag></item>   
-	    
+	<item>redémarre en mode invisible<tag>out.action.val="start_invisible"</tag></item>
+	<item>éteind ton système<tag>out.action.val="éteindre_système"</tag></item>
+	<item>éteind ton programme<tag>out.action.val="éteindre_système"</tag></item>   
 	    
 	<!-- Gestion des périphériques -->
-	<item>affiche l'écrans<tag>out.action.val="screenOn"</tag><tag>out.action._attributes.tts = "l'écran et en coure d'ouverture"</tag></item>
-	<item>mais l'écrans<tag>out.action.val="screenOn"</tag><tag>out.action._attributes.tts = "l'écran et en coure d'ouverture"</tag></item>
-	<item>allume l'écrans<tag>out.action.val="screenOn"</tag><tag>out.action._attributes.tts = "affichage de l'écran en coure"</tag></item>
-	<item>Lance l'écrans<tag>out.action.val="screenOn"</tag><tag>out.action._attributes.tts = "affichage de l'écran."</tag></item>
+	<item>affiche l'écrans<tag>out.action.val="screenOn"</tag></item>
+	<item>mais l'écrans<tag>out.action.val="screenOn"</tag></item>
+	<item>allume l'écrans<tag>out.action.val="screenOn"</tag></item>
+	<item>Lance l'écrans<tag>out.action.val="screenOn"</tag></item>
 	<item>ferme l'écrans<tag>out.action.val="screenOff"</tag></item>
 	<item>désactive l'écrans<tag>out.action.val="screenOff"</tag></item>
-	<item>éteinds l'écrans<tag>out.action.val="screenOff"</tag><tag>out.action._attributes.tts = "l'écran et en coure de fermeture"</tag></item>
+	<item>éteinds l'écrans<tag>out.action.val="screenOff"</tag></item>
 	
-	 <!-- Mode veille Matrix, mais l'écran en veille, Mot de passe 123 puis entré -->
+	<!-- Mode veille Matrix, mais l'écran en veille, Mot de passe 123 puis entré -->
 	<item>Mais en veille<tag>out.action.val="runMatrix"</tag></item>
 	<item>Mais toi en veille<tag>out.action.val="runMatrix"</tag></item>
 	<item>Mode Matrice<tag>out.action.val="runMatrix"</tag></item>
-        <item>Mais la Matrix<tag>out.action.val="runMatrix"</tag></item>
+    <item>Mais la Matrix<tag>out.action.val="runMatrix"</tag></item>
 	<item>active la Matrix<tag>out.action.val="runMatrix"</tag></item>
 	
 	<!-- Mode tracabilité IP géolocalisation -->
@@ -588,24 +595,24 @@
 	<item>quelle et ma tracabilité<tag>out.action.val="tracabilitéIP"</tag></item>
 	<item>géolocalise moi<tag>out.action.val="tracabilitéIP"</tag></item>  
 	    
-	 <!-- Mode information sur votre PC -->
+	<!-- Mode information sur votre PC -->
 	<item>mais les information du pc<tag>out.action.val="runInfoPC"</tag></item>
 	<item>donne les info du pc<tag>out.action.val="runInfoPC"</tag></item>
 	<item>donne moi les info du pc<tag>out.action.val="runInfoPC"</tag></item>
-	<item>mais les info du pc<tag>out.action.val="runInfoPC"</tag></item>   
-	    
+	<item>mais les info du pc<tag>out.action.val="runInfoPC"</tag></item>  
+
 	<!-- Mode capture d'écran -->
 	<item>Fait une capture décran<tag>out.action.val="runcapture-décran"</tag></item>
 	<item>Fait une capture<tag>out.action.val="runcapture-décran"</tag></item>
 	<item>Lance une capture décran<tag>out.action.val="runcapture-décran"</tag></item>
-	<item>Lance une capture<tag>out.action.val="runcapture-décran"</tag></item> 
-	    
+	<item>Lance une capture<tag>out.action.val="runcapture-décran"</tag></item>
+	
 	<!-- Mode jeux démo -->
 	<item>Lance la démo<tag>out.action.val="runpetit-jeux"</tag></item>
 	<item>lance le jeux<tag>out.action.val="runpetit-jeux"</tag></item>
-	<item>mais le jeux décran<tag>out.action.val="runpetit-jeux"</tag></item> 
-	    
-  	<!-- Mode Radio-Dark-Best -->
+	<item>mais le jeux décran<tag>out.action.val="runpetit-jeux"</tag></item>
+	
+	<!-- Mode Radio-Dark-Best -->
 	<item>Lance la Radio<tag>out.action.val="runRadio"</tag></item>
 	<item>Mais la Radio<tag>out.action.val="runRadio"</tag></item>
 	<item>Affiche la Radio<tag>out.action.val="runRadio"</tag></item>
@@ -615,7 +622,7 @@
 	<item>Mode Radio<tag>out.action.val="runRadio"</tag></item>
 	<item>Allume la Radio<tag>out.action.val="runRadio"</tag></item>
 	<item>Active la Radio<tag>out.action.val="runRadio"</tag></item>
-	    
+	
 	<!-- Lance le Navigateur Web de SarahV2Cortana -->
 	<item>Lance le Navigateur<tag>out.action.val="runNavigateur"</tag></item>
 	<item>Mais le Navigateur<tag>out.action.val="runNavigateur"</tag></item>
@@ -625,13 +632,13 @@
 	<item>Donne moi le Navigateur<tag>out.action.val="runNavigateur"</tag></item>
 	<item>Mode Navigateur<tag>out.action.val="runNavigateur"</tag></item>
 	<item>Allume le Navigateur<tag>out.action.val="runNavigateur"</tag></item>
-	<item>Active le Navigateur<tag>out.action.val="runNavigateur"</tag></item>   
-	    
+	<item>Active le Navigateur<tag>out.action.val="runNavigateur"</tag></item>
+    
 	<!-- Ouverture ou fermeture du lecteur DVD du PC -->
 	<item>ouvre le Dévédé<tag>out.action.val="dvdon"</tag></item>
 	<item>ouvre le lécteur Dévédé<tag>out.action.val="dvdon"</tag></item>
 	<item>ferme le Dévédé<tag>out.action.val="dvdoff"</tag></item>
-        <item>ouvre le lécteur<tag>out.action.val="dvdon"</tag></item>
+    <item>ouvre le lécteur<tag>out.action.val="dvdon"</tag></item>
 	<item>ferme le lécteur<tag>out.action.val="dvdoff"</tag></item>
 	<item>ferme le lécteur dévédé<tag>out.action.val="dvdoff"</tag></item>
 	
@@ -640,3 +647,4 @@
     </rule> 
     </grammar>
     <!-- Réalisation de SARAHV2Cortana part Avatar Rousseau (Dark Best), alias seb03000 -->
+

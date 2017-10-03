@@ -1,5 +1,5 @@
 # :::: SarahV2Cortana ::::
-Auteur: Avatar Rousseau Alias seb03000.
+Auteur: Avatar Rousseau Alias seb03000, Dark Best.
 
 # :::: Le plugin SarahV2Cortana, fonctionne bien sur Windows 10 64 Bits Pro, est Windows 7 64Bits édition intégrale avec kinect V1 est bien prendre la version de Sarah 3.16:::::
 
@@ -16,31 +16,65 @@ Pour les fichier .ahk il faut télécharger le logiciel AutoHotkey en fonction d
 # :::: Pour que SarahV2Cortana fonctionne bien, prendre la version de Sarah 3.16 :::::
 Placer bien le dossier de sarah 3.16 dans votre disque dur ( C: ) et nommé le SARAH
 
-Ne chager pas le nom ( donc SARAH ) dans le fichier custom.ini laissez bien le nom SARAH, 
+Ne changer pas le nom ( donc SARAH ) dans le fichier custom.ini laissez bien le nom SARAH, 
 
 est aussi dans le custom.ini laisser client=SARAH1 ne le changer pas.
 
 Puis désipé le dossier de SarahV2Cortana qui est en WinRar, est placer le dans un dossier, nomé le en SaraV2Cortana, 
 
-est placer le dans le dossier plugin de SARAH, puis pour enclencher SaraV2Cortana dite  ( ok sarah ) 
+est placer le dans le dossier plugin de SARAH, puis pour enclencher SaraV2Cortana dite  ( sarah ) 
 
-Comme exemple: ok sarah vas sur youtube. 
-
-# :::: Si le ( ok sarah ) ne vous convient pas, faite ce si :::::
-Aller dans le dossier SarahV2Cortana puis cliquer sur le fichier SarahV2Cortana.xml, et faite se changement:
-
-Oké SSARAH
-
-Enlevé le ( Oké S ) il y a un ( S ) en trop retiré le, et enregistrer.
+Comme exemple: Sarah vas sur youtube. 
 
 # :::: Exemple de ce qu'on peut faire avec SarahV2Cortana :::::
 Lui parlé, (mod chaterbot).
 
+Sarah présente toi   elle répond:  Bonjour je me nomme Sarah, je suis la pour vous aidai.
+
+Sarah Quelle age a tu   elle répond:  J'ai l'age de mai circuit.
+
+Sarah Quelle son té points faible   elle répond:  Mai point faible, je parle souvent toute seule , je mais en route des plugin sans que lon me donne l'odre, je dois avoie une movaise écoute.
+
+Et dautre encore....
+
+# ::::Lance des page web :::::
 Lui demandé d’ouvrir des pages web .url répertorier dans le plugin comme: Firefox, youtube, Pagejaune, 
 
-site de recette, Facebook, Gmail( messagerie ), notre communauté, le store, Twitter, allociné, wikipédia,
+Exemple:
+Sarah ouvre facebook
+
+Sarah lance youtube
+
+Sarah lance la communauté
+
+Sarah lance gougueule
+
+Sarah Lance le store
+
+Sarah Lance les pagejaune
+
+Sarah ou Lance émule
+
+Sarah Lance wikipédia
+
+Sarah Lance Cdiscount
+
+Sarah Lance ibé
+ 
+arah Lance leboncoin
+
+Sarah mais les infos
+
+Sarah trouve moi une recette
+
+Sarah lance Gimèl.
 
 Cdiscount, ebay, leboncoin, est autre.
+
+Voilà donc sa fonction pour Sarah Lance , mais vous pouvez dire aussi Sarah Mais, ou Sarah Vas sure, ou Sarah Ouvre, 
+
+ou Sarah Affichiche.
+
 
 # :::: Interagire avec votre pc :::: 
 ouvrir des logiciels .exe répertorier dans le plugin comme: ouvrire le Blocnote, VLC, 
@@ -76,7 +110,142 @@ Une console qui vous donne accès a divers référence de votre PC.
 Vous avez aussi un mode jeux , que j'ai construit en .bat
 
 Et encore +
-      
+
+Exemple:
+On commence toujour par lui dire Sarah
+
+Sarah ouvre le lecteur 
+Sarah ferme le lecteur
+
+Sarah ouvre ton interface
+Sarah ferme ton interface
+Sarah masque ton interface
+
+Sarah affiche le clavier
+Sarah Ferme le clavier
+
+Sarah affiche le bureau
+
+Sarah restore
+
+Sarah affiche les fenetres
+
+Sarah affiche la 3D
+
+Sarah affiche les pluguine
+
+Sarah affiche mes images
+Sarah affiche ton dossier
+Sarah affiche mes documents
+
+Sarah affiche mon forum   ( sa c'est mon forum hésité pas a aller voire ).
+
+Sarah affiche le terminale
+Sarah affiche les procéssusse
+Sarah affiche le panneau de configuration
+
+Sarah crèe un dossier   ( Donc cela vas créer un dossier vide sur votre bureau )
+Sarah crèe un document  ( donc cela vas créer un document vide sur votre bureau )
+Sarah crèe un fichier   ( Donc cela vas créer un fichier vide sur votre bureau )
+
+Sarah surligne tout
+
+Sarah annule
+
+Sarah rétabli
+
+Sarah vérrouille ma séssion
+
+Sarah sauvegarde
+Sarah copie
+Sarah colle
+Sarah coupe
+Sarah actualise
+
+Sarah ferme l'onglet
+Sarah ferme les onglet
+
+Sarah préçedent
+Sarah suivant
+
+Sarah férme les fenétre
+Sarah ferme les page
+
+Sarah valide
+
+Sarah vide la corbeille
+
+Sarah lance XBéMCé
+Sarah férme XBéMCé
+
+Sarah lance kodi
+Sarah férme kodi
+
+Sarah lance le Pense-bête
+Sarah Férme le Pense-bête
+
+Sarah lance origin
+Sarah Férme origin
+
+Sarah lance stime
+Sarah Férme stime
+
+Sarah lance skipe
+Sarah Férme skipe
+
+Sarah lance le médiacenteure
+Sarah Férme médiacenteure
+
+Sarah lance capture vidéo
+Sarah ferme la capture vidéo
+
+Sarah lance Bloutous
+Sarah ferme le Bloutous
+
+Sarah lance internet éxploreure
+Sarah ferme internet éxploreure
+
+Sarah lance vlc
+Sarah ferme vlc
+
+Sarah lance la webcam
+Sarah ferme la webcam
+
+Sarah lance notpad
+Sarah ferme notpad
+
+Sarah ouvre Blocnote
+Sarah ferme Blocnote
+
+Sarah va sur avaste
+
+Sarah éteind le PC
+Sarah éteind l'ordinateur
+
+Sarah réinitialise ton système
+Sarah redémarre en mode invisible
+
+Sarah allume l'écrans
+Sarah éteinds l'écrans
+
+Sarah Mais toi en veille
+
+Sarah donne moi mon ipé
+
+Sarah mais les info du pc
+
+Sarah Fait une capture décran
+
+Sarah lance le jeux
+
+Sarah Lance la Radio
+
+Sarah Lance le Navigateur
+
+Sarah ouvre le lécteur
+Sarah ferme le lécteur
+
+
 # :::: Je mettrai a jours régulièrement le plugin SarahV2Cortana ::::
       
 Pour avoir le lien sous le bras pour les dernière mise a jour c'est ici: https://github.com/seb03000/SarahV2Cortana/archive/master.zip 

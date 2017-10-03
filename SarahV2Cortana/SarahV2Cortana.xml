@@ -226,7 +226,7 @@
 	<!-- Affichage de la page du Store -->
     <item>Ouvre le store<tag>out.action.val="store"</tag></item>
 	<item>Mais le store<tag>out.action.val="store"</tag></item>
-	<item>Lance store<tag>out.action.val="store"</tag></item>
+	<item>Lance le store<tag>out.action.val="store"</tag></item>
 	<item>Affiche store<tag>out.action.val="store"</tag></item>
 	<item>Vas sure le store<tag>out.action.val="store"</tag></item> 
 	
@@ -336,8 +336,7 @@
 	<item>férme les fenétre<tag>out.action.val="shut"</tag></item>
 	<item>enlève les fenêtre<tag>out.action.val="shut"</tag></item>
 	<item>ferme les page<tag>out.action.val="shut"</tag></item>
-	<item>ferme la page<tag>out.action.val="shut"</tag></item>
-	<item>sauvegarde<tag>out.action.val="save"</tag></item>  
+	<item>ferme la page<tag>out.action.val="shut"</tag></item>  
 	<item>valide<tag>out.action.val="enter"</tag></item>    
 		
 	<!-- Vidage de la corbeille -->   
@@ -393,7 +392,6 @@
 	<item>affiche le Pense-bête<tag>out.action.val="runPensebête"</tag></item>
 	<item>lance le Pense-bête<tag>out.action.val="runPensebête"</tag></item>
 	<item>démarre le Pense-bête<tag>out.action.val="runPensebête"</tag></item>
-	<item>lance le Pense-bête<tag>out.action.val="runPensebête"</tag></item>
 	
 	<!-- Fermeture du pence-bête -->
 	<item>Férme le Pense-bête<tag>out.action.val="closePensebête"</tag></item>

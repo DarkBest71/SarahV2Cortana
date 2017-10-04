@@ -61,7 +61,7 @@ Sarah Lance Cdiscount
 
 Sarah Lance ibé
  
-arah Lance leboncoin
+Sarah Lance leboncoin
 
 Sarah mais les infos
 
@@ -93,7 +93,7 @@ Vider la corbeille.
 
 Arrêter le PC, le redémarrer, allumé l’écran du PC ou d'éteindre l'écrans, ou de sortir sarah du mode veille.
 
-edémarrer le programme( serveur node + client micro ).
+redémarrer le programme( serveur node + client micro ).
 
 Ouvrir le lecteur Dvd, ou le fermé.
 

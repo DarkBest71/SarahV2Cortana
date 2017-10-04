@@ -40,7 +40,7 @@ Et dautre encore....
 # ::::Lance des page web :::::
 Lui demandé d’ouvrir des pages web .url répertorier dans le plugin comme: Firefox, youtube, Pagejaune, 
 
-Exemple:
+# ::::Exemple::::
 Sarah ouvre facebook
 
 Sarah lance youtube
@@ -71,8 +71,12 @@ Sarah lance Gimèl.
 
 Cdiscount, ebay, leboncoin, est autre.
 
-Voilà donc sa fonction pour Sarah Lance , mais vous pouvez dire aussi Sarah Mais, ou Sarah Vas sure, ou Sarah Ouvre, 
+Voilà donc sa fonction pour Sarah Lance.
+Mais vous pouvez dire aussi:
 
+Sarah Mais, 
+ou Sarah Vas sure, 
+ou Sarah Ouvre, 
 ou Sarah Affichiche.
 
 
@@ -111,7 +115,7 @@ Vous avez aussi un mode jeux , que j'ai construit en .bat
 
 Et encore +
 
-Exemple:
+# ::::Exemple::::
 On commence toujour par lui dire Sarah
 
 Sarah ouvre le lecteur 
@@ -252,6 +256,6 @@ Pour avoir le lien sous le bras pour les dernière mise a jour c'est ici: https:
 
 # :::: Merci pour l'aide à :::::
 Adrien D: --> pour son ( tous 1 Jarvis ), cela ma bien aidé.
-Jean-Luc BEGHIN: --> pour l'aide ( Ok sarah ).
+Jean-Luc BEGHIN: --> pour l'aide ( Ok Ssarah ).
 Jean Jeannel: --> pour avoir réglé l'erreur 
 ( warn: Run  Cannot read property' length ' of undefined ) pour l'ouverture de l'interface de SarahV2Cortana.

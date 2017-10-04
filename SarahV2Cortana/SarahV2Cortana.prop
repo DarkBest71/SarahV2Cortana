@@ -3,7 +3,8 @@
     "SarahV2Cortana": {
       "description": "Actions pour Interface SarahV2Cortana",
       "version": "3.16",
-	  "Auteur": "Avatar Rousseau (Dark Best)"
+	  "Auteur": "Avatar Rousseau (Dark Best)",
+	  "Catégorie": "Speech"
     }
   }
 }

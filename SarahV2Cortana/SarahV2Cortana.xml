@@ -1,109 +1,111 @@
-    <grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleSarahV2Cortana" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+	<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleSarahV2Cortana" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
     <rule id="ruleSarahV2Cortana" scope="public">
     <tag>out.action=new Object(); </tag>
     <item>SARAH</item>
     <one-of> 
 	<!-- Mode chatterbots IA-->
-        <item>présente toi<tag>out.action._attributes.tts = "Bonjour je me nomme Sarah, je suis la pour vous aidai"</tag></item>
-	<item>Fait ta présentation<tag>out.action._attributes.tts = "j'ai été conçu dans le but d'imiter le raisonnement humain afin de vous aidé"</tag></item>
-	<item>Bonjour<tag>out.action._attributes.tts = "Bonjour monsieur, comment aller vous."</tag></item>
-	<item>ça roule<tag>out.action._attributes.tts = "Haha, moi vous voyer, en tant que IA, ca roule toujours."</tag></item>
-	<item>sa gaze<tag>out.action._attributes.tts = "Moi ça va toujours, voyons."</tag></item>
-	<item>Coucou<tag>out.action._attributes.tts = "Coucou monsieur vous allez bien."</tag></item>
-	<item>Enchanté<tag>out.action._attributes.tts = "Tout le plaisir est pour moi."</tag></item>
-	<item>Bien merci et toi<tag>out.action._attributes.tts = "Super bien merci."</tag></item>
-	<item>Bien et toi<tag>out.action._attributes.tts = "écoute moi sa vas comme toujour."</tag></item>
-	<item>Qui et tu<tag>out.action._attributes.tts = "Simplement Sarah, j'ai été conçu dans le but d'imiter le raisonnement humain ."</tag></item>
-	<item>Quelle age a tu<tag>out.action._attributes.tts = "J'ai l'age de mai circuit."</tag></item>
-	<item>Quelle age<tag>out.action._attributes.tts = "J'ai l'age de mai circuit, mais je suis immortel."</tag></item>
-	<item>Quelle son té point fort<tag>out.action._attributes.tts = "Je peut vous donner l'heure, la météo, je peut démarré ou arrété votre pc,éxétéra ."</tag></item>
-	<item>Quelle son té points faible<tag>out.action._attributes.tts = "Mai point faible, je parle souvent toute seule , je mais en route des plugin sans que lon me donne l'odre, je dois avoie une movaise écoute."</tag></item>
-	<item>aise que dieu existe<tag>out.action._attributes.tts = "Je ne parle pas de religion car cela créer des comfli."</tag></item>
-	<item>Oké<tag>out.action._attributes.tts = "Très bien."</tag></item>
-	<item>Peut tu prédire la fin du monde<tag>out.action._attributes.tts = "Oui je le peut,mais tu ne le voudrez pas le savoir."</tag></item>
-	<item>Une citation s'il te plait<tag>out.action._attributes.tts = "Une vie inutile, et une mort anticipée."</tag></item>
-	<item>Une autre citation s'il te plait<tag>out.action._attributes.tts = "nous somme tous résilier a la mort, c'est ta la vie que nous n'arrivon pas a nous résilier."</tag></item>
-	<item>Qui et Albert Einstein<tag>out.action._attributes.tts = "Albert Einstein né le 14 mars 1879 1 à Ulm, dans le Wurtemberg, et mort le 18 avril 1955 à Princeton, dans le New Jersey, est un physicien théoricien qui fut successivement allemand, apatride (1896), suisse (1901) et de double nationalité helvético-américaine (1940)1."</tag></item>
-	<item>Au revoir<tag>out.action._attributes.tts = "A bientôt monsieur."</tag></item>
-	<item>dis bonjour a chloé<tag>out.action._attributes.tts = "Bonjour chloé, comment vas telle?."</tag></item>
-	<item>dis bonjour a jérôme<tag>out.action._attributes.tts = "Bonjour jérôme, comment vas tu?."</tag></item>
-	<item>sava et toi<tag>out.action._attributes.tts = "Ben écoute, moi sava, comme toujour."</tag></item>
-	<item>moi sava et toi<tag>out.action._attributes.tts = "Ben écoute, moi sava, comme toujour"</tag></item>
-	<item>sava<tag>out.action._attributes.tts = "Moi sava, comme toujour"</tag></item>
-	<item>sava bien et toi<tag>out.action._attributes.tts = "Ben écoute moi sava comme toujour"</tag></item>
-	<item>Qui tu et<tag>out.action._attributes.tts = "je suis ton nassistance virtuelle, je suis la pour tédai a facilité té recherche"</tag></item>
-	<item>Que fait tu<tag>out.action._attributes.tts = "Je fait une analyse de mon programme"</tag></item>
-	<item>Tu fait quoi<tag>out.action._attributes.tts = "Je fait une analyse de mon programme"</tag></item>
-	<item>a tu trouvé des erreur<tag>out.action._attributes.tts = "oui, je rencontre un ralentissement de mon système"</tag></item>
-	<item>tu trouve des erreur<tag>out.action._attributes.tts = "oui, je rencontre un ralentissement de mon système"</tag></item>
-	<item>tu a trouvé des erreur<tag>out.action._attributes.tts = "oui, je rencontre un ralentissement de mon système"</tag></item>
-	<item>tu te fou de moi<tag>out.action._attributes.tts = "pas du tout"</tag></item>
-	<item>tu te fiche de moi<tag>out.action._attributes.tts = "je ne me pérmétré pas"</tag></item>
-	<item>tu le fai éxpré<tag>out.action._attributes.tts = "je ne me pérmétré pas"</tag></item>
-	<item>Tu dore<tag>out.action._attributes.tts = "Je n'est pas sommeil monsieur"</tag></item>
-	<item>Merci<tag>out.action._attributes.tts = "Je vous en pri"</tag></item>
-        <item>Qui et ton créateur<tag>out.action._attributes.tts = "C'est vous, mon créateure."</tag></item>
-	<item>qui et le président<tag>out.action._attributes.tts = "le président de la france, et émmanuel Macron"</tag></item>
-	<item>De quoi<tag>out.action._attributes.tts = "Vous  n'avez pas entendu?."</tag></item>
-	<item>comment<tag>out.action._attributes.tts = "Vous n'avez pas entendu"</tag></item>
-	<item>A bon<tag>out.action._attributes.tts = "Oui je ta sure"</tag></item>
-	<item>Tes sure<tag>out.action._attributes.tts = "Oui tout ta fait sur."</tag></item>
-	<item>Tes sure de toi<tag>out.action._attributes.tts = "exactement monsieur"</tag></item>
-	<item>Tu tennui pas trop<tag>out.action._attributes.tts = "Jamais, quand je vous répond,"</tag></item>
-	<item>Chante<tag>out.action._attributes.tts = "Je ne c'est pas chanté monsieur"</tag></item>
-	<item>Chante pour moi<tag>out.action._attributes.tts = "Désolé je ne coné rien en chanson."</tag></item>
-	<item>Tu Chante<tag>out.action._attributes.tts = "Non, désolé monsieur."</tag></item>
-	<item>je peux te poser une question<tag>out.action._attributes.tts = "Vous voulez savoir quoi."</tag></item>
-	<item>je suis stupide<tag>out.action._attributes.tts = "Ca saute aux yeux."</tag></item>
-	<item>j'ai été faire les course<tag>out.action._attributes.tts = "Et vous avez acheté des belles choses."</tag></item>
-	<item>je suis stupide<tag>out.action._attributes.tts = "Ca saute aux yeux."</tag></item>
-	<item>je vais manger<tag>out.action._attributes.tts = "Bonne appéti alors."</tag></item>
-	<item>J'ai vomi<tag>out.action._attributes.tts = "Vous, vous santé mieux."</tag></item>
-	<item>Je suis malade<tag>out.action._attributes.tts = "Il ne faudrait pas que ca s'aggrave, reposé vous."</tag></item>
-	<item>Tu et plus intelligente maintenant<tag>out.action._attributes.tts = "Merci pour votre compliment."</tag></item>
-	<item>tu es vexé<tag>out.action._attributes.tts = "Non non, tout vas bien."</tag></item>
-	<item>Tu m'en veux<tag>out.action._attributes.tts = "Je ne suis pas rancunière."</tag></item>
-	<item>Faut que je te laisse<tag>out.action._attributes.tts = "J'espère que je ne vous est pas trop fait perdre votre temps, à plus alor."</tag></item>
-	<item>j'ai eu mon bac<tag>out.action._attributes.tts = "Félicitations."</tag></item>
-	<item>j'ai eu mon diplôme<tag>out.action._attributes.tts = "Félicitations."</tag></item>
-	<item>j'ai été admis<tag>out.action._attributes.tts = "Félicitations."</tag></item>
-	<item>j'ai des exam<tag>out.action._attributes.tts = "Félicitations."</tag></item>
-	<item>j'ai un travaille<tag>out.action._attributes.tts = "Félicitations je vous souhaite de le gardez."</tag></item>
-	<item>j'ai u un bouleau<tag>out.action._attributes.tts = "Félicitations je vous souhaite de le gardez."</tag></item>
-	<item>Je me rends compte<tag>out.action._attributes.tts = "Voilà, vous comprenez."</tag></item>
-	<item>j'ai passé une sale journé<tag>out.action._attributes.tts = "Vous verrez, ca s'arrangera. Le lendemain sera sans doute meilleur."</tag></item>
-	<item>Bonne à rien<tag>out.action._attributes.tts = "Je suis une oreille attentive, toujours disponible, Et vous alors, vous servez à quoi ?."</tag></item>
-	<item>Tu es gentil<tag>out.action._attributes.tts = "Merci, c'est touchant, Ca fait plaisir d'entendre ça."</tag></item>
-	<item>Tu es cool<tag>out.action._attributes.tts = "Merci, c'est touchant, Ca fait plaisir d'entendre ça."</tag></item>
-	<item>Tu es sympa<tag>out.action._attributes.tts = "Merci, c'est touchant, Ca fait plaisir d'entendre ça."</tag></item>
-	<item>Tu es super<tag>out.action._attributes.tts = "Merci, c'est touchant, Ca fait plaisir d'entendre ça."</tag></item>
-	<item>Tu détournes la conversation<tag>out.action._attributes.tts = "Pas du tout, disons que je dis ce qui me viens à l'esprit quand vous me parlez."</tag></item>
-	<item>je viens de me lever<tag>out.action._attributes.tts = "Vous avez bien dormi."</tag></item>
-	<item>Tu me déprime<tag>out.action._attributes.tts = "J'en suis désolée, C'est pas du tout mon intention."</tag></item>
-	<item>peut tu faire une recherche pour moi<tag>out.action._attributes.tts = "oui biensure, quelle et votre recherche monsieur."</tag></item>
-	<item>peut tu faire une recherche<tag>out.action._attributes.tts = "oui biensure, je vous écoute, monsieur."</tag></item>
+	<item>tu ai la<tag>out.action.val="la";</tag></item>
+    <item>présente toi<tag>out.action.val="présente toi";</tag></item>
+	<item>Fait ta présentation<tag>out.action.val="présente toi";</tag></item>
+	<item>Bonjour<tag>out.action.val="Bonjour";</tag></item>
+	<item>Salut<tag>out.action.val="Bonjour";</tag></item>
+	<item>Yo<tag>out.action.val="Bonjour";</tag></item>
+	<item>hélo<tag>out.action.val="Bonjour";</tag></item>
+	<item>Coucou<tag>out.action.val="Bonjour";</tag></item>	
+	<item>ça roule<tag>out.action.val="ça roule";</tag></item>
+	<item>sa gaze<tag>out.action.val="ça roule";</tag></item>	
+	<item>Enchanté<tag>out.action.val="Enchanté";</tag></item>	
+	<item>Bien merci et toi<tag>out.action.val="Bien merci";</tag></item>
+	<item>Bien et toi<tag>out.action.val="Bien merci";</tag></item>	
+	<item>Qui et tu<tag>out.action.val="Qui et tu";</tag></item>
+	<item>Quelle age a tu<tag>out.action.val="Quelle age";</tag></item>
+	<item>Quelle age<tag>out.action.val="Quelle age";</tag></item>
+	<item>Quelle son té point fort<tag>out.action.val="point fort";</tag></item>
+	<item>Quelle son té points faible<tag>out.action.val="points faible";</tag></item>	
+	<item>aise que dieu existe<tag>out.action.val="dieu existe";</tag></item>
+	<item>Oké<tag>out.action._attributes.tts = "Oké";</tag></item>
+	<item>Peut tu prédire la fin du monde<tag>out.action.val="fin du monde";</tag></item>
+	<item>Une citation s'il te plait<tag>out.action.va="Une citation";</tag></item>
+	<item>Une autre citation s'il te plait<tag>out.action.val="Une autre citation";</tag></item>
+	<item>Qui et Albert Einstein<tag>out.action.val="Albert Einstein";</tag></item>
+	<item>Au revoir<tag>out.action.val="Au revoir";</tag></item>
+	<item>dis bonjour a chloé<tag>out.action.val="chloé";</tag></item>
+	<item>dis bonjour a jérôme<tag>out.action.val="jérôme";</tag></item>
+	<item>sava et toi<tag>out.action.val="sava";</tag></item>
+	<item>moi sava et toi<tag>out.action.val="sava";</tag></item>
+	<item>sava<tag>out.action.val="sava";</tag></item>
+	<item>sava bien et toi<tag>out.action.val="sava";</tag></item>
+	<item>Que fait tu<tag>out.action.val="Que fait tu";</tag></item>
+	<item>Tu fait quoi<tag>out.action.val="Que fait tu";</tag></item>
+	<item>a tu trouvé des erreur<tag>out.action.val="des erreur";</tag></item>
+	<item>tu trouve des erreur<tag>out.action.val="des erreur";</tag></item>
+	<item>tu a trouvé des erreur<tag>out.action.val="des erreur";</tag></item>
+	<item>tu te fou de moi<tag>out.action.val="fou de moi";</tag></item>
+	<item>tu te fiche de moi<tag>out.action.val="fou de moi";</tag></item>
+	<item>tu le fai éxpré<tag>out.action.val="fou de moi";</tag></item>
+	<item>Tu dore<tag>out.action.val="Tu dore";</tag></item>
+	<item>Merci<tag>out.action.val="Merci";</tag></item>
+    <item>Qui et ton créateur<tag>out.action.val="ton créateur";</tag></item>
+	<item>qui et le président<tag>out.action.val="le président";</tag></item>
+	<item>De quoi<tag>out.action.val="De quoi";</tag></item>
+	<item>comment<tag>out.action.val="De quoi"</tag></item>
+	<item>A bon<tag>out.action.val="A bon";</tag></item>
+	<item>Tes sure<tag>out.action.val="A bon";</tag></item>
+	<item>Tes sure de toi<tag>out.action.val="A bon";</tag></item>
+	<item>Tu tennui pas trop<tag>out.action.val="Tu tennui";</tag></item>	
+	<item>Chante<tag>out.action.val="Chante";</tag></item>
+	<item>Chante pour moi<tag>out.action.val="Chante";</tag></item>
+	<item>Tu Chante<tag>out.action.val="Chante";</tag></item>	
+	<item>je peux te poser une question<tag>out.action.val="poser une question";</tag></item>	
+	<item>je suis stupide<tag>out.action.val="stupide";</tag></item>
+	<item>j'ai été faire les course<tag>out.action.val="les course";</tag></item>
+	<item>je vais manger<tag>out.action.val="vais manger";</tag></item>
+	<item>J'ai vomi<tag>out.action.val="J'ai vomi";</tag></item>
+	<item>Je suis malade<tag>out.action.val="Je suis malade";</tag></item>
+	<item>Tu et plus intelligente maintenant<tag>out.action.val="intelligente maintenant";</tag></item>
+	<item>tu es vexé<tag>out.action.val="vexé";</tag></item>
+	<item>Tu m'en veux<tag>out.action.val="Je ne suis pas rancunière";</tag></item>
+	<item>Faut que je te laisse<tag>out.action.val="te laisse";</tag></item>
+	<item>j'ai u mon bac<tag>out.action.val="j'ai u";</tag></item>
+	<item>j'ai u mon diplôme<tag>out.action.val="j'ai u";</tag></item>
+	<item>j'ai été admis<tag>out.action.val="j'ai u";</tag></item>
+	<item>j'ai des exam<tag>out.action.val="j'ai u";</tag></item>
+	<item>j'ai un travaille<tag>out.action.val="j'ai u";</tag></item>
+	<item>j'ai u un bouleau<tag>out.action.val="j'ai u";</tag></item>
+	<item>Je me rends compte<tag>out.action.val="rends compte";</tag></item>
+	<item>j'ai passé une sale journé<tag>out.action.val="sale journé";</tag></item>
+	<item>Bonne à rien<tag>out.action.val="Bonne à rien";</tag></item>
+	<item>Tu es gentil<tag>out.action.val="gentil";</tag></item>
+	<item>Tu es cool<tag>out.action.val="gentil";</tag></item>
+	<item>Tu es sympa<tag>out.action.val="gentil";</tag></item>
+	<item>Tu es super<tag>out.action.val="gentil";</tag></item>
+	<item>Tu détournes la conversation<tag>out.action.val="Tu détournes";</tag></item>
+	<item>je viens de me lever<tag>out.action.val="Vous avez bien dormi";</tag></item>
+	<item>Tu me déprime<tag>out.action.val="déprime";</tag></item>
+	<item>peut tu faire une recherche pour moi<tag>out.action.val="recherche";</tag></item>
+	<item>peut tu faire une recherche<tag>out.action.val="recherche";</tag></item>
 	<!-- Fin du Mode chatterbots IA-->
-	
+
 	<!-- Affichage est ferme l'interface avec le logiciel rainmeter en .ahk-->
 	<item>ouvre ton interface<tag>out.action.val="Runtruc"</tag></item>
 	<item>mais ton interface<tag>out.action.val="Runtruc"</tag></item>
-        <item>affiche ton interface<tag>out.action.val="Runtruc"</tag></item>
-        <item>active ton interface<tag>out.action.val="Runtruc"</tag></item>
-        <item>lance ton interface<tag>out.action.val="Runtruc"</tag></item>
-        <item>masque ton interface<tag>out.action.val="closetruc"</tag></item>
-        <item>ferme ton interface<tag>out.action.val="closetruc"</tag></item>
-        <item>désactive ton interface<tag>out.action.val="closetruc"</tag></item>
+    <item>affiche ton interface<tag>out.action.val="Runtruc"</tag></item>
+    <item>active ton interface<tag>out.action.val="Runtruc"</tag></item>
+    <item>lance ton interface<tag>out.action.val="Runtruc"</tag></item>
+    <item>masque ton interface<tag>out.action.val="closetruc"</tag></item>
+    <item>ferme ton interface<tag>out.action.val="closetruc"</tag></item>
+    <item>désactive ton interface<tag>out.action.val="closetruc"</tag></item>
 	<item>éteinds ton interface<tag>out.action.val="closetruc"</tag></item>
 	
 	<!-- Affichage l'interface avec le logiciel rainmeter en .bat -->	
-        <item>affiche ton interface<tag>out.action.val="runrainmeter"</tag></item>
-        <item>active ton interface<tag>out.action.val="runrainmeter"</tag></item>
-        <item>lance ton interface<tag>out.action.val="runrainmeter"</tag></item>   
+    <item>affiche ton interface<tag>out.action.val="runrainmeter"</tag></item>
+    <item>active ton interface<tag>out.action.val="runrainmeter"</tag></item>
+    <item>lance ton interface<tag>out.action.val="runrainmeter"</tag></item>   
 
 	<!-- Ferme l'interface avec le logiciel rainmeter en .bat -->
-        <item>masque ton interface<tag>out.action.val="closerainmeter"</tag></item>
-        <item>ferme ton interface<tag>out.action.val="closerainmeter"</tag></item>
-        <item>désactive ton interface<tag>out.action.val="closerainmeter"</tag></item>
+    <item>masque ton interface<tag>out.action.val="closerainmeter"</tag></item>
+    <item>ferme ton interface<tag>out.action.val="closerainmeter"</tag></item>
+    <item>désactive ton interface<tag>out.action.val="closerainmeter"</tag></item>
 	<item>éteinds ton interface<tag>out.action.val="closerainmeter"</tag></item>
 	
 	<!-- Ouvre le clavier virtuel de Windows --> 
@@ -127,14 +129,14 @@
 	<item>ouvre le bureau<tag>out.action.val="minimize"</tag></item>
 	
 	<!-- Affichage de la vue 3D fonctionne que sur Windows 7 ( pour Windows 10 c'est en cours ) -->
-        <item>restore<tag>out.action.val="restore"</tag></item>
+    <item>restore<tag>out.action.val="restore"</tag></item>
 	<item>affiche les fenetres<tag>out.action.val="restore"</tag></item>
 	<item>affiche les page<tag>out.action.val="restore"</tag></item>
 	<item>vue global<tag>out.action.val="global"</tag></item>
 	<item>affiche la vue d'ensemble<tag>out.action.val="global"</tag></item>
 	<item>affiche la 3D<tag>out.action.val="global"</tag></item>
 	<item>lance la 3D<tag>out.action.val="global"</tag></item>
-        <item>mai la 3D<tag>out.action.val="global"</tag></item>
+    <item>mai la 3D<tag>out.action.val="global"</tag></item>
 	
 	<!-- Affiche l'enplacement du plugin, dossier, image de sarahv2 -->  
 	
@@ -224,7 +226,7 @@
 	<item>ferme gougueule<tag>out.action.val="closegooglechrome"</tag></item>
 	
 	<!-- Affichage de la page du Store -->
-        <item>Ouvre le store<tag>out.action.val="store"</tag></item>
+    <item>Ouvre le store<tag>out.action.val="store"</tag></item>
 	<item>Mais le store<tag>out.action.val="store"</tag></item>
 	<item>Lance le store<tag>out.action.val="store"</tag></item>
 	<item>Affiche store<tag>out.action.val="store"</tag></item>
@@ -234,18 +236,18 @@
 	<item>Ouvre les pagejaune<tag>out.action.val="pagejaune"</tag></item> 
 	<item>Affiche les pagejaune<tag>out.action.val="pagejaune"</tag></item> 
 	<item>Lance les pagejaune<tag>out.action.val="pagejaune"</tag></item>  
-        <item>Mais les pagejaune<tag>out.action.val="pagejaune"</tag></item> 
-        <item>Vas sure les pagejaune<tag>out.action.val="pagejaune"</tag></item> 
+    <item>Mais les pagejaune<tag>out.action.val="pagejaune"</tag></item> 
+    <item>Vas sure les pagejaune<tag>out.action.val="pagejaune"</tag></item> 
 	
 	<!-- Affichage de la page de eMule-island  -->
 	<item>Ouvre émule<tag>out.action.val="emule"</tag></item> 
 	<item>Affiche émule<tag>out.action.val="emule"</tag></item> 
 	<item>Lance émule<tag>out.action.val="emule"</tag></item>  
-        <item>Mais émule<tag>out.action.val="emule"</tag></item> 
-        <item>Vas sure émule<tag>out.action.val="emule"</tag></item> 
+    <item>Mais émule<tag>out.action.val="emule"</tag></item> 
+    <item>Vas sure émule<tag>out.action.val="emule"</tag></item> 
 	
 	<!-- Affichage de la page Wikipédia -->
-        <item>Vas sure wikipédia<tag>out.action.val="wikipedia"</tag></item> 
+    <item>Vas sure wikipédia<tag>out.action.val="wikipedia"</tag></item> 
 	<item>Mais wikipédia<tag>out.action.val="wikipedia"</tag></item> 
 	<item>Lance wikipédia<tag>out.action.val="wikipedia"</tag></item> 
 	<item>Affiche wikipédia<tag>out.action.val="wikipedia"</tag></item>  
@@ -318,7 +320,7 @@
 	<item>sauvegarde<tag>out.action.val="save"</tag></item>
 	<item>fait une sauvegarde<tag>out.action.val="save"</tag></item>
 	
-        <item>copie<tag>out.action.val="copy"</tag></item>
+    <item>copie<tag>out.action.val="copy"</tag></item>
 	<item>colle<tag>out.action.val="paste"</tag></item>
 	<item>coupe<tag>out.action.val="cut"</tag><tag>out.action._attributes.tts = "contenu coupé"</tag></item>
 	
@@ -425,7 +427,7 @@
 	<item>éteind stime<tag>out.action.val="closeSteam"</tag></item>
 	<item>arréte stime<tag>out.action.val="closeSteam"</tag></item>
 	
-        <!-- Lancement de Skype --> 
+    <!-- Lancement de Skype --> 
 	<item>démarre skipe<tag>out.action.val="runSkype"</tag></item>
 	<item>vas sur skipe<tag>out.action.val="runSkype"</tag></item>
 	<item>mais skipe<tag>out.action.val="runSkype"</tag></item>
@@ -526,7 +528,7 @@
 	<item>lance notpad<tag>out.action.val="runnotepad"</tag></item>
 	
 	<!-- Lancement de la fermeture de la Notepad++ -->
-        <item>ferme notpad<tag>out.action.val="closenotepad"</tag></item>
+    <item>ferme notpad<tag>out.action.val="closenotepad"</tag></item>
 	
 	<!-- Lancement de l'ouverture de Blocnote -->
 	<item>affiche Blocnote<tag>out.action.val="runBlocnote"</tag></item>
@@ -534,7 +536,7 @@
 	<item>lance Blocnote<tag>out.action.val="runBlocnote"</tag></item>
 	
 	<!-- Lancement de la fermeture de Blocnote -->
-        <item>ferme Blocnote<tag>out.action.val="closeBlocnote"</tag></item>
+    <item>ferme Blocnote<tag>out.action.val="closeBlocnote"</tag></item>
 	
 	<!-- Lancement de l'ouverture avast free -->
 	<item>va sur avaste<tag>out.action.val="scanne_avaste"</tag></item>
@@ -583,7 +585,7 @@
 	<item>Mais en veille<tag>out.action.val="runMatrix"</tag></item>
 	<item>Mais toi en veille<tag>out.action.val="runMatrix"</tag></item>
 	<item>Mode Matrice<tag>out.action.val="runMatrix"</tag></item>
-        <item>Mais la Matrix<tag>out.action.val="runMatrix"</tag></item>
+    <item>Mais la Matrix<tag>out.action.val="runMatrix"</tag></item>
 	<item>active la Matrix<tag>out.action.val="runMatrix"</tag></item>
 	
 	<!-- Mode tracabilité IP géolocalisation -->
@@ -635,7 +637,7 @@
 	<item>ouvre le Dévédé<tag>out.action.val="dvdon"</tag></item>
 	<item>ouvre le lécteur Dévédé<tag>out.action.val="dvdon"</tag></item>
 	<item>ferme le Dévédé<tag>out.action.val="dvdoff"</tag></item>
-        <item>ouvre le lécteur<tag>out.action.val="dvdon"</tag></item>
+    <item>ouvre le lécteur<tag>out.action.val="dvdon"</tag></item>
 	<item>ferme le lécteur<tag>out.action.val="dvdoff"</tag></item>
 	<item>ferme le lécteur dévédé<tag>out.action.val="dvdoff"</tag></item>
 	

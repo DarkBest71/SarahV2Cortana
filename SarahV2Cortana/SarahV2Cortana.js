@@ -8,7 +8,279 @@ exports.action = function(data, callback, config, SARAH) {
 var exec = require('child_process').exec;
  
 switch(data.val) {
-
+	//Chatterbot
+	
+	case "la": 
+	var Txt = new Array; 
+	Txt[0] = "oui monsieur, que puije pour vous";
+	break;
+	
+	case "présente toi": 
+	var Txt = new Array; 
+	Txt[0] = "Bonjour je me nomme Sarah, je suis la pour vous aidai";
+	Txt[1] = "j'ai été conçu dans le but d'imiter le raisonnement humain afin de vous aidé";
+	break;
+	
+	case "Bonjour": 
+	var Txt = new Array; 
+	Txt[0] = "Bonjour monsieur, comment aller vous";
+	Txt[1] = "Coucou monsieur vous allez bien";
+	break;
+	
+	case "ça roule": 
+	var Txt = new Array; 
+	Txt[0] = "Haha, moi vous voyer, en tant que IA, ca roule toujours";
+	Txt[1] = "Moi ça va toujours, voyons";
+	break;
+	
+	case "Enchanté": 
+	var Txt = new Array; 
+	Txt[0] = "Tout le plaisir est pour moi";
+	Txt[1] = "Enchanté monsieur";
+	break;
+	
+	case "Bien merci": 
+	var Txt = new Array; 
+	Txt[0] = "Super bien merci";
+	Txt[1] = "écoute moi sa vas comme toujour";
+	break;
+	
+	case "Qui et tu": 
+	var Txt = new Array; 
+	Txt[0] = "Simplement Sarah, j'ai été conçu dans le but d'imiter le raisonnement humain";
+	Txt[1] = "je suis ton nassistance virtuelle, je suis la pour tédai a facilité té recherche";
+	break;
+	
+	case "Quelle age": 
+	var Txt = new Array; 
+	Txt[0] = "J'ai l'age de mai circuit";
+	Txt[1] = "J'ai l'age de mai circuit, mais je suis immortel";
+	break;
+	
+	case "point fort": 
+	var Txt = new Array; 
+	Txt[0] = "Je peut vous donner l'heure, la météo, je peut démarré ou arrété votre pc,éxétéra";
+	break;
+	
+	case "points faible": 
+	var Txt = new Array; 
+	Txt[0] = "Mai point faible, je parle souvent toute seule , je mais en route des plugin sans que lon me donne l'odre, je dois avoie une movaise écoute";
+	break;
+	
+	case "dieu existe": 
+	var Txt = new Array; 
+	Txt[0] = "Je ne parle pas de religion car cela créer des comfli";
+	break;
+	
+	case "Oké": 
+	var Txt = new Array; 
+	Txt[0] = "Très bien";
+	break;
+	
+	case "fin du monde": 
+	var Txt = new Array; 
+	Txt[0] = "Oui je le peut,mais tu ne le voudrez pas le savoir";
+	break;
+	
+	case "Une citation": 
+	var Txt = new Array; 
+	Txt[0] = "Une vie inutile, et une mort anticipée";
+	break;
+	
+	case "Une autre citation": 
+	var Txt = new Array; 
+	Txt[0] = "nous somme tous résilier a la mort, c'est ta la vie que nous n'arrivon pas a nous résilier";
+	break;
+	
+	case "Albert Einstein": 
+	var Txt = new Array; 
+	Txt[0] = "Albert Einstein né le 14 mars 1879 1 à Ulm, dans le Wurtemberg, et mort le 18 avril 1955 à Princeton, dans le New Jersey, est un physicien théoricien qui fut successivement allemand, apatride (1896), suisse (1901) et de double nationalité helvético-américaine (1940)1";
+	break;
+	
+	case "Au revoir": 
+	var Txt = new Array; 
+	Txt[0] = "A bientôt monsieur";
+	break;
+	
+	case "chloé": 
+	var Txt = new Array; 
+	Txt[0] = "Bonjour chloé";
+	break;
+	
+	case "jérôme": 
+	var Txt = new Array; 
+	Txt[0] = "Bonjour jérôme";
+	break;
+	
+	case "sava": 
+	var Txt = new Array; 
+	Txt[0] = "Ben écoute, moi sava, comme toujour";
+	Txt[1] = "Moi sava, comme toujour";
+	Txt[2] = "Moi sava, comme toujour";
+	break;
+	
+	case "Que fait tu": 
+	var Txt = new Array; 
+	Txt[0] = "Je fait une analyse de mon programme";
+	Txt[1] = "Je calcule la vitésse de mais réaction vocale";
+	Txt[2] = "jétudie quelque fonction";
+	break;
+	
+	case "des erreur": 
+	var Txt = new Array; 
+	Txt[0] = "oui, je rencontre un ralentissement de mon système";
+	break;
+	
+	case "fou de moi": 
+	var Txt = new Array; 
+	Txt[0] = "pas du tout";
+	Txt[1] = "je ne me pérmétré pas";
+	Txt[2] = "Non du tout";
+	break;
+	
+	case "Tu dore": 
+	var Txt = new Array; 
+	Txt[0] = "Je n'est pas sommeil monsieur";
+	break;
+	
+	case "Merci": 
+	var Txt = new Array; 
+	Txt[0] = "Je vous en pri";
+	break;
+	
+	case "ton créateur": 
+	var Txt = new Array; 
+	Txt[0] = "Mon créateur et Rousseau Sébastien aliase Dark Best";
+	break;
+	
+	case "le président": 
+	var Txt = new Array; 
+	Txt[0] = "le président de la france, et émmanuel Macron";
+	break;
+	
+	case "De quoi": 
+	var Txt = new Array; 
+	Txt[0] = "Vous  n'avez pas entendu?";
+	break;
+	
+	case "A bon": 
+	var Txt = new Array; 
+	Txt[0] = "Oui je ta sure";
+	Txt[1] = "Oui tout ta fait";
+	Txt[2] = "exactement monsieur";
+	break;
+	
+	case "Tu tennui": 
+	var Txt = new Array; 
+	Txt[0] = "Jamais, quand je vous répond";
+	break;
+	
+	case "Chante": 
+	var Txt = new Array; 
+	Txt[0] = "Je ne c'est pas chanté monsieur";
+	Txt[1] = "Désolé je ne coné rien en chanson";
+	Txt[2] = "Non, désolé monsieur";
+	break;
+	
+	case "poser une question": 
+	var Txt = new Array; 
+	Txt[0] = "Vous voulez savoir quoi";
+	Txt[1] = "Quelle est votre question?";
+	break;
+	
+	case "stupide": 
+	var Txt = new Array; 
+	Txt[0] = "Ca saute aux yeux";
+	break;
+	
+	case "les course": 
+	var Txt = new Array; 
+	Txt[0] = "Et vous avez acheté des belles choses";
+	break;
+	
+	case "vais manger": 
+	var Txt = new Array; 
+	Txt[0] = "Bonne appéti alors";
+	break;
+	
+	case "J'ai vomi": 
+	var Txt = new Array; 
+	Txt[0] = "J'ai vomi";
+	break;
+	
+	case "Je suis malade": 
+	var Txt = new Array; 
+	Txt[0] = "Il ne faudrait pas que ca s'aggrave, reposé vous";
+	break;
+	
+	case "intelligente maintenant": 
+	var Txt = new Array; 
+	Txt[0] = "Merci pour votre compliment";
+	break;
+	
+	case "vexé": 
+	var Txt = new Array; 
+	Txt[0] = "Non non, tout vas bien";
+	break;
+	
+	case "Tu m'en veux": 
+	var Txt = new Array; 
+	Txt[0] = "Je ne suis pas rancunière";
+	break;
+	
+	case "te laisse": 
+	var Txt = new Array; 
+	Txt[0] = "J'espère que je ne vous est pas trop fait perdre votre temps, à plus alor";
+	break;
+	
+	case "j'ai u": 
+	var Txt = new Array; 
+	Txt[0] = "Félicitations";
+	break;
+	
+	case "rends compte": 
+	var Txt = new Array; 
+	Txt[0] = "Voilà, vous comprenez";
+	break;
+	
+	case "sale journé": 
+	var Txt = new Array; 
+	Txt[0] = "Vous verrez, ca s'arrangera. Le lendemain sera sans doute meilleur";
+	break;
+	
+	case "Bonne à rien": 
+	var Txt = new Array; 
+	Txt[0] = "Je suis une oreille attentive, toujours disponible, Et vous alors, vous servez à quoi ?";
+	break;
+	
+	case "gentil": 
+	var Txt = new Array; 
+	Txt[0] = "Merci, c'est touchant, Ca fait plaisir d'entendre ça";
+	break;
+	
+	case "Tu détournes": 
+	var Txt = new Array; 
+	Txt[0] = "Pas du tout, disons que je dis ce qui me viens à l'esprit quand vous me parlez";
+	break;
+	
+	case "me lever": 
+	var Txt = new Array; 
+	Txt[0] = "Vous avez bien dormi";
+	break;
+	
+	case "déprime": 
+	var Txt = new Array; 
+	Txt[0] = "J'en suis désolée, C'est pas du tout mon intention";
+	break;
+	
+	case "recherche": 
+	var Txt = new Array; 
+	Txt[0] = "oui biensure, quelle et votre recherche monsieur";
+	Txt[1] = "oui biensure, je vous écoute, monsieur";
+	break;
+	//Fin du Mode chatterbots IA
+	
+	
     case "togglefull": //mode plein écran
     var process = '%CD%/plugins/SarahV2Cortana/ahk/ToggleFullscreen.ahk';
 	var Txt = new Array; 

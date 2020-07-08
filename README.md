@@ -1,5 +1,5 @@
 # :::: SarahV2Cortana ::::
-Auteur: Avatar Rousseau Alias seb03000, Dark Best.
+Auteur: Avatar Rousseau Alias seb03000, Dark Best. !!!!
 
 # :::: Le plugin SarahV2Cortana, fonctionne bien sur Windows 10 64 Bits Pro, est Windows 7 64Bits édition intégrale avec kinect V1 est bien prendre la version de Sarah 3.16:::::
 
